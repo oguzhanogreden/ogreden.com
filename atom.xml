@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title></title>
+ <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
+ <link href="https://ozan.ogreden.com/"/>
+ <updated>2021-02-01T12:58:17-06:00</updated>
+ <id>https://ozan.ogreden.com</id>
+ <author>
+   <name>Ozan Öğreden</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Basics of variational inference - theory</title>
+   <link href="https://ozan.ogreden.com/2021/01/23/variational-inference/"/>
+   <updated>2021-01-23T00:00:00-06:00</updated>
+   <id>https://ozan.ogreden.com/2021/01/23/variational-inference</id>
+   <content type="html">&lt;p&gt;I recently attempted fitting a &lt;a href=&quot;/2021/01/08/dirichlet-processes-label-switching/&quot;&gt;Dirichlet process mixture model&lt;/a&gt; &lt;!-- [[202012161651 dirichlet process post]] --&gt; using PyMC3. It wasn’t a very succesful attempt, I ran into some difficulties due to label switching. The speed of NUTS sampler for the Dirichlet process mixture model kept me from trying different settings to solve this, and here we are, looking for an alternative.&lt;/p&gt;
+
+&lt;p&gt;The alternative is already there, it’s called variational inference (VI). It is a method for approximating probability densities &lt;!-- [[202101121750 Variational Inference A Review For Statisticians]] --&gt;. In Bayesian modeling, we can use it to approximate the posterior and consider it an alternative to markov chain monte carlo (MCMC) algorithms. There is one important advantage of VI: it’s blazing fast compared to MCMC. And there is an important disadvantage: you don’t get to be sure that the approximation will give you what you’re looking for.&lt;/p&gt;
+
+&lt;p&gt;Let’s start with remembering what we’re looking for in Bayesian inference problem: the posterior, or the density of model parameters conditional on the data. Mathematically speaking:&lt;/p&gt;
+
+\[p(z | x)\]
+
+&lt;p&gt;Commonly used modern methods for getting to the posterior are based on sampling, a.k.a markov chain monte carlo algorithms. VI, on the other hand, approaches the problem from an optimisation point of view, by making use of a clever trick. Before we get to the trick, let’s take a look at the objective of the optimisation: Kullbeck-Leibler (KL) divergence &lt;!-- [[202101121805 Kullbeck-Leibler divergence]] --&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Kullbeck-Leibler divergence is a measure if the “difference in information contained within two distributions” &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. In the VI context, specifically, the KL divergence from the posterior to the approximating density is relevant:  \(KL( q(\mathbf{z}) \| p(\mathbf{z} \vert \mathbf{x} ) )\)&lt;/p&gt;
+
+&lt;p&gt;Buried in this divergence is a term that’s very difficult to evaluate: \(p(\boldsymbol{x})\). The clever trick I mentioned above walks around this difficulty, by optimising for another objective, which is (1) easier to evaluate and (2) is equivalent to minimising the KL divergence: Evidence lower bound (ELBO).&lt;/p&gt;
+
+\[ELBO(q) = \mathbb{E}[logp(\mathbf{z}, \mathbf{x})] - \mathbb{E}[logq(\mathbf{z})]\]
+
+&lt;p&gt;Blei et al. (2018) note that “the variational objective mirrors the usual balance between likelihood and prior” &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;!-- [[202101121750 Variational Inference A Review For Statisticians]] --&gt; and this is visible once the identity is rearranged:&lt;/p&gt;
+
+\[ELBO(q) = \mathbb{E}[logp(\mathbf{x}|\mathbf{z})] + KL(q(\mathbf{z})||p(\mathbf{z}))\]
+
+&lt;p&gt;Great. But how do we specify \(q\)? A commonly used family of probability distributions is “mean-field variational family”. The mean-field variational family is essentially a joint distribution of independent random variables. So we say that&lt;/p&gt;
+
+\[q(\boldsymbol{z}) = \prod_{j=1}^{m}q_j(z_j).\]
+
+&lt;p&gt;This makes one of the key properties of VI with mean-field family clear: &lt;strong&gt;we’re assuming that prior parameters are mutually independent&lt;/strong&gt;. If they are correlated, the approximation will not be able to capture that information.&lt;/p&gt;
+
+&lt;p&gt;Now, we need an optimisation algorithm and we’re ready to go. I’ll refer you to Blei et al. (2018) &lt;sup id=&quot;fnref:2:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; for the details, where you can read about coordinate ascent mean-field variational inference.&lt;/p&gt;
+
+&lt;p&gt;Now let’s turn to what’s happening when we use the &lt;a href=&quot;https://docs.pymc.io/notebooks/variational_api_quickstart.html&quot;&gt;variational API of PyMC3&lt;/a&gt;. &lt;a href=&quot;https://github.com/pymc-devs/pymc3/blob/aedc8e9006c7e672e461774a5ee095562405c99c/pymc3/variational/inference.py#L732-L741&quot;&gt;Here&lt;/a&gt; you can see that the default of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;method=&lt;/code&gt; parameter is ADVI (automatic differentiation variational inference). ADVI is an algorithm that can express a given probabilistic model as an optimisation problem. The significant advantage of it is that we don’t have to think about technical requirements that we need to satisfy to make the approximation work. Any model we can write in PyMC3 (also Stan) can be run through ADVI.&lt;/p&gt;
+
+&lt;p&gt;Equipped with the magic provided by PyMC3 and with a basic understanding of variational inference. It’s time to see it in practice!&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;https://ermongroup.github.io/cs228-notes/inference/variational/ &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;https://arxiv.org/abs/1601.00670 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:2:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Writing is too important to not practice until needed</title>
+   <link href="https://ozan.ogreden.com/2021/01/08/writing/"/>
+   <updated>2021-01-08T00:00:00-06:00</updated>
+   <id>https://ozan.ogreden.com/2021/01/08/writing</id>
+   <content type="html">&lt;!-- 202012062149 --&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;tldr: I set a writing goal for 2021.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Earlier in my life, I had a few serendipitious online interactions that nudged the course of my life in important ways. Most of these could happen because of the online presence of others: their blogs, professional websites or their presence in online communities. In the past years, I have been allowing too little of such coincidences.&lt;/p&gt;
+
+&lt;p&gt;I had a reminder recently: I run into someone online. They were able to quickly check out this website, as well as my lightweight &lt;a href=&quot;https://twitter.com/oguzhanogreden/&quot;&gt;Twitter account&lt;/a&gt; and responded: “Quickly checked your website and Twitter and I love your work!” (This happened at a point when I don’t have anything significant that would count as “my work”. &lt;!-- This is one of the good reasons to stick to it via a Beeminder goal [[202012051524]]]. --&gt; ) We had a cup of coffee it was indeed really nice.&lt;/p&gt;
+
+&lt;p&gt;Writing seems to become increasingly more important for getting work done, as well. It’s sometimes painfully obvious that textual communication is hard to do effectively. In these cases, &lt;strong&gt;there is not much to do but write better&lt;/strong&gt;. From this point of view, it makes sense that a strong emphasis on writing is expressed by the likes of Teamflow [&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;] and Gumroad [&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;].&lt;/p&gt;
+
+&lt;p&gt;In addition, I’m thinking of set up an e-commerce shop with an idea. In the first phase, I need to be able to write decent quality copy so that I can express the idea and meet my customers.&lt;/p&gt;
+
+&lt;p&gt;Considering all these, &lt;strong&gt;one of my goals for 2021 is to practice writing&lt;/strong&gt;. By the end of the year, I’d like to see one or two pieces that I can be proud of, and &lt;a href=&quot;https://www.beeminder.com/oguzhanogreden/w-posted&quot;&gt;a few dozens of pieces written for practice purposes&lt;/a&gt;. There is one rule: I’m not allowed to indulge in navel-gazing.&lt;/p&gt;
+
+&lt;p&gt;Here is what I have so far:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/2020/12/05/beeminder-flossing/&quot;&gt;A post I’ve written for Beeminder’s Black Friday deal&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/2020/12/19/switchpoint-analysis-pymc3/&quot;&gt;A post in which I analysed some of my Beeminder data&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;“2.1 Thinking on paper: When confronted with a problem, we decompose it into parts; read the folks who dedicated their lives to it; and “think on paper” about it. Better, we make this thinking available internally so that everyone can benefit and contribute to it.” (&lt;a href=&quot;https://www.notion.so/Teamflow-s-Culture-8f24be7f619a4e4aa7e93ba02d58cf4c&quot;&gt;link&lt;/a&gt;) &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;“How we work &amp;gt; Instead of having meetings, people “talk” to each other via GitHub, Notion, and (occasionally) Slack, expecting responses within 24 hours. Because there are no standups or “syncs” and some projects can involve expensive feedback loops to collaborate, working this way requires clear and thoughtful communication. Everyone writes well, and writes &lt;em&gt;a lot&lt;/em&gt;.” (&lt;a href=&quot;https://web.archive.org/web/20210107174327/https://sahillavingia.com/work&quot;&gt;link&lt;/a&gt;) &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dirichlet Processes, MCMC frustrations and a direction ahead</title>
+   <link href="https://ozan.ogreden.com/2021/01/08/dirichlet-processes-label-switching/"/>
+   <updated>2021-01-08T00:00:00-06:00</updated>
+   <id>https://ozan.ogreden.com/2021/01/08/dirichlet-processes-label-switching</id>
+   <content type="html">&lt;p&gt;A Dirichlet process is a (stochastic) process whose realisations are probability distributions. It has two parameters: a base distribution and a scaling parameter.&lt;/p&gt;
+
+&lt;p&gt;In Bayesian statistics, the Dirichlet Process is useful when considering, for instance, a random variable which has a mixture of normal distributions where we aren’t sure how many components are involved. As such, it belongs to a group called nonparametric Bayesian models.&lt;/p&gt;
+
+&lt;p&gt;I recently had a problem at work that I though could be solved by modeling it as a Dirichlet Process, but I didn’t feel confident enough and solved it using a linear regression model. What’s a better excuse to practise some &lt;a href=&quot;/2021/01/08/writing/&quot;&gt;writing&lt;/a&gt;&lt;!--[[202012062149]]--&gt;?&lt;/p&gt;
+
+&lt;p&gt;Let’s quickly visit the notation for a Dirichlet Process. A random variable $Y$ is a Dirichlet process:&lt;/p&gt;
+
+\[Y \sim DP(N, \alpha)\]
+
+&lt;p&gt;where $N$ stands for normal distribution and $\alpha$ is the scaling parameter. $N$ can be any distribution and $\alpha$ has a natural interpretation: The lower the value, the less spread realisations of $Y$ will be around $N$. In the context of mixture distributions, $\alpha$ conveys information as to how many components there will be in the mixture.&lt;/p&gt;
+
+&lt;p&gt;Now let’s consider the following made up case: We’re asked to model the number of cars that enter the city of Utrecht per hour. The stakeholders involved are the city planners and they know that the average number of cars that enter the city can is mostly based on &lt;em&gt;period of day&lt;/em&gt;. For instance, the average in the morning hours might be:&lt;/p&gt;
+
+\[y_{morning} \sim N(\mu_{morning}, \sigma)\]
+
+&lt;p&gt;In the noon, however, the location of the normal distribution will likely shift to $\mu_{noon}$ &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let’s also suppose that they’re willing to reconsider their definition of period of day, and would like to see what the data has to tell them. So part of our task is to summarise the evidence on this matter: The analysis should be flexible with respect to however many time periods there are.&lt;/p&gt;
+
+&lt;p&gt;We could approach this problem with the following model:&lt;/p&gt;
+
+\[y \sim \sum_{i=1}^K w_i * N(\mu_i, 1 / {\tau_{i}\lambda_{i}})\]
+
+&lt;p&gt;where we’d split the day into $K$ time periods, each time period would be modeled by a different normal distribution $N(\mu_i, 1 / {\tau_{i}\lambda_{i}})$ and each data point would belong to one of these with probability $w_i$.&lt;/p&gt;
+
+&lt;p&gt;Now, let’s build up the components of this model. Since we want to time periods to be similar to each other in terms of average number of cars, we’ll estimate $\mu_i$ by using an intercept only linear model,&lt;/p&gt;
+
+&lt;p&gt;We’ll use the Dirichlet process for modeling $w_i$s:&lt;/p&gt;
+
+\[w_i = \beta_i \prod_{j=1}^{i-1} (1-\beta_j)\]
+
+&lt;p&gt;where&lt;/p&gt;
+
+\[\beta_1, \ldots , \beta_K \sim Beta(1, \alpha)\]
+
+\[\alpha \sim Gamma(1, 1)\]
+
+&lt;p&gt;are the parameters for the Dirichlet process.&lt;/p&gt;
+
+&lt;p&gt;We can get this far by simply following &lt;a href=&quot;https://docs.pymc.io/notebooks/dp_mix.html&quot;&gt;the relevant PyMC3 documentation&lt;/a&gt;. When learning something like this, building up the conceptual understanding up to this basic point and playing with an example is a good method, I think. So let’s make sure we can actually make sense of model output based on what we understood so far.&lt;/p&gt;
+
+&lt;h1 id=&quot;dummy-example&quot;&gt;Dummy example&lt;/h1&gt;
+
+&lt;p&gt;Let’s create some data with a structure that will make the job easy for this kind of model.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;generator = np.random.default_rng()
+size = 30
+
+dat_count = np.vstack([
+    generator.poisson(lam=750, size=(size, 1)), # morning
+    generator.poisson(lam=500, size=(size, 1)), # noon
+    generator.poisson(lam=250, size=(size, 1)), # evening
+])
+
+dat_period = np.vstack([
+    np.asarray([&quot;morning&quot;] * size),
+    np.asarray([&quot;noon&quot;] * size),
+    np.asarray([&quot;evening&quot;] * size),
+]).reshape(-1, 1)
+
+dat = np.hstack([
+    dat_count,
+    dat_period
+])
+
+df_count = pd.DataFrame(dat, columns=[&quot;count&quot;, &quot;period&quot;], )
+df_count[&quot;count&quot;] = df_count[&quot;count&quot;].astype(int)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is a dataset with three, clearly distinct groups:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Pasted image 20210108215604.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can standardise the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;count&lt;/code&gt; column and we have our $y$:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;count_mean = df_count[&quot;count&quot;].mean()
+count_sd = df_count[&quot;count&quot;].std()
+df_count[&quot;count_std&quot;] = (df_count[&quot;count&quot;] - count_mean) / count_sd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Following the tutorial, we can fit a Dirichlet Process model like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;K = 30
+
+def stick_breaking(beta):
+    portion_remaining = tt.concatenate([[1], tt.extra_ops.cumprod(1 - beta)[:-1]])
+    
+    return beta * portion_remaining
+
+with pm.Model() as m:
+    alpha = pm.Gamma(&quot;alpha&quot;, 1, 1)
+    beta = pm.Beta(&quot;beta&quot;, 1, alpha, shape=K) 
+    w = pm.Deterministic(&quot;w&quot;, stick_breaking(beta))
+    
+    tau = pm.Gamma(&quot;tau&quot;, 1.0, 1.0, shape=K)
+    lambda_ = pm.Gamma(&quot;lambda_&quot;, 10.0, 1.0, shape=K)
+    mu = pm.Normal(&quot;mu&quot;, mu=0, tau=tau * lambda_, shape=K)
+    
+    obs = pm.NormalMixture(
+        &quot;obs&quot;, w, mu, tau=lambda_ * tau, observed=y[&quot;count_std&quot;].values
+    )
+	
+with m:
+    trace = pm.sample(500, tune=500, chains=3, cores=3, init=&quot;advi&quot;, target_accept=.875) 	
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I’ll jump over the model checks… since at this point I went into a rabbit hole that swallowed my hours. The rabbit I chased looked like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Pasted image 20210108220312.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;How is it possible that for instance component 2 is multimodel, while I specified it as a normal distribution? This is yet another way of observing what’s called &lt;strong&gt;label switching&lt;/strong&gt;. This isn’t big of a concern if you’re after the marginal density. But is a bit of an issue if you’re after clustering your data points into these components.&lt;/p&gt;
+
+&lt;p&gt;It turns out, fitting Dirichlet Process mixtures is rather hard. And hard problems in Bayesian statistics are really frustrating when you’re not experienced with the model you’re working, because you may need to wait 30 minutes to get a result that you can’t even use.&lt;/p&gt;
+
+&lt;p&gt;There seem to be &lt;a href=&quot;https://stats.stackexchange.com/a/1087&quot;&gt;different&lt;/a&gt; &lt;a href=&quot;https://discourse.pymc.io/t/properly-sampling-mixture-models/986/2&quot;&gt;ways&lt;/a&gt; of &lt;a href=&quot;https://stats.stackexchange.com/a/420348&quot;&gt;dealing&lt;/a&gt; with &lt;a href=&quot;https://discourse.pymc.io/t/difficulties-fitting-a-mixture-of-dirichlet-distributions/5810/3?u=ozanogreden&quot;&gt;this&lt;/a&gt; &lt;a href=&quot;https://cran.r-project.org/web/packages/pivmet/vignettes/Relabelling_in_Bayesian_mixtures_by_pivotal_units.html&quot;&gt;issue&lt;/a&gt;, which I’d like to get back to soon.&lt;/p&gt;
+
+&lt;p&gt;Before that, however, I’ll turn to something else that I came to know while I was reading about this problem: variational inference. &lt;a href=&quot;https://www.codingpaths.com/&quot;&gt;Sayam Kumar&lt;/a&gt; has talk on this topic titled “&lt;a href=&quot;https://discourse.pymc.io/t/demystifying-variational-inference-by-sayam-kumar/6022&quot;&gt;Demystifying Variational Inference&lt;/a&gt; which he advertises with the following questions &lt;em&gt;“What will you do if MCMC is taking too long to sample? Also what if the dataset is huge? Is there any other cost-effective method for finding the posterior that can save us and potentially produce similar results?”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;More on variational inference to come!&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Number of cars is a discrete non-negative random variable, so we can model it with a Poisson likelihood. However, fitting a Dirichlet Process mixture with Poisson likelihood proved terribly difficult. More in the remainder of the text. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Bayesian change point analysis using PyMC3</title>
+   <link href="https://ozan.ogreden.com/2020/12/19/switchpoint-analysis-pymc3/"/>
+   <updated>2020-12-19T00:00:00-06:00</updated>
+   <id>https://ozan.ogreden.com/2020/12/19/switchpoint-analysis-pymc3</id>
+   <content type="html">&lt;p&gt;I earlier wrote about how &lt;a href=&quot;/2020/12/05/beeminder-flossing/&quot;&gt;Beeminder helped me make a flossing habit&lt;/a&gt;&lt;!-- [[202011260914 beeminder black friday post about flossing]] --&gt;. In that post, I also touched upon a small “experiment” I made by decreasing my flossing commitment in Beeminder to see if I could keep the habit up &lt;!-- [[202011260836]] --&gt; - a friend of mine had put her faith in me that I can.
+I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&gt;
+
+&lt;p&gt;In the meanwhile, I had an assignment at work where some Bayesian modeling was due. Having never seriously used PyMC3 before, I had to read a lot of documentation and work a few toy examples. During these exercises, I also analysed the said experiment. Here’s how that went.&lt;/p&gt;
+
+&lt;p&gt;First of all, here’s what the data looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Pasted image 20201219135858.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s pretty obvious that my flossing rate has changed around half of October. The goal of the current analysis is to use PyMC3 to figure out when that happened. It’s not the most exciting analysis, and is borrowed from a StackOverflow answer &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, but it makes for good writing exercise &lt;!-- [[202012062149]] --&gt; (and I now also have a Beeminder goal that forces me to write things here&lt;!-- [[202012170753]] --&gt;).&lt;/p&gt;
+
+&lt;p&gt;First, I need to do some simple data processing: My flossing rate can be thought of as times I have flossed over number of days in the period I’m analysing. However, Beeminder doesn’t report data for the days I have not flossed. This is easy to fix using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandas.date_range&lt;/code&gt; and a join.&lt;/p&gt;
+
+&lt;p&gt;Once the data is ready, the PyMC3 code for the model looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flossing_data&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Priors
+&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HalfCauchy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'sigma'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;beta&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testval&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;switch_lower&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;switch_upper&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;switchpoint&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DiscreteUniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'switchpoint'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switch_lower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;upper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switch_upper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+    
+    &lt;span class=&quot;c1&quot;&gt;## Priors for the intercept are informative
+&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;intercept_u1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Intercept_u1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;upper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;75&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+    &lt;span class=&quot;n&quot;&gt;intercept_u2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Intercept_u2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;upper&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;75&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;# Model
+&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;value&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;intercept&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switchpoint&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intercept_u1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intercept_u2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;# Likelihood
+&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;likelihood&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;value&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intercept&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;observed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;step1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NUTS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intercept_u1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intercept_u2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;step2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Metropolis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;switchpoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;trace&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;progressbar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cores&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tune&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The parameter of interest is “switchpoint” and here’s how the posterior samples for this parameter look, alongside the data itself:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Pasted image 20201219141317.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The model hedges its bet around 48th day. Remarkably, the 94% probability range covers 17th to 74th day. This is largely due to the completely uninformative prior we specified for switchpoint. We could have done better by specifying a prior that are a bit more informative.&lt;/p&gt;
+
+&lt;p&gt;Next to the parameter of interest, the “Intercept_u1” and “Intercept_u2” parameters can be interpreted as the daily rates of flossing and before and after the switchpoint, respectively:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Pasted image 20201219142108.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So the rate with which I flossed seems to have decreased. In fact, hypothesis testing is for free using Bayesian statistics:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;posterior_intercepts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posterior&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Intercept_u1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Intercept_u2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_dataframe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;h_u1_gt_u2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posterior_intercepts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Intercept_u1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posterior_intercepts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Intercept_u2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;h_u1_gt_u2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# &amp;gt; 0.93925
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Looking at the data, the probability that I flossed more while using Beeminder than in the period I haven’t used it is 94%.&lt;/p&gt;
+
+&lt;p&gt;This is a neat, albeit a trivial, example. It served me as a writing exercise, and I did learn a few elementary details about Bayesian estimation using PyMC3 in the process. Yay, I guess&lt;!-- (#incomplete write about these?) --&gt;.&lt;/p&gt;
+
+&lt;!-- I have a special interest in making small-to-mid-size businesses automate &quot;graph interpretation&quot; aspects of their work using statistical models (#incomplete write about this?). --&gt;
+
+&lt;!-- Technical notes: --&gt;
+&lt;!-- - &quot;Sampling Error: Bad initial energy&quot; roughly translates to &quot;Something wrong while evaluating the likelihood of initial values.&quot; and can be debugged with `Model.check_test_point()`. The term energy is used here since ??? #incomplete since energy is the concept that Hamiltonian Monte Carlo uses [[202012090733]]  to ??? #incomplete . I had the warning because I specified priors with no breadth. --&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;See &lt;a href=&quot;https://stackoverflow.com/questions/36045851/pymc3-regression-with-change-point/36114952&quot;&gt;here&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>202012051402</title>
+   <link href="https://ozan.ogreden.com/2020/12/05/montaigne-warning/"/>
+   <updated>2020-12-05T00:00:00-06:00</updated>
+   <id>https://ozan.ogreden.com/2020/12/05/montaigne-warning</id>
+   <content type="html">&lt;p&gt;Montaigne opens his Essays with an honest warning:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Thus, reader, I am myself the matter of my book; you would be unreasonable to spend your leisure on so frivolous and vain a subject. So farewell.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Beeminder: the commitment device that helps me stick to habits</title>
+   <link href="https://ozan.ogreden.com/2020/12/05/beeminder-flossing/"/>
+   <updated>2020-12-05T00:00:00-06:00</updated>
+   <id>https://ozan.ogreden.com/2020/12/05/beeminder-flossing</id>
+   <content type="html">&lt;!-- 202011260914 --&gt;
+
+&lt;p&gt;One of the products I use had an interesting Black Friday deal: The users would publish a promotion and get month(s) of premium for free. I really like the product and liked the idea of paying one month less. I’m not used to writing, however, so I missed the deadline. I’ll go ahead and post this anyway.&lt;/p&gt;
+
+&lt;!-- [Montaigne's warm warning](/2020/12/05/montaigne-warning/) holds for whoever's reading this. This is about me, and how I figured out a way of sticking to flossing. As such, it's obviously not useful for many. --&gt;
+
+&lt;p&gt;–&lt;/p&gt;
+
+&lt;p&gt;There is so much online content about habits&lt;!-- [[202011260821]] --&gt;. This note will be part of that pile, but I actually don’t think I have much to add: I have a long record of failures, even for a trivial habit like flossing&lt;!-- [[202011260825]] --&gt;. I managed finally, though, and I will write how.&lt;/p&gt;
+
+&lt;p&gt;The challenge I had with flossing is particularly interesting for me, since I have been able to change all sorts of things in my life so far&lt;!-- [[202011301152]] --&gt;. Some of these changes were, some emotionally challenging and a few once unimaginable. Why does flossing my teeth almost every night is so difficult, of all things?&lt;/p&gt;
+
+&lt;p&gt;I think there are two reasons&lt;!-- [[202012010631]] --&gt;. The first is that there is no immediate feedback when I don’t floss. In addition, I engage in something similar to moral licensing: I’m often busy with a few new things that challenge me throughout a day, I buckle down and apply myself. By the time I need to floss, I’m inclined to think “Oh I’ll do it tomorrow, today has been long.”&lt;/p&gt;
+
+&lt;p&gt;The first reason doesn’t need tackling: I already know flossing is better for me. How to tackle the-moral-licensing-like-decisions, though? This is where Beeminder is helpful&lt;!-- [[202012020814]]  [perhaps even at a meta level? [[202012020827]]--&gt;&lt;/p&gt;
+
+&lt;p&gt;Beeminder is a commitment device&lt;!-- [[202012020845]] --&gt;. You set goals, it helps you stick to them. At the very core of most my Beeminder goals are two things: What do I want to do? And how often? [&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;] For any goal, these are often clear. Deciding how often to floss is trivial: The more evenings of a week the better (ask your dentist though).&lt;/p&gt;
+
+&lt;p&gt;Here’s what happens once I set a goal like “Flossing, 5 times/week”: If I don’t stick to the frequency I’ve set, Beeminder will take $5 from my wallet. To make sure they don’t take my money without good reason, they’ll be annoyingly persistent at sending notifications to my phone. If I already flossed that day, I’ll respond to notification using their app. That’s all.&lt;/p&gt;
+
+&lt;p&gt;After months of Beeminding flossing, I need Beeminder’s push less and frequently. Nevertheless, nearing the 7 months of this commitment, I still have days where I would &lt;em&gt;not&lt;/em&gt; floss if not for Beeminder. In fact, I tried getting rid of the Beeminder after a chat with a friend, to see if I would keep up the habit. Although I did keep flossing, my frequency went down&lt;!-- [[202011260836]] --&gt;. After all, using Beeminder was effective for me for consistently flossing. So I went back to using it to make sure I stick to my commitment. And my dentist doesn’t care if it’s a “habit” or something I do because an app triggers me, as long as I keep flossing.&lt;/p&gt;
+
+&lt;p&gt;–&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;1: Other measures are possible too: How many steps? How many words? How little work hours? How many kilograms? &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Transparent Companies</title>
+   <link href="https://ozan.ogreden.com/2020/09/06/transparent-companies/"/>
+   <updated>2020-09-06T00:00:00-05:00</updated>
+   <id>https://ozan.ogreden.com/2020/09/06/transparent-companies</id>
+   <content type="html">&lt;p&gt;I’ve spent some time thinking about transparency in the past months.
+Here’s a list of companies that have helped shape my imagination in how transparency in business can look like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;buffer.com&lt;/strong&gt;: Their company value number 1 is &lt;a href=&quot;https://buffer.com/about&quot;&gt;“Default to transparency.”&lt;/a&gt;. Specifically, they excel at communicating their &lt;a href=&quot;https://buffer.com/resources/salary-formula-changes-2019/&quot;&gt;salary formula&lt;/a&gt;, sharing their &lt;a href=&quot;https://buffer.com/resources/shareholder-update-q2-2020-and-july/&quot;&gt;board updates&lt;/a&gt; and have a &lt;a href=&quot;https://buffer.com/revenue&quot;&gt;revenue dashboard&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;gitlab.com&lt;/strong&gt;: One of their company values is &lt;a href=&quot;https://about.gitlab.com/handbook/values/#transparency&quot;&gt;“Transparency”&lt;/a&gt;. They write in exhaustive detail about their &lt;a href=&quot;https://about.gitlab.com/company/okrs/&quot;&gt;OKRs&lt;/a&gt;, their &lt;a href=&quot;https://about.gitlab.com/company/strategy/&quot;&gt;strategy&lt;/a&gt; and also how they go about &lt;a href=&quot;https://about.gitlab.com/handbook/ceo/cadence/#strategy&quot;&gt;strategizing&lt;/a&gt; and have an excellent &lt;a href=&quot;https://about.gitlab.com/handbook/hiring/&quot;&gt;hiring&lt;/a&gt; page.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;hellocode.com&lt;/strong&gt;: This is a small software shop working on &lt;a href=&quot;https://exist.io/&quot;&gt;Exist&lt;/a&gt;, &lt;a href=&quot;https://larder.io/&quot;&gt;Larder&lt;/a&gt; and &lt;a href=&quot;https://changemap.co/&quot;&gt;Changemap&lt;/a&gt;. They have a stats page which outlines their &lt;a href=&quot;https://hellocode.co/stats/&quot;&gt;financial situation&lt;/a&gt;. On their blog, you can read their &lt;a href=&quot;http://blog.hellocode.co/post/exist-in-2020/&quot;&gt;2020 plans&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;baremetrics.com&lt;/strong&gt;: They &lt;a href=&quot;https://baremetrics.com/blog/inside-our-financials-baremetrics-demo&quot;&gt;demo their product&lt;/a&gt; with their own company metrics and they do that &lt;a href=&quot;https://baremetrics.com/blog/inside-our-financials-baremetrics-demo&quot;&gt;with an attitude&lt;/a&gt;. They have a list of “open startups” but not all of the companies listed here have a focus on transparency.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;friendly.is&lt;/strong&gt;: Friendly is one of the startups I’ve come to know via Baremetrics, one of their company values is &lt;a href=&quot;https://friendly.is/en/manifesto&quot;&gt;“Default to transparency.”&lt;/a&gt;. They keep their revenue dashboard, website analytics and their product backlog &lt;a href=&quot;https://friendly.is/en/open&quot;&gt;public&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some more here:&lt;/p&gt;
+
+&lt;p&gt;https://github.com/opencompany/awesome-open-company
+https://www.opencompany.org/directory/&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Useful Blog Posts On Data Science Job Market</title>
+   <link href="https://ozan.ogreden.com/2019/10/02/data-science-job-hunt/"/>
+   <updated>2019-10-02T00:00:00-05:00</updated>
+   <id>https://ozan.ogreden.com/2019/10/02/data-science-job-hunt</id>
+   <content type="html">&lt;p&gt;As of September 2nd, I’ve been working at &lt;a href=&quot;https://www.parkbee.nl&quot;&gt;ParkBee&lt;/a&gt;. While looking for this position, I revisited some of the data science job search material on the internet. In the meanwhile, I realized these are often not very well known by my peers, especially by those who can benefit from them. So here’s the starter kit for anyone who may be interested:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://veekaybee.github.io/2019/02/13/data-science-is-different/&quot;&gt;Data science is different now&lt;/a&gt; by &lt;em&gt;Vicky Boykis&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mpopov.com/blog/advice-for-grads-entering-industry-datasci&quot;&gt;Advice for graduates applying for data science jobs&lt;/a&gt; by &lt;em&gt;Mikhail Popov&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@aawinecoff/im-the-best-data-scientist-you-d-never-hire-700b751a3b2e&quot;&gt;I’m the Best Data Scientist You’d Never Hire&lt;/a&gt; by &lt;em&gt;Amy Winecoff&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This one is not strictly about data science positions, but it helped me evaluate the few interviews I had so far:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jacobian.org/2018/nov/29/annotated-interview-kickoff-script/&quot;&gt;My interview kickoff script, annotated&lt;/a&gt; by &lt;em&gt;Jacob-Kaplan Moss&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Moody Humans v0.1.0</title>
+   <link href="https://ozan.ogreden.com/2019/03/15/introducing-moodyhumans/"/>
+   <updated>2019-03-15T00:00:00-05:00</updated>
+   <id>https://ozan.ogreden.com/2019/03/15/introducing-moodyhumans</id>
+   <content type="html">&lt;p&gt;Moody Humans was a simple “mood logging using scientific measurement tools” project.&lt;/p&gt;
+
+&lt;p&gt;I primarily wanted to have some experience with web development using Vue.
+The backend is built using Django.&lt;/p&gt;
+
+&lt;p&gt;The fanciest feature of Moody Humans is that it’s integrated to &lt;a href=&quot;https://www.openhumans.org&quot;&gt;Open Humans&lt;/a&gt;.
+Which opens up the benefits of OpenHumans ecosystem, chief among them being the personal data notebooks.&lt;/p&gt;
+
+&lt;p&gt;Head over to &lt;a href=&quot;https://moodyhumans.herokuapp.com&quot;&gt;Moody Humans&lt;/a&gt; to take a look!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Women in Turkish Parliament</title>
+   <link href="https://ozan.ogreden.com/2018/05/15/women-in-turkish-parliament/"/>
+   <updated>2018-05-15T00:00:00-05:00</updated>
+   <id>https://ozan.ogreden.com/2018/05/15/women-in-turkish-parliament</id>
+   <content type="html">&lt;p&gt;I worked on a d3-parliament demo with the excuse of &lt;a href=&quot;https://en.wikipedia.org/wiki/2018_Turkish_general_election&quot;&gt;upcoming Turkish general election&lt;/a&gt;.
+You can see the final version &lt;a href=&quot;/women-in-turkish-parliament&quot;&gt;here&lt;/a&gt; (&lt;a href=&quot;/tbmm-kadin-temsili&quot;&gt;TR&lt;/a&gt;).&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Setting up SSL"
-date:   2020-08-22 11:24:17 -0500
-categories: tech
----
-
-[Certbot](https://certbot.eff.org/lets-encrypt/debianbuster-nginx) by EFF is amazing. The instructions are clear, but how to use them if you're serving Nginx from the [official Nginx Docker image](https://hub.docker.com/_/nginx)?
-
