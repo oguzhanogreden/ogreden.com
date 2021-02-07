@@ -2,21 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title></title>
- <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
- <link href="https://ozan.ogreden.com/"/>
- <updated>2021-02-01T12:58:17-06:00</updated>
- <id>https://ozan.ogreden.com</id>
+ <link href="https://www.oguzhanogreden.com/atom.xml" rel="self"/>
+ <link href="https://www.oguzhanogreden.com/"/>
+ <updated>2021-02-07T15:44:24-06:00</updated>
+ <id>https://www.oguzhanogreden.com</id>
  <author>
-   <name>Ozan Öğreden</name>
+   <name>Oğuzhan Öğreden</name>
    <email></email>
  </author>
 
  
  <entry>
    <title>Basics of variational inference - theory</title>
-   <link href="https://ozan.ogreden.com/2021/01/23/variational-inference/"/>
+   <link href="https://www.oguzhanogreden.com/2021/01/23/variational-inference/"/>
    <updated>2021-01-23T00:00:00-06:00</updated>
-   <id>https://ozan.ogreden.com/2021/01/23/variational-inference</id>
+   <id>https://www.oguzhanogreden.com/2021/01/23/variational-inference</id>
    <content type="html">&lt;p&gt;I recently attempted fitting a &lt;a href=&quot;/2021/01/08/dirichlet-processes-label-switching/&quot;&gt;Dirichlet process mixture model&lt;/a&gt; &lt;!-- [[202012161651 dirichlet process post]] --&gt; using PyMC3. It wasn’t a very succesful attempt, I ran into some difficulties due to label switching. The speed of NUTS sampler for the Dirichlet process mixture model kept me from trying different settings to solve this, and here we are, looking for an alternative.&lt;/p&gt;
 
 &lt;p&gt;The alternative is already there, it’s called variational inference (VI). It is a method for approximating probability densities &lt;!-- [[202101121750 Variational Inference A Review For Statisticians]] --&gt;. In Bayesian modeling, we can use it to approximate the posterior and consider it an alternative to markov chain monte carlo (MCMC) algorithms. There is one important advantage of VI: it’s blazing fast compared to MCMC. And there is an important disadvantage: you don’t get to be sure that the approximation will give you what you’re looking for.&lt;/p&gt;
@@ -64,9 +64,9 @@
  
  <entry>
    <title>Writing is too important to not practice until needed</title>
-   <link href="https://ozan.ogreden.com/2021/01/08/writing/"/>
+   <link href="https://www.oguzhanogreden.com/2021/01/08/writing/"/>
    <updated>2021-01-08T00:00:00-06:00</updated>
-   <id>https://ozan.ogreden.com/2021/01/08/writing</id>
+   <id>https://www.oguzhanogreden.com/2021/01/08/writing</id>
    <content type="html">&lt;!-- 202012062149 --&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;tldr: I set a writing goal for 2021.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
@@ -105,9 +105,9 @@
  
  <entry>
    <title>Dirichlet Processes, MCMC frustrations and a direction ahead</title>
-   <link href="https://ozan.ogreden.com/2021/01/08/dirichlet-processes-label-switching/"/>
+   <link href="https://www.oguzhanogreden.com/2021/01/08/dirichlet-processes-label-switching/"/>
    <updated>2021-01-08T00:00:00-06:00</updated>
-   <id>https://ozan.ogreden.com/2021/01/08/dirichlet-processes-label-switching</id>
+   <id>https://www.oguzhanogreden.com/2021/01/08/dirichlet-processes-label-switching</id>
    <content type="html">&lt;p&gt;A Dirichlet process is a (stochastic) process whose realisations are probability distributions. It has two parameters: a base distribution and a scaling parameter.&lt;/p&gt;
 
 &lt;p&gt;In Bayesian statistics, the Dirichlet Process is useful when considering, for instance, a random variable which has a mixture of normal distributions where we aren’t sure how many components are involved. As such, it belongs to a group called nonparametric Bayesian models.&lt;/p&gt;
@@ -240,23 +240,21 @@ with m:
  
  <entry>
    <title>Bayesian change point analysis using PyMC3</title>
-   <link href="https://ozan.ogreden.com/2020/12/19/switchpoint-analysis-pymc3/"/>
+   <link href="https://www.oguzhanogreden.com/2020/12/19/switchpoint-analysis-pymc3/"/>
    <updated>2020-12-19T00:00:00-06:00</updated>
-   <id>https://ozan.ogreden.com/2020/12/19/switchpoint-analysis-pymc3</id>
+   <id>https://www.oguzhanogreden.com/2020/12/19/switchpoint-analysis-pymc3</id>
    <content type="html">&lt;p&gt;I earlier wrote about how &lt;a href=&quot;/2020/12/05/beeminder-flossing/&quot;&gt;Beeminder helped me make a flossing habit&lt;/a&gt;&lt;!-- [[202011260914 beeminder black friday post about flossing]] --&gt;. In that post, I also touched upon a small “experiment” I made by decreasing my flossing commitment in Beeminder to see if I could keep the habit up &lt;!-- [[202011260836]] --&gt; - a friend of mine had put her faith in me that I can.
 I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&gt;
 
-&lt;p&gt;In the meanwhile, I had an assignment at work where some Bayesian modeling was due. Having never seriously used PyMC3 before, I had to read a lot of documentation and work a few toy examples. During these exercises, I also analysed the said experiment. Here’s how that went.&lt;/p&gt;
+&lt;p&gt;In the meanwhile, I had an assignment at work where I needed a simple Bayesian model. I chose to use PyMC3, and not having used it before, I read a lot of documentation and worked out a few toy examples. During these exercises, I also analysed the said experiment. Here’s how that went.&lt;/p&gt;
 
-&lt;p&gt;First of all, here’s what the data looks like:&lt;/p&gt;
+&lt;p&gt;First of all, here’s what the data looked like:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/Pasted image 20201219135858.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;It’s pretty obvious that my flossing rate has changed around half of October. The goal of the current analysis is to use PyMC3 to figure out when that happened. It’s not the most exciting analysis, and is borrowed from a StackOverflow answer &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, but it makes for good writing exercise &lt;!-- [[202012062149]] --&gt; (and I now also have a Beeminder goal that forces me to write things here&lt;!-- [[202012170753]] --&gt;).&lt;/p&gt;
+&lt;p&gt;It’s pretty obvious that my flossing rate has changed around half of October. My goal was to reach this conclusion more formally, using PyMC3. It’s not the most exciting analysis, and the solution is borrowed from a StackOverflow answer &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, but it makes for good &lt;a href=&quot;/2021/01/08/writing/&quot;&gt;writing exercise&lt;/a&gt; &lt;!-- [[202012062149]] --&gt; (and I now also have a Beeminder goal that forces me to write things here&lt;!-- [[202012170753]] --&gt;).&lt;/p&gt;
 
-&lt;p&gt;First, I need to do some simple data processing: My flossing rate can be thought of as times I have flossed over number of days in the period I’m analysing. However, Beeminder doesn’t report data for the days I have not flossed. This is easy to fix using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandas.date_range&lt;/code&gt; and a join.&lt;/p&gt;
-
-&lt;p&gt;Once the data is ready, the PyMC3 code for the model looks like this:&lt;/p&gt;
+&lt;p&gt;First, I needed some data processing to obtain my flossing rate by using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandas.date_range&lt;/code&gt; and a join. Once the data is ready, the PyMC3 code for the model looked like this:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flossing_data&lt;/span&gt;
 
@@ -292,17 +290,17 @@ I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&g
     &lt;span class=&quot;n&quot;&gt;trace&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;step1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;step2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;progressbar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cores&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tune&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The parameter of interest is “switchpoint” and here’s how the posterior samples for this parameter look, alongside the data itself:&lt;/p&gt;
+&lt;p&gt;The parameter of interest was “switchpoint” and here’s how the posterior samples for this parameter looked, alongside the data itself:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/Pasted image 20201219141317.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The model hedges its bet around 48th day. Remarkably, the 94% probability range covers 17th to 74th day. This is largely due to the completely uninformative prior we specified for switchpoint. We could have done better by specifying a prior that are a bit more informative.&lt;/p&gt;
+&lt;p&gt;The model hedged its bet around the 48th day. Remarkably, the 94% probability range covers 17th to 74th day. This is largely due to the uninformative prior on the switchpoint parameter. We could have done better by specifying a prior that are a bit more informative and reduce the weight on the earlier and the later days.&lt;/p&gt;
 
-&lt;p&gt;Next to the parameter of interest, the “Intercept_u1” and “Intercept_u2” parameters can be interpreted as the daily rates of flossing and before and after the switchpoint, respectively:&lt;/p&gt;
+&lt;p&gt;Next to the parameter of interest, the “Intercept_u1” and “Intercept_u2” parameters could be interpreted as the daily rates of flossing and before and after the switchpoint, respectively:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/Pasted image 20201219142108.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;So the rate with which I flossed seems to have decreased. In fact, hypothesis testing is for free using Bayesian statistics:&lt;/p&gt;
+&lt;p&gt;So the rate with which I flossed seemed to have decreased. In fact, we can test the hypothesis directly using the posterior samples:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;posterior_intercepts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pm_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posterior&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Intercept_u1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Intercept_u2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_dataframe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;h_u1_gt_u2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posterior_intercepts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Intercept_u1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posterior_intercepts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Intercept_u2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
@@ -313,7 +311,7 @@ I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&g
 
 &lt;p&gt;Looking at the data, the probability that I flossed more while using Beeminder than in the period I haven’t used it is 94%.&lt;/p&gt;
 
-&lt;p&gt;This is a neat, albeit a trivial, example. It served me as a writing exercise, and I did learn a few elementary details about Bayesian estimation using PyMC3 in the process. Yay, I guess&lt;!-- (#incomplete write about these?) --&gt;.&lt;/p&gt;
+&lt;p&gt;This is a neat, albeit a trivial, example. I did learn a few elementary details about Bayesian estimation using PyMC3 in the process and it served me as a writing exercise.&lt;/p&gt;
 
 &lt;!-- I have a special interest in making small-to-mid-size businesses automate &quot;graph interpretation&quot; aspects of their work using statistical models (#incomplete write about this?). --&gt;
 
@@ -332,9 +330,9 @@ I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&g
  
  <entry>
    <title>202012051402</title>
-   <link href="https://ozan.ogreden.com/2020/12/05/montaigne-warning/"/>
+   <link href="https://www.oguzhanogreden.com/2020/12/05/montaigne-warning/"/>
    <updated>2020-12-05T00:00:00-06:00</updated>
-   <id>https://ozan.ogreden.com/2020/12/05/montaigne-warning</id>
+   <id>https://www.oguzhanogreden.com/2020/12/05/montaigne-warning</id>
    <content type="html">&lt;p&gt;Montaigne opens his Essays with an honest warning:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -345,9 +343,9 @@ I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&g
  
  <entry>
    <title>Beeminder: the commitment device that helps me stick to habits</title>
-   <link href="https://ozan.ogreden.com/2020/12/05/beeminder-flossing/"/>
+   <link href="https://www.oguzhanogreden.com/2020/12/05/beeminder-flossing/"/>
    <updated>2020-12-05T00:00:00-06:00</updated>
-   <id>https://ozan.ogreden.com/2020/12/05/beeminder-flossing</id>
+   <id>https://www.oguzhanogreden.com/2020/12/05/beeminder-flossing</id>
    <content type="html">&lt;!-- 202011260914 --&gt;
 
 &lt;p&gt;One of the products I use had an interesting Black Friday deal: The users would publish a promotion and get month(s) of premium for free. I really like the product and liked the idea of paying one month less. I’m not used to writing, however, so I missed the deadline. I’ll go ahead and post this anyway.&lt;/p&gt;
@@ -384,11 +382,13 @@ I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&g
  
  <entry>
    <title>Transparent Companies</title>
-   <link href="https://ozan.ogreden.com/2020/09/06/transparent-companies/"/>
+   <link href="https://www.oguzhanogreden.com/2020/09/06/transparent-companies/"/>
    <updated>2020-09-06T00:00:00-05:00</updated>
-   <id>https://ozan.ogreden.com/2020/09/06/transparent-companies</id>
-   <content type="html">&lt;p&gt;I’ve spent some time thinking about transparency in the past months.
-Here’s a list of companies that have helped shape my imagination in how transparency in business can look like:&lt;/p&gt;
+   <id>https://www.oguzhanogreden.com/2020/09/06/transparent-companies</id>
+   <content type="html">&lt;p&gt;I’ve spent some time thinking about transparency in business in the past months.
+I am very close to starting my own e-commerce company to play with some of these ideas (more on that later).&lt;/p&gt;
+
+&lt;p&gt;Here’s a list of companies that have helped shape my imagination in how transparency in business can look like:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;buffer.com&lt;/strong&gt;: Their company value number 1 is &lt;a href=&quot;https://buffer.com/about&quot;&gt;“Default to transparency.”&lt;/a&gt;. Specifically, they excel at communicating their &lt;a href=&quot;https://buffer.com/resources/salary-formula-changes-2019/&quot;&gt;salary formula&lt;/a&gt;, sharing their &lt;a href=&quot;https://buffer.com/resources/shareholder-update-q2-2020-and-july/&quot;&gt;board updates&lt;/a&gt; and have a &lt;a href=&quot;https://buffer.com/revenue&quot;&gt;revenue dashboard&lt;/a&gt;&lt;/li&gt;
@@ -398,18 +398,22 @@ Here’s a list of companies that have helped shape my imagination in how transp
   &lt;li&gt;&lt;strong&gt;friendly.is&lt;/strong&gt;: Friendly is one of the startups I’ve come to know via Baremetrics, one of their company values is &lt;a href=&quot;https://friendly.is/en/manifesto&quot;&gt;“Default to transparency.”&lt;/a&gt;. They keep their revenue dashboard, website analytics and their product backlog &lt;a href=&quot;https://friendly.is/en/open&quot;&gt;public&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Some more here:&lt;/p&gt;
+&lt;p&gt;Some more can be here:&lt;/p&gt;
 
-&lt;p&gt;https://github.com/opencompany/awesome-open-company
-https://www.opencompany.org/directory/&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://github.com/opencompany/awesome-open-company&lt;/li&gt;
+  &lt;li&gt;https://www.opencompany.org/directory/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And also see &lt;a href=&quot;https://web.archive.org/web/20210206120529/https://revdancatt.com/2021/02/05/a-short-essay-on-pricing-pen-plotter-art&quot;&gt;a post by Rev Dan Catt&lt;/a&gt; on how he approaches pricing his pen plotter art.&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>Useful Blog Posts On Data Science Job Market</title>
-   <link href="https://ozan.ogreden.com/2019/10/02/data-science-job-hunt/"/>
+   <link href="https://www.oguzhanogreden.com/2019/10/02/data-science-job-hunt/"/>
    <updated>2019-10-02T00:00:00-05:00</updated>
-   <id>https://ozan.ogreden.com/2019/10/02/data-science-job-hunt</id>
+   <id>https://www.oguzhanogreden.com/2019/10/02/data-science-job-hunt</id>
    <content type="html">&lt;p&gt;As of September 2nd, I’ve been working at &lt;a href=&quot;https://www.parkbee.nl&quot;&gt;ParkBee&lt;/a&gt;. While looking for this position, I revisited some of the data science job search material on the internet. In the meanwhile, I realized these are often not very well known by my peers, especially by those who can benefit from them. So here’s the starter kit for anyone who may be interested:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -428,9 +432,9 @@ https://www.opencompany.org/directory/&lt;/p&gt;
  
  <entry>
    <title>Moody Humans v0.1.0</title>
-   <link href="https://ozan.ogreden.com/2019/03/15/introducing-moodyhumans/"/>
+   <link href="https://www.oguzhanogreden.com/2019/03/15/introducing-moodyhumans/"/>
    <updated>2019-03-15T00:00:00-05:00</updated>
-   <id>https://ozan.ogreden.com/2019/03/15/introducing-moodyhumans</id>
+   <id>https://www.oguzhanogreden.com/2019/03/15/introducing-moodyhumans</id>
    <content type="html">&lt;p&gt;Moody Humans was a simple “mood logging using scientific measurement tools” project.&lt;/p&gt;
 
 &lt;p&gt;I primarily wanted to have some experience with web development using Vue.
@@ -445,9 +449,9 @@ Which opens up the benefits of OpenHumans ecosystem, chief among them being the 
  
  <entry>
    <title>Women in Turkish Parliament</title>
-   <link href="https://ozan.ogreden.com/2018/05/15/women-in-turkish-parliament/"/>
+   <link href="https://www.oguzhanogreden.com/2018/05/15/women-in-turkish-parliament/"/>
    <updated>2018-05-15T00:00:00-05:00</updated>
-   <id>https://ozan.ogreden.com/2018/05/15/women-in-turkish-parliament</id>
+   <id>https://www.oguzhanogreden.com/2018/05/15/women-in-turkish-parliament</id>
    <content type="html">&lt;p&gt;I worked on a d3-parliament demo with the excuse of &lt;a href=&quot;https://en.wikipedia.org/wiki/2018_Turkish_general_election&quot;&gt;upcoming Turkish general election&lt;/a&gt;.
 You can see the final version &lt;a href=&quot;/women-in-turkish-parliament&quot;&gt;here&lt;/a&gt; (&lt;a href=&quot;/tbmm-kadin-temsili&quot;&gt;TR&lt;/a&gt;).&lt;/p&gt;
 </content>
