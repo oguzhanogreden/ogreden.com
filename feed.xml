@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Feb 2021 15:52:30 -0600</pubDate>
-    <lastBuildDate>Sun, 07 Feb 2021 15:52:30 -0600</lastBuildDate>
+    <pubDate>Tue, 09 Feb 2021 17:01:58 -0600</pubDate>
+    <lastBuildDate>Tue, 09 Feb 2021 17:01:58 -0600</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -110,25 +110,25 @@
     
       <item>
         <title>Dirichlet Processes, MCMC frustrations and a direction ahead</title>
-        <description>&lt;p&gt;A Dirichlet process is a (stochastic) process whose realisations are probability distributions. It has two parameters: a base distribution and a scaling parameter.&lt;/p&gt;
+        <description>&lt;p&gt;Put blandly, a Dirichlet process is a stochastic process whose realisations are probability distributions. It has two parameters: a base distribution and a scaling parameter.&lt;/p&gt;
 
-&lt;p&gt;In Bayesian statistics, the Dirichlet Process is useful when considering, for instance, a random variable which has a mixture of normal distributions where we aren’t sure how many components are involved. As such, it belongs to a group called nonparametric Bayesian models.&lt;/p&gt;
+&lt;p&gt;In Bayesian statistics, the Dirichlet Process is useful when modeling, for instance, a random variable which has a mixture of normal distributions and we aren’t sure how many components are involved. As such, it is a nonparametric Bayesian model.&lt;/p&gt;
 
-&lt;p&gt;I recently had a problem at work that I though could be solved by modeling it as a Dirichlet Process, but I didn’t feel confident enough and solved it using a linear regression model. What’s a better excuse to practise some &lt;a href=&quot;/2021/01/08/writing/&quot;&gt;writing&lt;/a&gt;&lt;!--[[202012062149]]--&gt;?&lt;/p&gt;
+&lt;p&gt;I recently had a problem at work that I though could be solved by modeling it as a Dirichlet Process, but I didn’t feel confident enough and solved it using a few linear regression models. What’s a better excuse to practise some &lt;a href=&quot;/2021/01/08/writing/&quot;&gt;writing&lt;/a&gt;&lt;!--[[202012062149]]--&gt;?&lt;/p&gt;
 
 &lt;p&gt;Let’s quickly visit the notation for a Dirichlet Process. A random variable $Y$ is a Dirichlet process:&lt;/p&gt;
 
 \[Y \sim DP(N, \alpha)\]
 
-&lt;p&gt;where $N$ stands for normal distribution and $\alpha$ is the scaling parameter. $N$ can be any distribution and $\alpha$ has a natural interpretation: The lower the value, the less spread realisations of $Y$ will be around $N$. In the context of mixture distributions, $\alpha$ conveys information as to how many components there will be in the mixture.&lt;/p&gt;
+&lt;p&gt;where $N$ stands for normal distribution and $\alpha$ is the scaling parameter of the Dirichlet process. $\alpha$ has a natural interpretation: The lower the value, the less spread realisations of $Y$ will be around $N$. In the context of mixture distributions, $\alpha$ conveys information as to how many components there will be in the mixture.&lt;/p&gt;
 
-&lt;p&gt;Now let’s consider the following made up case: We’re asked to model the number of cars that enter the city of Utrecht per hour. The stakeholders involved are the city planners and they know that the average number of cars that enter the city can is mostly based on &lt;em&gt;period of day&lt;/em&gt;. For instance, the average in the morning hours might be:&lt;/p&gt;
+&lt;p&gt;Now let’s consider the following made up case: We’re asked to model the number of cars that enter the city of &lt;a href=&quot;https://en.wikipedia.org/wiki/Utrecht_(province)&quot;&gt;Utrecht&lt;/a&gt; per hour. The stakeholders involved are the city planners and they know that the average number of cars that enter the city can be modeled by using &lt;em&gt;period of day&lt;/em&gt;. For instance, the average in the morning hours might be:&lt;/p&gt;
 
 \[y_{morning} \sim N(\mu_{morning}, \sigma)\]
 
-&lt;p&gt;In the noon, however, the location of the normal distribution will likely shift to $\mu_{noon}$ &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;In the noon, however, the location of the normal distribution will shift to $\mu_{noon}$ &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
-&lt;p&gt;Let’s also suppose that they’re willing to reconsider their definition of period of day, and would like to see what the data has to tell them. So part of our task is to summarise the evidence on this matter: The analysis should be flexible with respect to however many time periods there are.&lt;/p&gt;
+&lt;p&gt;Let’s also suppose that they’re willing to reconsider their definitions for &lt;em&gt;period of day&lt;/em&gt;, and would like to see what the data has to tell them. So part of our task is to summarise the evidence on this matter: The analysis should be flexible with respect to however many time periods there are.&lt;/p&gt;
 
 &lt;p&gt;We could approach this problem with the following model:&lt;/p&gt;
 
