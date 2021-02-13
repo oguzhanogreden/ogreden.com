@@ -4,7 +4,7 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-02-10T11:05:08-06:00</updated>
+ <updated>2021-02-13T02:41:12-06:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
@@ -17,9 +17,15 @@
    <link href="https://ozan.ogreden.com/2021/01/23/variational-inference/"/>
    <updated>2021-01-23T00:00:00-06:00</updated>
    <id>https://ozan.ogreden.com/2021/01/23/variational-inference</id>
-   <content type="html">&lt;p&gt;I recently attempted fitting a &lt;a href=&quot;/2021/01/08/dirichlet-processes-label-switching/&quot;&gt;Dirichlet process mixture model&lt;/a&gt; &lt;!-- [[202012161651 dirichlet process post]] --&gt; using PyMC3. It wasn’t a very succesful attempt, I ran into some difficulties due to label switching. The speed of NUTS sampler for the Dirichlet process mixture model kept me from trying different settings to solve this, and here we are, looking for an alternative.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Switching to a Bayesian workflow can be frustrating initially, when the sampling speed becomes limiting and you have no idea why.
+Like it happened to me &lt;a href=&quot;/2021/01/08/dirichlet-processes-label-switching/&quot;&gt;when I tried to fit a Dirichlet process mixture model&lt;/a&gt; &lt;!-- [[202012161651 dirichlet process post]] --&gt; using PyMC3.
+Any attempt at working around the difficulties I ran into got blocked by the speed of NUTS sampler.&lt;/p&gt;
 
-&lt;p&gt;The alternative is already there, it’s called variational inference (VI). It is a method for approximating probability densities &lt;!-- [[202101121750 Variational Inference A Review For Statisticians]] --&gt;. In Bayesian modeling, we can use it to approximate the posterior and consider it an alternative to markov chain monte carlo (MCMC) algorithms. There is one important advantage of VI: it’s blazing fast compared to MCMC. And there is an important disadvantage: you don’t get to be sure that the approximation will give you what you’re looking for.&lt;/p&gt;
+&lt;p&gt;It turns out that variational inference (VI) can help in these stages.
+However, it seems to have its own peculiarities and even some pitfalls.
+Not having learned about VI during my master’s, I set out to read about it.&lt;/p&gt;
+
+&lt;p&gt;It is a method for approximating probability densities &lt;!-- [[202101121750 Variational Inference A Review For Statisticians]] --&gt;. In Bayesian modeling, we can use it to approximate the posterior and consider it an alternative to markov chain monte carlo (MCMC) algorithms. There is one important advantage of VI: it’s blazing fast compared to MCMC. And there is an important disadvantage: you don’t get to be sure that the approximation will give you what you’re looking for.&lt;/p&gt;
 
 &lt;p&gt;Let’s start with remembering what we’re looking for in Bayesian inference problem: the posterior, or the density of model parameters conditional on the data. Mathematically speaking:&lt;/p&gt;
 
