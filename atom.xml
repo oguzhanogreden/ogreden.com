@@ -4,13 +4,43 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-02-13T02:41:12-06:00</updated>
+ <updated>2021-02-20T13:46:49-06:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>A pivot: From data science to software development</title>
+   <link href="https://ozan.ogreden.com/2021/02/20/pivot-career-software/"/>
+   <updated>2021-02-20T00:00:00-06:00</updated>
+   <id>https://ozan.ogreden.com/2021/02/20/pivot-career-software</id>
+   <content type="html">&lt;p&gt;A few months ago, I watched &lt;a href=&quot;https://www.youtube.com/watch?v=dL7LBoGIHZM&quot;&gt;Pivot&lt;/a&gt; by &lt;a href=&quot;http://www.pivotmethod.com/&quot;&gt;Jenny Blake&lt;/a&gt;.
+A friend of mine suggested the talk to me after hearing that I was contemplating a radical career move: going on a sabbatical.&lt;/p&gt;
+
+&lt;p&gt;I have always liked the idea of a sabbatical.
+More than that, I have been preparing for one for a while.
+I made sure I can afford one without getting too stressed about my livelihood.
+People around me were all encouraging, too.&lt;/p&gt;
+
+&lt;p&gt;Combined with a lack of excitement about my job, that I couldn’t shake of despite &lt;a href=&quot;/2021/01/23/variational-inference/&quot;&gt;a few&lt;/a&gt; &lt;a href=&quot;/2021/01/08/dirichlet-processes-label-switching/&quot;&gt;attempts&lt;/a&gt;…
+I came quite close to the edge.
+At this stage, Jenny Blake’s talk was a good trigger for an &lt;a href=&quot;https://slatestarcodex.com/2014/03/24/should-you-reverse-any-advice-you-hear/&quot;&gt;advice reversal&lt;/a&gt; session.&lt;/p&gt;
+
+&lt;p&gt;She addresses people like me, directly: those who think that a large step is needed for getting more satisfaction out of their career.
+Her advice to us is quite the opposite, though.
+She suggests doubling down on what works, and taking a small step.
+A small step to reorient oneself, and face a different future.&lt;/p&gt;
+
+&lt;p&gt;Thinking along with her talk, it became clear to me that I wanted to try my hand at software development.&lt;/p&gt;
+
+&lt;p&gt;And last week, I internally announced my plans of switching from my data science role to a software development role.&lt;/p&gt;
+
+&lt;p&gt;I’m excited!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Basics of variational inference - theory</title>
@@ -25,17 +55,25 @@ Any attempt at working around the difficulties I ran into got blocked by the spe
 However, it seems to have its own peculiarities and even some pitfalls.
 Not having learned about VI during my master’s, I set out to read about it.&lt;/p&gt;
 
-&lt;p&gt;It is a method for approximating probability densities &lt;!-- [[202101121750 Variational Inference A Review For Statisticians]] --&gt;. In Bayesian modeling, we can use it to approximate the posterior and consider it an alternative to markov chain monte carlo (MCMC) algorithms. There is one important advantage of VI: it’s blazing fast compared to MCMC. And there is an important disadvantage: you don’t get to be sure that the approximation will give you what you’re looking for.&lt;/p&gt;
+&lt;p&gt;VI is a method for approximating probability densities&lt;!-- [[202101121750 Variational Inference A Review For Statisticians]] --&gt;.
+In the context of Bayesian modeling, we can use it to approximate the posterior.
+As such, we can consider it an alternative to markov chain monte carlo (MCMC) algorithms.
+There is one important advantage of VI: it’s very fast compared to MCMC.
+And there is an important disadvantage: you don’t get to be sure that the approximation will give you what you’re looking for, unlike with MCMC.&lt;/p&gt;
 
 &lt;p&gt;Let’s start with remembering what we’re looking for in Bayesian inference problem: the posterior, or the density of model parameters conditional on the data. Mathematically speaking:&lt;/p&gt;
 
 \[p(z | x)\]
 
-&lt;p&gt;Commonly used modern methods for getting to the posterior are based on sampling, a.k.a markov chain monte carlo algorithms. VI, on the other hand, approaches the problem from an optimisation point of view, by making use of a clever trick. Before we get to the trick, let’s take a look at the objective of the optimisation: Kullbeck-Leibler (KL) divergence &lt;!-- [[202101121805 Kullbeck-Leibler divergence]] --&gt;.&lt;/p&gt;
+&lt;p&gt;Commonly used modern methods for getting to the posterior are based on sampling, a.k.a markov chain monte carlo algorithms.
+VI, on the other hand, approaches the problem from an optimisation point of view, by making use of a clever trick.
+Before we get to the trick, let’s specify the objective of the optimisation: Kullbeck-Leibler (KL) divergence &lt;!-- [[202101121805 Kullbeck-Leibler divergence]] --&gt;.&lt;/p&gt;
 
-&lt;p&gt;The Kullbeck-Leibler divergence is a measure if the “difference in information contained within two distributions” &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. In the VI context, specifically, the KL divergence from the posterior to the approximating density is relevant:  \(KL( q(\mathbf{z}) \| p(\mathbf{z} \vert \mathbf{x} ) )\)&lt;/p&gt;
+&lt;p&gt;The Kullbeck-Leibler divergence is a measure if the “difference in information contained within two distributions” &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+In the VI context, specifically, the KL divergence from the posterior to the approximating density is relevant:  \(KL( q(\mathbf{z}) \| p(\mathbf{z} \vert \mathbf{x} ) )\)&lt;/p&gt;
 
-&lt;p&gt;Buried in this divergence is a term that’s very difficult to evaluate: \(p(\boldsymbol{x})\). The clever trick I mentioned above walks around this difficulty, by optimising for another objective, which is (1) easier to evaluate and (2) is equivalent to minimising the KL divergence: Evidence lower bound (ELBO).&lt;/p&gt;
+&lt;p&gt;Buried in this divergence is a term that’s very difficult to evaluate: \(p(\boldsymbol{x})\).
+The trick is to optimise for another objective which is (1) easier to evaluate and (2) is equivalent to minimising the KL divergence: Evidence lower bound (ELBO).&lt;/p&gt;
 
 \[ELBO(q) = \mathbb{E}[logp(\mathbf{z}, \mathbf{x})] - \mathbb{E}[logq(\mathbf{z})]\]
 
@@ -43,17 +81,19 @@ Not having learned about VI during my master’s, I set out to read about it.&lt
 
 \[ELBO(q) = \mathbb{E}[logp(\mathbf{x}|\mathbf{z})] + KL(q(\mathbf{z})||p(\mathbf{z}))\]
 
-&lt;p&gt;Great. But how do we specify \(q\)? A commonly used family of probability distributions is “mean-field variational family”. The mean-field variational family is essentially a joint distribution of independent random variables. So we say that&lt;/p&gt;
+&lt;p&gt;Great. But how do we specify \(q\)? A commonly used family of probability distributions is “mean-field variational family”. The mean-field variational family is essentially a joint distribution of independent random variables.
+So we have:&lt;/p&gt;
 
 \[q(\boldsymbol{z}) = \prod_{j=1}^{m}q_j(z_j).\]
 
-&lt;p&gt;This makes one of the key properties of VI with mean-field family clear: &lt;strong&gt;we’re assuming that prior parameters are mutually independent&lt;/strong&gt;. If they are correlated, the approximation will not be able to capture that information.&lt;/p&gt;
+&lt;p&gt;This makes one of the key properties of VI with mean-field family clear: &lt;strong&gt;we’re assuming that model parameters are mutually independent&lt;/strong&gt;.
+If they are correlated, the approximation will not be able to capture that information.&lt;/p&gt;
 
 &lt;p&gt;Now, we need an optimisation algorithm and we’re ready to go. I’ll refer you to Blei et al. (2018) &lt;sup id=&quot;fnref:2:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; for the details, where you can read about coordinate ascent mean-field variational inference.&lt;/p&gt;
 
 &lt;p&gt;Now let’s turn to what’s happening when we use the &lt;a href=&quot;https://docs.pymc.io/notebooks/variational_api_quickstart.html&quot;&gt;variational API of PyMC3&lt;/a&gt;. &lt;a href=&quot;https://github.com/pymc-devs/pymc3/blob/aedc8e9006c7e672e461774a5ee095562405c99c/pymc3/variational/inference.py#L732-L741&quot;&gt;Here&lt;/a&gt; you can see that the default of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;method=&lt;/code&gt; parameter is ADVI (automatic differentiation variational inference). ADVI is an algorithm that can express a given probabilistic model as an optimisation problem. The significant advantage of it is that we don’t have to think about technical requirements that we need to satisfy to make the approximation work. Any model we can write in PyMC3 (also Stan) can be run through ADVI.&lt;/p&gt;
 
-&lt;p&gt;Equipped with the magic provided by PyMC3 and with a basic understanding of variational inference. It’s time to see it in practice!&lt;/p&gt;
+&lt;p&gt;Equipped with the magic provided by PyMC3 and with a basic understanding of variational inference.It’s time to see it in practice!&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
@@ -403,7 +443,7 @@ I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&g
    <updated>2020-09-06T00:00:00-05:00</updated>
    <id>https://ozan.ogreden.com/2020/09/06/transparent-companies</id>
    <content type="html">&lt;p&gt;I’ve spent some time thinking about transparency in business in the past months.
-I am very close to starting my own e-commerce company to play with some of these ideas (more on that later).&lt;/p&gt;
+I ~am~ got very close to starting my own e-commerce company to play with some of these ideas (more on that later).&lt;/p&gt;
 
 &lt;p&gt;Here’s a list of companies that have helped shape my imagination in how transparency in business can look like:&lt;/p&gt;
 
