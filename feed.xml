@@ -5,9 +5,30 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Mar 2021 15:15:00 -0600</pubDate>
-    <lastBuildDate>Sun, 07 Mar 2021 15:15:00 -0600</lastBuildDate>
+    <pubDate>Wed, 10 Mar 2021 13:50:34 -0600</pubDate>
+    <lastBuildDate>Wed, 10 Mar 2021 13:50:34 -0600</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Why am I changing into a career in software?</title>
+        <description>&lt;p&gt;The answer boils down to one concept: craft. Wikipedia entry of the word is rather narrow in definition&lt;!--[[202103102009 wikipedia entry of craft]]--&gt;. It’s been more than 10 years that software has been described as one. And it’s not a stretch of imagination to consider writing another. Stretch a little and you will see a crafty element in a wide array of human activities.&lt;/p&gt;
+
+&lt;p&gt;The crafty nature of software is in part why I’m switching.&lt;/p&gt;
+
+&lt;p&gt;In retrospect, this is a logical next step. Once, I aspired to be a cognitive psychology researcher. When it came to &lt;a href=&quot;https://doi.org/10.3758/s13414-018-1560-5&quot;&gt;doing research&lt;/a&gt;), I chose for writing Python scripts for creating experiment materials and R to simulate participants. Instead of focusing on generating knowledge. And this kept going on &lt;a href=&quot;https://cran.r-project.org/web/packages/dcurver/index.html&quot;&gt;like this&lt;/a&gt;, well into my current job: data scientist.&lt;/p&gt;
+
+&lt;p&gt;The “data scientist” title still covers really wide ground. One way of grouping data scientists is whether the position is a central role or a supportive role. The supportive role is the one I know closely: You support a business in solving a problem, but you are not at the core of the problem solution. If you’re craving for craft, you need to stretch yourself quite frequently.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, I would prefer less stretching and more craft.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Mar 2021 00:00:00 -0600</pubDate>
+        <link>https://ozan.ogreden.com/2021/03/10/why-change-career-software/</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/2021/03/10/why-change-career-software/</guid>
+        
+        
+        <category>writing</category>
+        
+      </item>
     
       <item>
         <title>A pivot: From data science to software development</title>
@@ -517,27 +538,6 @@ I ~am~ got very close to starting my own e-commerce company to play with some of
         
         
         <category>collections</category>
-        
-      </item>
-    
-      <item>
-        <title>Moody Humans v0.1.0</title>
-        <description>&lt;p&gt;Moody Humans was a simple “mood logging using scientific measurement tools” project.&lt;/p&gt;
-
-&lt;p&gt;I primarily wanted to have some experience with web development using Vue.
-The backend is built using Django.&lt;/p&gt;
-
-&lt;p&gt;The fanciest feature of Moody Humans is that it’s integrated to &lt;a href=&quot;https://www.openhumans.org&quot;&gt;Open Humans&lt;/a&gt;.
-Which opens up the benefits of OpenHumans ecosystem, chief among them being the personal data notebooks.&lt;/p&gt;
-
-&lt;p&gt;Head over to &lt;a href=&quot;https://moodyhumans.herokuapp.com&quot;&gt;Moody Humans&lt;/a&gt; to take a look!&lt;/p&gt;
-</description>
-        <pubDate>Fri, 15 Mar 2019 00:00:00 -0500</pubDate>
-        <link>https://ozan.ogreden.com/2019/03/15/introducing-moodyhumans/</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/2019/03/15/introducing-moodyhumans/</guid>
-        
-        
-        <category>projects</category>
         
       </item>
     

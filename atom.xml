@@ -4,13 +4,30 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-03-07T15:15:00-06:00</updated>
+ <updated>2021-03-10T13:50:34-06:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Why am I changing into a career in software?</title>
+   <link href="https://ozan.ogreden.com/2021/03/10/why-change-career-software/"/>
+   <updated>2021-03-10T00:00:00-06:00</updated>
+   <id>https://ozan.ogreden.com/2021/03/10/why-change-career-software</id>
+   <content type="html">&lt;p&gt;The answer boils down to one concept: craft. Wikipedia entry of the word is rather narrow in definition&lt;!--[[202103102009 wikipedia entry of craft]]--&gt;. It’s been more than 10 years that software has been described as one. And it’s not a stretch of imagination to consider writing another. Stretch a little and you will see a crafty element in a wide array of human activities.&lt;/p&gt;
+
+&lt;p&gt;The crafty nature of software is in part why I’m switching.&lt;/p&gt;
+
+&lt;p&gt;In retrospect, this is a logical next step. Once, I aspired to be a cognitive psychology researcher. When it came to &lt;a href=&quot;https://doi.org/10.3758/s13414-018-1560-5&quot;&gt;doing research&lt;/a&gt;), I chose for writing Python scripts for creating experiment materials and R to simulate participants. Instead of focusing on generating knowledge. And this kept going on &lt;a href=&quot;https://cran.r-project.org/web/packages/dcurver/index.html&quot;&gt;like this&lt;/a&gt;, well into my current job: data scientist.&lt;/p&gt;
+
+&lt;p&gt;The “data scientist” title still covers really wide ground. One way of grouping data scientists is whether the position is a central role or a supportive role. The supportive role is the one I know closely: You support a business in solving a problem, but you are not at the core of the problem solution. If you’re craving for craft, you need to stretch yourself quite frequently.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, I would prefer less stretching and more craft.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>A pivot: From data science to software development</title>
