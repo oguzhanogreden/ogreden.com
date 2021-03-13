@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 10 Mar 2021 13:50:34 -0600</pubDate>
-    <lastBuildDate>Wed, 10 Mar 2021 13:50:34 -0600</lastBuildDate>
+    <pubDate>Sat, 13 Mar 2021 08:07:30 -0600</pubDate>
+    <lastBuildDate>Sat, 13 Mar 2021 08:07:30 -0600</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -15,7 +15,7 @@
 
 &lt;p&gt;The crafty nature of software is in part why I’m switching.&lt;/p&gt;
 
-&lt;p&gt;In retrospect, this is a logical next step. Once, I aspired to be a cognitive psychology researcher. When it came to &lt;a href=&quot;https://doi.org/10.3758/s13414-018-1560-5&quot;&gt;doing research&lt;/a&gt;), I chose for writing Python scripts for creating experiment materials and R to simulate participants. Instead of focusing on generating knowledge. And this kept going on &lt;a href=&quot;https://cran.r-project.org/web/packages/dcurver/index.html&quot;&gt;like this&lt;/a&gt;, well into my current job: data scientist.&lt;/p&gt;
+&lt;p&gt;In retrospect, this is a logical next step. Once, I aspired to be a cognitive psychology researcher. When it came to &lt;a href=&quot;https://doi.org/10.3758/s13414-018-1560-5&quot;&gt;doing research&lt;/a&gt;, I chose for writing Python scripts for creating experiment materials and R to simulate participants. Instead of focusing on generating knowledge. And this kept going on &lt;a href=&quot;https://cran.r-project.org/web/packages/dcurver/index.html&quot;&gt;like this&lt;/a&gt;, well into my current position: working as a data scientist.&lt;/p&gt;
 
 &lt;p&gt;The “data scientist” title still covers really wide ground. One way of grouping data scientists is whether the position is a central role or a supportive role. The supportive role is the one I know closely: You support a business in solving a problem, but you are not at the core of the problem solution. If you’re craving for craft, you need to stretch yourself quite frequently.&lt;/p&gt;
 
@@ -53,7 +53,7 @@ A small step to reorient oneself, and face a different path.&lt;/p&gt;
 &lt;p&gt;Thinking about it, I realised I wanted to try my hand at software development.
 And last week, I internally announced my plans of switching from my data science role to a software development role.&lt;/p&gt;
 
-&lt;p&gt;I have a lot to learn, and a lot to experience - I’m excited!&lt;/p&gt;
+&lt;p&gt;I have a lot to learn, a lot to experience and a lot of ideas - I’m excited!&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Feb 2021 00:00:00 -0600</pubDate>
         <link>https://ozan.ogreden.com/2021/02/20/pivot-career-software/</link>
@@ -112,7 +112,8 @@ If they are correlated, the approximation will not be able to capture that infor
 
 &lt;p&gt;Now let’s turn to what’s happening when we use the &lt;a href=&quot;https://docs.pymc.io/notebooks/variational_api_quickstart.html&quot;&gt;variational API of PyMC3&lt;/a&gt;. &lt;a href=&quot;https://github.com/pymc-devs/pymc3/blob/aedc8e9006c7e672e461774a5ee095562405c99c/pymc3/variational/inference.py#L732-L741&quot;&gt;Here&lt;/a&gt; you can see that the default of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;method=&lt;/code&gt; parameter is ADVI (automatic differentiation variational inference). ADVI is an algorithm that can express a given probabilistic model as an optimisation problem. The significant advantage of it is that we don’t have to think about technical requirements that we need to satisfy to make the approximation work. Any model we can write in PyMC3 (also Stan) can be run through ADVI.&lt;/p&gt;
 
-&lt;p&gt;Equipped with the magic provided by PyMC3 and with a basic understanding of variational inference.It’s time to see it in practice!&lt;/p&gt;
+&lt;p&gt;Equipped with the magic provided by PyMC3 and with a basic understanding of variational inference.
+It’s time to see it in practice!&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
@@ -144,7 +145,7 @@ If they are correlated, the approximation will not be able to capture that infor
 Most of these happened thanks to the online presence of others: scientists with blogs, professionals with their own websites or someone’s presence in an online community.&lt;/p&gt;
 
 &lt;p&gt;I had a reminder recently: I ran into someone online.
-They were able to quickly check out this website, as well as my lightweight &lt;a href=&quot;https://twitter.com/oguzhanogreden/&quot;&gt;Twitter account&lt;/a&gt; and responded: “Quickly checked your website and Twitter and I love your work!” (This happened at a point when I don’t have anything significant that would count as “my work”.
+They were able to quickly check out this website, as well as my lightweight &lt;a href=&quot;https://twitter.com/oguzhanogred_en/&quot;&gt;Twitter account&lt;/a&gt; and responded: “Quickly checked your website and Twitter and I love your work!” (This happened at a point when I don’t have anything significant that would count as “my work”.
 &lt;!-- This is one of the good reasons to stick to it via a Beeminder goal [[202012051524]]]. --&gt; )
 We had a cup of coffee it was indeed really nice.&lt;/p&gt;
 
@@ -161,12 +162,7 @@ In the first phase of such an endeavour, I need to be able to write decent quali
 
 &lt;p&gt;Considering all these, &lt;strong&gt;one of my goals for 2021 is to practice writing&lt;/strong&gt;. By the end of the year, I’d like to see one or two pieces that I can be proud of, and &lt;a href=&quot;https://www.beeminder.com/oguzhanogreden/w-posted&quot;&gt;a few dozens of pieces written for practice purposes&lt;/a&gt;. There is one rule: I’m not allowed to indulge in navel-gazing.&lt;/p&gt;
 
-&lt;p&gt;Here is what I have so far:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/2020/12/05/beeminder-flossing/&quot;&gt;A post I’ve written for Beeminder’s Black Friday deal&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/2020/12/19/switchpoint-analysis-pymc3/&quot;&gt;A post in which I analysed some of my Beeminder data&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;/posts/&quot;&gt;Here&lt;/a&gt; is what I have so far.&lt;/p&gt;
 
 &lt;hr /&gt;
 
