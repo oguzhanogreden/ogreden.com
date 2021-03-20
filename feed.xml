@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Mar 2021 08:07:30 -0600</pubDate>
-    <lastBuildDate>Sat, 13 Mar 2021 08:07:30 -0600</lastBuildDate>
+    <pubDate>Sat, 20 Mar 2021 12:55:11 +0100</pubDate>
+    <lastBuildDate>Sat, 20 Mar 2021 12:55:11 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;Ultimately, I would prefer less stretching and more craft.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 10 Mar 2021 00:00:00 -0600</pubDate>
+        <pubDate>Wed, 10 Mar 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/03/10/why-change-career-software/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/03/10/why-change-career-software/</guid>
         
@@ -55,7 +55,7 @@ And last week, I internally announced my plans of switching from my data science
 
 &lt;p&gt;I have a lot to learn, a lot to experience and a lot of ideas - I’m excited!&lt;/p&gt;
 </description>
-        <pubDate>Sat, 20 Feb 2021 00:00:00 -0600</pubDate>
+        <pubDate>Sat, 20 Feb 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/02/20/pivot-career-software/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/02/20/pivot-career-software/</guid>
         
@@ -126,7 +126,7 @@ It’s time to see it in practice!&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Sat, 23 Jan 2021 00:00:00 -0600</pubDate>
+        <pubDate>Sat, 23 Jan 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/01/23/variational-inference/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/01/23/variational-inference/</guid>
         
@@ -177,7 +177,7 @@ In the first phase of such an endeavour, I need to be able to write decent quali
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Fri, 08 Jan 2021 00:00:00 -0600</pubDate>
+        <pubDate>Fri, 08 Jan 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/01/08/writing/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/01/08/writing/</guid>
         
@@ -316,7 +316,7 @@ with m:
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Fri, 08 Jan 2021 00:00:00 -0600</pubDate>
+        <pubDate>Fri, 08 Jan 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/01/08/dirichlet-processes-label-switching/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/01/08/dirichlet-processes-label-switching/</guid>
         
@@ -410,7 +410,7 @@ I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&g
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Sat, 19 Dec 2020 00:00:00 -0600</pubDate>
+        <pubDate>Sat, 19 Dec 2020 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2020/12/19/switchpoint-analysis-pymc3/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2020/12/19/switchpoint-analysis-pymc3/</guid>
         
@@ -427,7 +427,7 @@ I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&g
   &lt;p&gt;Thus, reader, I am myself the matter of my book; you would be unreasonable to spend your leisure on so frivolous and vain a subject. So farewell.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Sat, 05 Dec 2020 00:00:00 -0600</pubDate>
+        <pubDate>Sat, 05 Dec 2020 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2020/12/05/montaigne-warning/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2020/12/05/montaigne-warning/</guid>
         
@@ -470,7 +470,7 @@ I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&g
   &lt;/ol&gt;
 &lt;/div&gt;
 </description>
-        <pubDate>Sat, 05 Dec 2020 00:00:00 -0600</pubDate>
+        <pubDate>Sat, 05 Dec 2020 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2020/12/05/beeminder-flossing/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2020/12/05/beeminder-flossing/</guid>
         
@@ -503,7 +503,7 @@ I ~am~ got very close to starting my own e-commerce company to play with some of
 
 &lt;p&gt;And also see &lt;a href=&quot;https://web.archive.org/web/20210206120529/https://revdancatt.com/2021/02/05/a-short-essay-on-pricing-pen-plotter-art&quot;&gt;a post by Rev Dan Catt&lt;/a&gt; on how he approaches pricing his pen plotter art.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 06 Sep 2020 00:00:00 -0500</pubDate>
+        <pubDate>Sun, 06 Sep 2020 00:00:00 +0200</pubDate>
         <link>https://ozan.ogreden.com/2020/09/06/transparent-companies/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2020/09/06/transparent-companies/</guid>
         
@@ -528,7 +528,7 @@ I ~am~ got very close to starting my own e-commerce company to play with some of
   &lt;li&gt;&lt;a href=&quot;https://jacobian.org/2018/nov/29/annotated-interview-kickoff-script/&quot;&gt;My interview kickoff script, annotated&lt;/a&gt; by &lt;em&gt;Jacob-Kaplan Moss&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 02 Oct 2019 00:00:00 -0500</pubDate>
+        <pubDate>Wed, 02 Oct 2019 00:00:00 +0200</pubDate>
         <link>https://ozan.ogreden.com/2019/10/02/data-science-job-hunt/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2019/10/02/data-science-job-hunt/</guid>
         
