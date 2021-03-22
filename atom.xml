@@ -4,13 +4,31 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-03-20T13:09:10+01:00</updated>
+ <updated>2021-03-22T18:17:46+01:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Using unitless line heights in CSS is preferred</title>
+   <link href="https://ozan.ogreden.com/til/using-unitless-lineheights-css"/>
+   <updated>2021-03-22T00:00:00+01:00</updated>
+   <id>https://ozan.ogreden.com/til/using-unitless-lineheights-css</id>
+   <content type="html">&lt;p&gt;I’ve been reading about web typography and came across a post by Erik Meyer, &lt;a href=&quot;http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/&quot;&gt;“Unitless line-heights”&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When you set the line height with a united value, the value will be computed and passed down to children.
+For instance, setting the line height to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.5em&lt;/code&gt; for an element with font size of 16 points, means that the line height will be 24 points.&lt;/p&gt;
+
+&lt;p&gt;This value will be passed down to any element under the hierarchy, not the raw value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.5em&lt;/code&gt;.
+Meaning that even a descendant with 12 points will get a line height of 24 points.&lt;/p&gt;
+
+&lt;p&gt;Instead, using a unitless line height (like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.5&lt;/code&gt;) will make sure that each element will compute the line height to be 1.5 times their font.
+This is preferable since line heights are very much font size dependent.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Why am I changing into a career in software?</title>

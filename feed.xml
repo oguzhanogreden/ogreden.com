@@ -5,9 +5,33 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 20 Mar 2021 13:09:10 +0100</pubDate>
-    <lastBuildDate>Sat, 20 Mar 2021 13:09:10 +0100</lastBuildDate>
+    <pubDate>Mon, 22 Mar 2021 18:17:46 +0100</pubDate>
+    <lastBuildDate>Mon, 22 Mar 2021 18:17:46 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Using unitless line heights in CSS is preferred</title>
+        <description>&lt;p&gt;I’ve been reading about web typography and came across a post by Erik Meyer, &lt;a href=&quot;http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/&quot;&gt;“Unitless line-heights”&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When you set the line height with a united value, the value will be computed and passed down to children.
+For instance, setting the line height to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.5em&lt;/code&gt; for an element with font size of 16 points, means that the line height will be 24 points.&lt;/p&gt;
+
+&lt;p&gt;This value will be passed down to any element under the hierarchy, not the raw value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.5em&lt;/code&gt;.
+Meaning that even a descendant with 12 points will get a line height of 24 points.&lt;/p&gt;
+
+&lt;p&gt;Instead, using a unitless line height (like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.5&lt;/code&gt;) will make sure that each element will compute the line height to be 1.5 times their font.
+This is preferable since line heights are very much font size dependent.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 Mar 2021 00:00:00 +0100</pubDate>
+        <link>https://ozan.ogreden.com/til/using-unitless-lineheights-css</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/til/using-unitless-lineheights-css</guid>
+        
+        <category>css</category>
+        
+        
+        <category>til</category>
+        
+      </item>
     
       <item>
         <title>Why am I changing into a career in software?</title>
@@ -506,31 +530,6 @@ I ~am~ got very close to starting my own e-commerce company to play with some of
         <pubDate>Sun, 06 Sep 2020 00:00:00 +0200</pubDate>
         <link>https://ozan.ogreden.com/2020/09/06/transparent-companies/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2020/09/06/transparent-companies/</guid>
-        
-        
-        <category>collections</category>
-        
-      </item>
-    
-      <item>
-        <title>Useful Blog Posts On Data Science Job Market</title>
-        <description>&lt;p&gt;As of September 2nd, I’ve been working at &lt;a href=&quot;https://www.parkbee.nl&quot;&gt;ParkBee&lt;/a&gt;. While looking for this position, I revisited some of the data science job search material on the internet. In the meanwhile, I realized these are often not very well known by my peers, especially by those who can benefit from them. So here’s the starter kit for anyone who may be interested:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://veekaybee.github.io/2019/02/13/data-science-is-different/&quot;&gt;Data science is different now&lt;/a&gt; by &lt;em&gt;Vicky Boykis&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mpopov.com/blog/advice-for-grads-entering-industry-datasci&quot;&gt;Advice for graduates applying for data science jobs&lt;/a&gt; by &lt;em&gt;Mikhail Popov&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/@aawinecoff/im-the-best-data-scientist-you-d-never-hire-700b751a3b2e&quot;&gt;I’m the Best Data Scientist You’d Never Hire&lt;/a&gt; by &lt;em&gt;Amy Winecoff&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This one is not strictly about data science positions, but it helped me evaluate the few interviews I had so far:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jacobian.org/2018/nov/29/annotated-interview-kickoff-script/&quot;&gt;My interview kickoff script, annotated&lt;/a&gt; by &lt;em&gt;Jacob-Kaplan Moss&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Wed, 02 Oct 2019 00:00:00 +0200</pubDate>
-        <link>https://ozan.ogreden.com/2019/10/02/data-science-job-hunt/</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/2019/10/02/data-science-job-hunt/</guid>
         
         
         <category>collections</category>
