@@ -4,13 +4,32 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-03-25T09:54:53+01:00</updated>
+ <updated>2021-03-26T18:08:43+01:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Evaluation of LINQ can be deferred past the moment DbContext is disposed.</title>
+   <link href="https://ozan.ogreden.com/til/deferred-execution-lazy-evaluation-disposed-error"/>
+   <updated>2021-03-26T00:00:00+01:00</updated>
+   <id>https://ozan.ogreden.com/til/deferred-execution-lazy-evaluation-disposed-error</id>
+   <content type="html">&lt;p&gt;That the .NET Core ecosystem brings the Language-Integrated Query (LINQ) of C# and Entity Framework Core provides a lot of comfort.&lt;/p&gt;
+
+&lt;p&gt;One property of LINQ is that it defers execution of queries, if the return value of the query is a sequence of values.
+This provides for flexibility in composing complex queries programatically without changing the way you compose the query.&lt;/p&gt;
+
+&lt;p&gt;There are some pitfalls of deferred execution, for instance it can cause degraded performance due to potential multiple enumeration.
+I learned of another one that caught me by surprise:
+If the execution is deferred long enough, resources that are needed for querying may be &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/api/system.idisposable?view=net-5.0&quot;&gt;disposed&lt;/a&gt; of.&lt;/p&gt;
+
+&lt;p&gt;Searching the internet for “The operation cannot be completed because the DbContext has been disposed.” returns more than enough results, &lt;a href=&quot;The operation cannot be completed because the DbContext has been disposed&quot;&gt;here&lt;/a&gt; is one StackOverflow answer that I found useful.&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Improving readability on web with typography basics</title>

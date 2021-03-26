@@ -5,9 +5,34 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 25 Mar 2021 09:54:53 +0100</pubDate>
-    <lastBuildDate>Thu, 25 Mar 2021 09:54:53 +0100</lastBuildDate>
+    <pubDate>Fri, 26 Mar 2021 18:08:43 +0100</pubDate>
+    <lastBuildDate>Fri, 26 Mar 2021 18:08:43 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Evaluation of LINQ can be deferred past the moment DbContext is disposed.</title>
+        <description>&lt;p&gt;That the .NET Core ecosystem brings the Language-Integrated Query (LINQ) of C# and Entity Framework Core provides a lot of comfort.&lt;/p&gt;
+
+&lt;p&gt;One property of LINQ is that it defers execution of queries, if the return value of the query is a sequence of values.
+This provides for flexibility in composing complex queries programatically without changing the way you compose the query.&lt;/p&gt;
+
+&lt;p&gt;There are some pitfalls of deferred execution, for instance it can cause degraded performance due to potential multiple enumeration.
+I learned of another one that caught me by surprise:
+If the execution is deferred long enough, resources that are needed for querying may be &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/api/system.idisposable?view=net-5.0&quot;&gt;disposed&lt;/a&gt; of.&lt;/p&gt;
+
+&lt;p&gt;Searching the internet for “The operation cannot be completed because the DbContext has been disposed.” returns more than enough results, &lt;a href=&quot;The operation cannot be completed because the DbContext has been disposed&quot;&gt;here&lt;/a&gt; is one StackOverflow answer that I found useful.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 26 Mar 2021 00:00:00 +0100</pubDate>
+        <link>https://ozan.ogreden.com/til/deferred-execution-lazy-evaluation-disposed-error</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/til/deferred-execution-lazy-evaluation-disposed-error</guid>
+        
+        <category>ef-core</category>
+        
+        
+        <category>til</category>
+        
+      </item>
     
       <item>
         <title>Improving readability on web with typography basics</title>
@@ -571,49 +596,6 @@ I failed her. But I’m a regular flosser these days, so there’s that.&lt;/p&g
         
         
         <category>zettel</category>
-        
-      </item>
-    
-      <item>
-        <title>Beeminder: the commitment device that helps me stick to habits</title>
-        <description>&lt;!-- 202011260914 --&gt;
-
-&lt;p&gt;One of the products I use had an interesting Black Friday deal: The users would publish a promotion and get month(s) of premium for free. I really like the product and liked the idea of paying one month less. I’m not used to writing, however, so I missed the deadline. I’ll go ahead and post this anyway.&lt;/p&gt;
-
-&lt;!-- [Montaigne's warm warning](/2020/12/05/montaigne-warning/) holds for whoever's reading this. This is about me, and how I figured out a way of sticking to flossing. As such, it's obviously not useful for many. --&gt;
-
-&lt;p&gt;–&lt;/p&gt;
-
-&lt;p&gt;There is so much online content about habits&lt;!-- [[202011260821]] --&gt;. This note will be part of that pile, but I actually don’t think I have much to add: I have a long record of failures, even for a trivial habit like flossing&lt;!-- [[202011260825]] --&gt;. I managed finally, though, and I will write how.&lt;/p&gt;
-
-&lt;p&gt;The challenge I had with flossing is particularly interesting for me, since I have been able to change all sorts of things in my life so far&lt;!-- [[202011301152]] --&gt;. Some of these changes were, some emotionally challenging and a few once unimaginable. Why does flossing my teeth almost every night is so difficult, of all things?&lt;/p&gt;
-
-&lt;p&gt;I think there are two reasons&lt;!-- [[202012010631]] --&gt;. The first is that there is no immediate feedback when I don’t floss. In addition, I engage in something similar to moral licensing: I’m often busy with a few new things that challenge me throughout a day, I buckle down and apply myself. By the time I need to floss, I’m inclined to think “Oh I’ll do it tomorrow, today has been long.”&lt;/p&gt;
-
-&lt;p&gt;The first reason doesn’t need tackling: I already know flossing is better for me. How to tackle the-moral-licensing-like-decisions, though? This is where Beeminder is helpful&lt;!-- [[202012020814]]  [perhaps even at a meta level? [[202012020827]]--&gt;&lt;/p&gt;
-
-&lt;p&gt;Beeminder is a commitment device&lt;!-- [[202012020845]] --&gt;. You set goals, it helps you stick to them. At the very core of most my Beeminder goals are two things: What do I want to do? And how often? [&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;] For any goal, these are often clear. Deciding how often to floss is trivial: The more evenings of a week the better (ask your dentist though).&lt;/p&gt;
-
-&lt;p&gt;Here’s what happens once I set a goal like “Flossing, 5 times/week”: If I don’t stick to the frequency I’ve set, Beeminder will take $5 from my wallet. To make sure they don’t take my money without good reason, they’ll be annoyingly persistent at sending notifications to my phone. If I already flossed that day, I’ll respond to notification using their app. That’s all.&lt;/p&gt;
-
-&lt;p&gt;After months of Beeminding flossing, I need Beeminder’s push less and frequently. Nevertheless, nearing the 7 months of this commitment, I still have days where I would &lt;em&gt;not&lt;/em&gt; floss if not for Beeminder. In fact, I tried getting rid of the Beeminder after a chat with a friend, to see if I would keep up the habit. Although I did keep flossing, my frequency went down&lt;!-- [[202011260836]] --&gt;. After all, using Beeminder was effective for me for consistently flossing. So I went back to using it to make sure I stick to my commitment. And my dentist doesn’t care if it’s a “habit” or something I do because an app triggers me, as long as I keep flossing.&lt;/p&gt;
-
-&lt;p&gt;–&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;1: Other measures are possible too: How many steps? How many words? How little work hours? How many kilograms? &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 05 Dec 2020 00:00:00 +0100</pubDate>
-        <link>https://ozan.ogreden.com/2020/12/05/beeminder-flossing/</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/2020/12/05/beeminder-flossing/</guid>
-        
-        
-        <category>writing</category>
         
       </item>
     
