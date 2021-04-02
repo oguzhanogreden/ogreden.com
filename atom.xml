@@ -4,13 +4,34 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-03-26T20:56:25+01:00</updated>
+ <updated>2021-04-02T08:54:27+02:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Margaret Atwood's Introduction to The Graveyard Book</title>
+   <link href="https://ozan.ogreden.com/notebook/2021/04/02"/>
+   <updated>2021-04-02T00:00:00+02:00</updated>
+   <id>https://ozan.ogreden.com/notebook/2021/04/atwood-graveyard-book</id>
+   <content type="html">&lt;p&gt;The 10th anniversary edition of The Graveyard Book has a foreword by Margaret Atwood. The foreword is delightful. And it’s short. In five pages, she succinctly meanders through all I want from a forward: literary context, Gaiman’s place in that context, excitement about the story, and even a personal anectode that involved Gaiman.&lt;/p&gt;
+
+&lt;p&gt;Let me try to give you a taste of the meandering yet to the point style of Atwood. Here’s where she makes a leap towards introducing the book:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Astrologically, Neil Gaiman is a Scorpio with Gemini rising, and, if you go in for that sort of thing - as he must, because I found his horoscope online - this explains much. Scorpio is governed by Pluto, patron of the Underworld as well as of plumbing, underwear, the criminal underworld, and everything below the line; and Gemini is ruled by Mercury or Hermes, god of thieves, jokes, communication, travel, and secrets; in addition to which he is the conductor of souls to the Underworld. Most travel to the land of the dead is one-way, but Hermes comes and goes as he pleases, and so do various protagonists in books by Neil Gaiman, including this one.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The following paragraph opens with “Most of us have a distinct aversion to being dead. We have great difficulty imagining ourselves as simply not existing anymore: […]”&lt;/p&gt;
+
+&lt;p&gt;Yet we have tried to imagine this throuhout the history. Atwood then surveys a selection of ancient stories that attempt at an explanation and reminds: “But there are many other possibilities. […] It is this latter body of folklore that Neil Gaiman draws upon for The Graveyard Book.”&lt;/p&gt;
+
+&lt;p&gt;Fantastic!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Evaluation of LINQ can be deferred past the moment DbContext is disposed.</title>
