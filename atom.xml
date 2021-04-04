@@ -4,13 +4,40 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-04-02T09:09:14+02:00</updated>
+ <updated>2021-04-04T13:58:23+02:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>How to notice what you don't know?</title>
+   <link href="https://ozan.ogreden.com/notebook/2021/04/04"/>
+   <updated>2021-04-04T00:00:00+02:00</updated>
+   <id>https://ozan.ogreden.com/notebook/2021/04/how-to-notice-what-you-dont-know</id>
+   <content type="html">&lt;p&gt;Some authors make you feel lucky that you’re in their audience. &lt;a href=&quot;https://jvns.ca&quot;&gt;Julia Evans&lt;/a&gt; &lt;!--[[202104041301 Julia Evans]]--&gt; is one of those authors for me.&lt;/p&gt;
+
+&lt;p&gt;Julia recently published &lt;a href=&quot;https://jvns.ca/blog/learn-how-things-work/&quot;&gt;“Get better at programming by learning how things work”&lt;/a&gt;. She has great advice that pairs well with Peter Norvig’s &lt;!--[[202104041304 Peter Norvig]]--&gt;’s &lt;a href=&quot;http://norvig.com/21-days.html&quot;&gt;recipe for programming success&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One question that she leaves open is “How do you figure out what you don’t know?” Here’s what’s been working for me.&lt;/p&gt;
+
+&lt;p&gt;Trying to talk about the topic opens the portal for me. I find self-talking out loud effective. Initiating the talk with a hypothetical interview question is helpful here. For instance, “Can you explain how a Flexbox is laid out in &lt;a href=&quot;https://www.youtube.com/watch?v=QcUey-DVYjk&quot;&gt;5 levels&lt;/a&gt;?” If can come up with two levels, perhaps three, but not more, that’s a good sign. That usually tells me I’m at the “I can use this thing (and it will be okay).” level, borrowing Julia’s description.&lt;/p&gt;
+
+&lt;p&gt;Once I have the portal open, I need a good source. Then I’ll just read it with a specific goal. To make notes of concepts I don’t know. Or statements that I wouldn’t be able to make myself.&lt;/p&gt;
+
+&lt;p&gt;In the CSS example, I thought I’d be able to add another level by reading the CSS specification. (I was also curious why people seemed “scared” of them.) This was a good idea.&lt;/p&gt;
+
+&lt;p&gt;Here’s how it worked. A sentence &lt;a href=&quot;https://www.w3.org/TR/css-flexbox-1/#flex-containers&quot;&gt;like&lt;/a&gt; “A flex container establishes a new flex formatting context for its contents. This is the same as establishing a block formatting context, except that flex layout is used instead of block layout.” brought up the following question:  What is a formatting context? I also noticed that I should probably know how block containers establish their formatting context. Or what kind of formatting context they establish.&lt;/p&gt;
+
+&lt;p&gt;Here’s another example. &lt;a href=&quot;https://www.w3.org/TR/css-flexbox-1/#visibility-collapse&quot;&gt;Reading&lt;/a&gt; “Though collapsed flex items aren’t rendered, they do appear in the formatting structure.” highlighted box in my mental model that I need to fill in. What is a formatting structure?&lt;/p&gt;
+
+&lt;p&gt;After all, this can get scary: The amount of notes I now have is overwhelming. Next to that, stepping into unknown territory makes one thing very hard: To make smart choices to reach your goal effectively. Which of this leads should I follow? At this point, I usually just make notes, and keep reading. I read until I have a sense of which leads are promising.&lt;/p&gt;
+
+&lt;p&gt;I could, of course, heed &lt;a href=&quot;https://www.w3.org/Style/CSS/read.en.html&quot;&gt;the advice of the wise&lt;/a&gt; and learn everything. But that seems impractical for my needs.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Margaret Atwood's Foreword to The Graveyard Book</title>
