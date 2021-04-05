@@ -5,9 +5,24 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Apr 2021 14:06:34 +0200</pubDate>
-    <lastBuildDate>Sun, 04 Apr 2021 14:06:34 +0200</lastBuildDate>
+    <pubDate>Mon, 05 Apr 2021 17:44:41 +0200</pubDate>
+    <lastBuildDate>Mon, 05 Apr 2021 17:44:41 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Ghulheim, a drawing by Neil Gaiman</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Even from the path below Ghûlheim, even from miles away, Bod could see that all of the angles were wrong–that the walls sloped crazily, that it was every nightmare he had ever endured made into a place, like a huge mouth of jutting teeth. It was a city that had been built just to be abandoned, in which all the fears and madnesses and revulsions of the creatures who built it were made into stone. The ghoul-folk had found it and delighted in it and called it home. &lt;em&gt;(The Graveyard Book, Neil Gaiman)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is a great description. I could attempt at a good sketch how Ghûlheim looks, and likely fail to caricaturize how Evil it looks. The wickedness of the city Neil Gaiman describes  is as pointy as it needs to be: it’s a good specimen of the familiar &lt;a href=&quot;https://www.google.com/search?q=dark+scary+town+illustration&amp;amp;tbm=isch&amp;amp;ved=2ahUKEwj7mPHetufvAhXN2rsIHddlAZoQ2-cCegQIABAA&quot;&gt;Dark Scary Town Illustration&lt;/a&gt; with a touch of &lt;a href=&quot;https://www.google.com/search?q=dark%20scary%20town%20illustration%20tim%20burton&amp;amp;tbm=isch&amp;amp;tbs=rimg:CZ1leCtb2WFyYRNZA6gyR6Tg&amp;amp;hl=en&amp;amp;sa=X&amp;amp;ved=0CAIQrnZqFwoTCJj79tS35-8CFQAAAAAdAAAAABAC&amp;amp;biw=1265&amp;amp;bih=1313&quot;&gt;Tim Burton aesthetics&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/05</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/05</guid>
+        
+        
+      </item>
     
       <item>
         <title>How to notice what you don't know?</title>
@@ -399,145 +414,6 @@ In the first phase of such an endeavour, I need to be able to write decent quali
         <pubDate>Fri, 08 Jan 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/01/08/writing/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/01/08/writing/</guid>
-        
-        
-        <category>writing</category>
-        
-      </item>
-    
-      <item>
-        <title>Dirichlet Processes, MCMC frustrations and a direction ahead</title>
-        <description>&lt;p&gt;Put blandly, a Dirichlet process is a stochastic process whose realisations are probability distributions. It has two parameters: a base distribution and a scaling parameter.&lt;/p&gt;
-
-&lt;p&gt;In Bayesian statistics, the Dirichlet Process is useful when modeling, for instance, a random variable which has a mixture of normal distributions and we aren’t sure how many components are involved. As such, it is a nonparametric Bayesian model.&lt;/p&gt;
-
-&lt;p&gt;I recently had a problem at work that I though could be solved by modeling it as a Dirichlet Process, but I didn’t feel confident enough and solved it using a few linear regression models. What’s a better excuse to practise some &lt;a href=&quot;/2021/01/08/writing/&quot;&gt;writing&lt;/a&gt;&lt;!--[[202012062149]]--&gt;?&lt;/p&gt;
-
-&lt;p&gt;Let’s quickly visit the notation for a Dirichlet Process. A random variable $Y$ is a Dirichlet process:&lt;/p&gt;
-
-\[Y \sim DP(N, \alpha)\]
-
-&lt;p&gt;where $N$ stands for normal distribution and $\alpha$ is the scaling parameter of the Dirichlet process. $\alpha$ has a natural interpretation: The lower the value, the less spread realisations of $Y$ will be around $N$. In the context of mixture distributions, $\alpha$ conveys information as to how many components there will be in the mixture.&lt;/p&gt;
-
-&lt;p&gt;Now let’s consider the following made up case: We’re asked to model the number of cars that enter the city of &lt;a href=&quot;https://en.wikipedia.org/wiki/Utrecht_(province)&quot;&gt;Utrecht&lt;/a&gt; per hour. The stakeholders involved are the city planners and they know that the average number of cars that enter the city can be modeled by using &lt;em&gt;period of day&lt;/em&gt;. For instance, the average in the morning hours might be:&lt;/p&gt;
-
-\[y_{morning} \sim N(\mu_{morning}, \sigma)\]
-
-&lt;p&gt;In the noon, however, the location of the normal distribution will shift to $\mu_{noon}$ &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;Let’s also suppose that they’re willing to reconsider their definitions for &lt;em&gt;period of day&lt;/em&gt;, and would like to see what the data has to tell them. So part of our task is to summarise the evidence on this matter: The analysis should be flexible with respect to however many time periods there are.&lt;/p&gt;
-
-&lt;p&gt;We could approach this problem with the following model:&lt;/p&gt;
-
-\[y \sim \sum_{i=1}^K w_i * N(\mu_i, 1 / {\tau_{i}\lambda_{i}})\]
-
-&lt;p&gt;where we’d split the day into $K$ time periods, each time period would be modeled by a different normal distribution $N(\mu_i, 1 / {\tau_{i}\lambda_{i}})$ and each data point would belong to one of these with probability $w_i$.&lt;/p&gt;
-
-&lt;p&gt;Now, let’s build up the components of this model. Since we want to time periods to be similar to each other in terms of average number of cars, we’ll estimate $\mu_i$ by using an intercept only linear model,&lt;/p&gt;
-
-&lt;p&gt;We’ll use the Dirichlet process for modeling $w_i$s:&lt;/p&gt;
-
-\[w_i = \beta_i \prod_{j=1}^{i-1} (1-\beta_j)\]
-
-&lt;p&gt;where&lt;/p&gt;
-
-\[\beta_1, \ldots , \beta_K \sim Beta(1, \alpha)\]
-
-\[\alpha \sim Gamma(1, 1)\]
-
-&lt;p&gt;are the parameters for the Dirichlet process.&lt;/p&gt;
-
-&lt;p&gt;We can get this far by simply following &lt;a href=&quot;https://docs.pymc.io/notebooks/dp_mix.html&quot;&gt;the relevant PyMC3 documentation&lt;/a&gt;. When learning something like this, building up the conceptual understanding up to this basic point and playing with an example is a good method, I think. So let’s make sure we can actually make sense of model output based on what we understood so far.&lt;/p&gt;
-
-&lt;h1 id=&quot;dummy-example&quot;&gt;Dummy example&lt;/h1&gt;
-
-&lt;p&gt;Let’s create some data with a structure that will make the job easy for this kind of model.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;generator = np.random.default_rng()
-size = 30
-
-dat_count = np.vstack([
-    generator.poisson(lam=750, size=(size, 1)), # morning
-    generator.poisson(lam=500, size=(size, 1)), # noon
-    generator.poisson(lam=250, size=(size, 1)), # evening
-])
-
-dat_period = np.vstack([
-    np.asarray([&quot;morning&quot;] * size),
-    np.asarray([&quot;noon&quot;] * size),
-    np.asarray([&quot;evening&quot;] * size),
-]).reshape(-1, 1)
-
-dat = np.hstack([
-    dat_count,
-    dat_period
-])
-
-df_count = pd.DataFrame(dat, columns=[&quot;count&quot;, &quot;period&quot;], )
-df_count[&quot;count&quot;] = df_count[&quot;count&quot;].astype(int)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This is a dataset with three, clearly distinct groups:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Pasted image 20210108215604.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We can standardise the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;count&lt;/code&gt; column and we have our $y$:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;count_mean = df_count[&quot;count&quot;].mean()
-count_sd = df_count[&quot;count&quot;].std()
-df_count[&quot;count_std&quot;] = (df_count[&quot;count&quot;] - count_mean) / count_sd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Following the tutorial, we can fit a Dirichlet Process model like so:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;K = 30
-
-def stick_breaking(beta):
-    portion_remaining = tt.concatenate([[1], tt.extra_ops.cumprod(1 - beta)[:-1]])
-    
-    return beta * portion_remaining
-
-with pm.Model() as m:
-    alpha = pm.Gamma(&quot;alpha&quot;, 1, 1)
-    beta = pm.Beta(&quot;beta&quot;, 1, alpha, shape=K) 
-    w = pm.Deterministic(&quot;w&quot;, stick_breaking(beta))
-    
-    tau = pm.Gamma(&quot;tau&quot;, 1.0, 1.0, shape=K)
-    lambda_ = pm.Gamma(&quot;lambda_&quot;, 10.0, 1.0, shape=K)
-    mu = pm.Normal(&quot;mu&quot;, mu=0, tau=tau * lambda_, shape=K)
-    
-    obs = pm.NormalMixture(
-        &quot;obs&quot;, w, mu, tau=lambda_ * tau, observed=y[&quot;count_std&quot;].values
-    )
-	
-with m:
-    trace = pm.sample(500, tune=500, chains=3, cores=3, init=&quot;advi&quot;, target_accept=.875) 	
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;I’ll jump over the model checks… since at this point I went into a rabbit hole that swallowed my hours. The rabbit I chased looked like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Pasted image 20210108220312.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;How is it possible that for instance component 2 is multimodel, while I specified it as a normal distribution? This is yet another way of observing what’s called &lt;strong&gt;label switching&lt;/strong&gt;. This isn’t big of a concern if you’re after the marginal density. But is a bit of an issue if you’re after clustering your data points into these components.&lt;/p&gt;
-
-&lt;p&gt;It turns out, fitting Dirichlet Process mixtures is rather hard. And hard problems in Bayesian statistics are really frustrating when you’re not experienced with the model you’re working, because you may need to wait 30 minutes to get a result that you can’t even use.&lt;/p&gt;
-
-&lt;p&gt;There seem to be &lt;a href=&quot;https://stats.stackexchange.com/a/1087&quot;&gt;different&lt;/a&gt; &lt;a href=&quot;https://discourse.pymc.io/t/properly-sampling-mixture-models/986/2&quot;&gt;ways&lt;/a&gt; of &lt;a href=&quot;https://stats.stackexchange.com/a/420348&quot;&gt;dealing&lt;/a&gt; with &lt;a href=&quot;https://discourse.pymc.io/t/difficulties-fitting-a-mixture-of-dirichlet-distributions/5810/3?u=ozanogreden&quot;&gt;this&lt;/a&gt; &lt;a href=&quot;https://cran.r-project.org/web/packages/pivmet/vignettes/Relabelling_in_Bayesian_mixtures_by_pivotal_units.html&quot;&gt;issue&lt;/a&gt;, which I’d like to get back to soon.&lt;/p&gt;
-
-&lt;p&gt;Before that, however, I’ll turn to something else that I came to know while I was reading about this problem: variational inference. &lt;a href=&quot;https://www.codingpaths.com/&quot;&gt;Sayam Kumar&lt;/a&gt; has talk on this topic titled “&lt;a href=&quot;https://discourse.pymc.io/t/demystifying-variational-inference-by-sayam-kumar/6022&quot;&gt;Demystifying Variational Inference&lt;/a&gt; which he advertises with the following questions &lt;em&gt;“What will you do if MCMC is taking too long to sample? Also what if the dataset is huge? Is there any other cost-effective method for finding the posterior that can save us and potentially produce similar results?”&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;More on variational inference to come!&lt;/p&gt;
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;Number of cars is a discrete non-negative random variable, so we can model it with a Poisson likelihood. However, fitting a Dirichlet Process mixture with Poisson likelihood proved terribly difficult. More in the remainder of the text. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 08 Jan 2021 00:00:00 +0100</pubDate>
-        <link>https://ozan.ogreden.com/2021/01/08/dirichlet-processes-label-switching/</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/2021/01/08/dirichlet-processes-label-switching/</guid>
         
         
         <category>writing</category>
