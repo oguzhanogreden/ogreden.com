@@ -5,9 +5,35 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Apr 2021 17:56:55 +0200</pubDate>
-    <lastBuildDate>Mon, 05 Apr 2021 17:56:55 +0200</lastBuildDate>
+    <pubDate>Thu, 08 Apr 2021 22:05:47 +0200</pubDate>
+    <lastBuildDate>Thu, 08 Apr 2021 22:05:47 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Looking for: Meta blub studies</title>
+        <description>&lt;p&gt;Blub studies is not a very good &lt;a href=&quot;https://slatestarcodex.com/2016/02/20/writing-advice/&quot;&gt;concept-handle&lt;/a&gt;. It’s not very clear what “blub” is. It is, however, a great meme.&lt;/p&gt;
+
+&lt;p&gt;In its shortest definition, &lt;a href=&quot;https://www.benkuhn.net/blub/&quot;&gt;blub studies&lt;/a&gt; is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;the study of what goes on in the guts of these boring, everyday systems–not the kind you get tenure for inventing, but the kind people actually use.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ben Kuhn suggests “kickstarting ‘your blub flywheel’” however you can. He promises it will eventually pay off greatly.&lt;/p&gt;
+
+&lt;p&gt;I have an appetite for blub studies. And this sounds like a good advice to me.  I will heed it. Just like I followed the “Use Vim emulation in an IDE” advice, as a person with an appetite for keyboard-dominant interaction with my computer.&lt;/p&gt;
+
+&lt;p&gt;I feel like there’s something missing. There must be a “blub-studies studies” level that we can rise to. At that level, we could ask and answer questions like: How to build appetite for blub-studies? How to get better at it? I don’t think I have come across this yet. Except perhaps in The Zen and Motorcycle Maintenance, or Philosophical Explanations.&lt;/p&gt;
+
+&lt;p&gt;(This came my way thanks to &lt;a href=&quot;https://jvns.ca&quot;&gt;Julia Evans&lt;/a&gt;&lt;!--[[202104041301 Julia Evans]]--&gt;.)&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 08 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/08</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/08</guid>
+        
+        
+      </item>
     
       <item>
         <title>Ghulheim, a drawing by Neil Gaiman</title>
@@ -363,57 +389,6 @@ It’s time to see it in practice!&lt;/p&gt;
         <pubDate>Sat, 23 Jan 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/01/23/variational-inference/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/01/23/variational-inference/</guid>
-        
-        
-        <category>writing</category>
-        
-      </item>
-    
-      <item>
-        <title>Writing is too important to not practice until needed</title>
-        <description>&lt;!-- 202012062149 --&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;tldr: I set a writing goal for 2021.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;When I was around 18, I had serendipitious online interactions that nudged the course of my life in important ways.
-Most of these happened thanks to the online presence of others: scientists with blogs, professionals with their own websites or someone’s presence in an online community.&lt;/p&gt;
-
-&lt;p&gt;I had a reminder recently: I ran into someone online.
-They were able to quickly check out this website, as well as my lightweight &lt;a href=&quot;https://twitter.com/ozanogred_en/&quot;&gt;Twitter account&lt;/a&gt; and responded: “Quickly checked your website and Twitter and I love your work!” (This happened at a point when I don’t have anything significant that would count as “my work”.
-&lt;!-- This is one of the good reasons to stick to it via a Beeminder goal [[202012051524]]]. --&gt; )
-We had a cup of coffee it was indeed really nice.&lt;/p&gt;
-
-&lt;p&gt;In the past years, I have been allowing too little of such coincidences.
-I’d like to try and reverse that by writing more and attending to my online presence.&lt;/p&gt;
-
-&lt;p&gt;Writing seems to become increasingly more important for getting work done, as well.
-It’s sometimes painfully obvious that textual communication is hard to do effectively.
-In these cases, &lt;strong&gt;there is not much to do but write better&lt;/strong&gt;.
-From this point of view, it makes sense that a strong emphasis on writing is expressed by the likes of Teamflow [&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;] and Gumroad [&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;].&lt;/p&gt;
-
-&lt;p&gt;In addition, I’ve been thinking of set up an e-commerce shop to test an idea.
-In the first phase of such an endeavour, I need to be able to write decent quality copy so that I can express the idea and meet my customers.&lt;/p&gt;
-
-&lt;p&gt;Considering all these, &lt;strong&gt;one of my goals for 2021 is to practice writing&lt;/strong&gt;. By the end of the year, I’d like to see one or two pieces that I can be proud of, and &lt;a href=&quot;https://www.beeminder.com/oguzhanogreden/w-posted&quot;&gt;a few dozens of pieces written for practice purposes&lt;/a&gt;. There is one rule: I’m not allowed to indulge in navel-gazing.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/posts/&quot;&gt;Here&lt;/a&gt; is what I have so far.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;“2.1 Thinking on paper: When confronted with a problem, we decompose it into parts; read the folks who dedicated their lives to it; and “think on paper” about it. Better, we make this thinking available internally so that everyone can benefit and contribute to it.” (&lt;a href=&quot;https://www.notion.so/Teamflow-s-Culture-8f24be7f619a4e4aa7e93ba02d58cf4c&quot;&gt;link&lt;/a&gt;) &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;“How we work &amp;gt; Instead of having meetings, people “talk” to each other via GitHub, Notion, and (occasionally) Slack, expecting responses within 24 hours. Because there are no standups or “syncs” and some projects can involve expensive feedback loops to collaborate, working this way requires clear and thoughtful communication. Everyone writes well, and writes &lt;em&gt;a lot&lt;/em&gt;.” (&lt;a href=&quot;https://web.archive.org/web/20210107174327/https://sahillavingia.com/work&quot;&gt;link&lt;/a&gt;) &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 08 Jan 2021 00:00:00 +0100</pubDate>
-        <link>https://ozan.ogreden.com/2021/01/08/writing/</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/2021/01/08/writing/</guid>
         
         
         <category>writing</category>
