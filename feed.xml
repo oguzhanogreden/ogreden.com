@@ -5,9 +5,50 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Apr 2021 22:05:47 +0200</pubDate>
-    <lastBuildDate>Thu, 08 Apr 2021 22:05:47 +0200</lastBuildDate>
+    <pubDate>Sun, 11 Apr 2021 22:57:02 +0200</pubDate>
+    <lastBuildDate>Sun, 11 Apr 2021 22:57:02 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>(Very) recently</title>
+        <description>&lt;p&gt;&lt;em&gt;Inspired by &lt;a href=&quot;https://twitter.com/tmcw&quot;&gt;Tom MacWright’s&lt;/a&gt; Recently series, and to appease &lt;a href=&quot;https://www.beeminder.com/oguzhanogreden/w-posted&quot;&gt;Beeminder&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;notes-for-junior-developers&quot;&gt;Notes for junior developers&lt;/h2&gt;
+
+&lt;p&gt;I’ll be starting working as a developer next week. As in any problem solving domain, problems I will get will have a few good and many bad solutions. My focus in this “first period” will be focusing on learning what makes a solution good, and when to make a trade-off for a worse solution for the sake of e.g. speed.&lt;/p&gt;
+
+&lt;p&gt;Developing problem solving expertise is difficult. Surely, I will feel lost, tried and tried, and &lt;a href=&quot;https://www.brainpickings.org/2012/10/15/when-charles-darwin-hated-everybody/&quot;&gt;hate everybody &amp;amp; everything&lt;/a&gt;. Here’s some advice from &lt;a href=&quot;https://twitter.com/dulcedejae/status/1366698180340047874&quot;&gt;jae anne&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/dan_abramov/status/1366728171534565376&quot;&gt;Dan Abramov&lt;/a&gt; on how to tackle this.&lt;/p&gt;
+
+&lt;p&gt;In short, jae anne shouts a warning that anytime something works but you don’t understand it, you should treat it as it’s “not working” and your work not done. You just don’t give into the feeling of “I just want this damn thing to be done.”&lt;/p&gt;
+
+&lt;p&gt;In a sense, these are obvious. In another sense, it’s hard for me to tell “Up to which resolution should &lt;strong&gt;I&lt;/strong&gt; understand what’s going on here?” before being able to use jae anne’s suggestion. That’s easier to do for me than following their advice, and is a pre-requisite too.&lt;/p&gt;
+
+&lt;h2 id=&quot;command-line-tools-that-compete-with-a-hadoop-cluster&quot;&gt;Command-line tools that compete with a Hadoop Cluster&lt;/h2&gt;
+
+&lt;p&gt;Adam Drake wrote (many years ago) &lt;a href=&quot;https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html&quot;&gt;a short demo&lt;/a&gt; of what can be achieved with &lt;a href=&quot;https://brandur.org/small-sharp-tools&quot;&gt;small, sharp tools&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m pretty happy if I can pipe &lt;a href=&quot;https://parkbee.github.io/data-til/2020/11/05/find-and-replace-extension-regex/&quot;&gt;two shell commands&lt;/a&gt; (and not lose any file), while Adam goes on to parallelize operations and all.&lt;/p&gt;
+
+&lt;p&gt;Inspiring stuff.&lt;/p&gt;
+
+&lt;h2 id=&quot;shorthand-for-shaping&quot;&gt;“Shorthand for shaping”&lt;/h2&gt;
+
+&lt;p&gt;I’ve always found shorthand a bit magical. In my own way, I have about 7 shortcuts defined for &lt;a href=&quot;https://espanso.org&quot;&gt;espanso&lt;/a&gt;. That’s all I have to say about shorthand.&lt;/p&gt;
+
+&lt;p&gt;There are also custom (sometimes ad-hoc) shorthands that people use. Ryan Singer’s essay &lt;a href=&quot;https://world.hey.com/rjs/9-shorthand-for-shaping-cc672da1&quot;&gt;“Shorthand for shaping”&lt;/a&gt; is a short exposition of a custom shorthand of how he used a simple shorthand notation for thinking about a early stage design process.&lt;/p&gt;
+
+&lt;p&gt;Being someone who doesn’t know shorthand, neither designs anything, I found it pretty interesting to see that a sketch like this is part of the process:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-11-very-recently.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/2021/04/11/very-recently/</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/2021/04/11/very-recently/</guid>
+        
+        
+        <category>writing</category>
+        
+      </item>
     
       <item>
         <title>Looking for: Meta blub studies</title>
@@ -318,77 +359,6 @@ And last week, I internally announced my plans of switching from my data science
         <pubDate>Sat, 20 Feb 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/02/20/pivot-career-software/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/02/20/pivot-career-software/</guid>
-        
-        
-        <category>writing</category>
-        
-      </item>
-    
-      <item>
-        <title>Basics of variational inference - theory</title>
-        <description>&lt;p&gt;Switching to a Bayesian workflow can be frustrating initially, when the sampling speed becomes limiting and you have no idea why.
-Like it happened to me &lt;a href=&quot;/2021/01/08/dirichlet-processes-label-switching/&quot;&gt;when I tried to fit a Dirichlet process mixture model&lt;/a&gt; &lt;!-- [[202012161651 dirichlet process post]] --&gt; using PyMC3.
-Any attempt at working around the difficulties I ran into got blocked by the speed of NUTS sampler.&lt;/p&gt;
-
-&lt;p&gt;It turns out that variational inference (VI) can help in these stages.
-However, it seems to have its own peculiarities and even some pitfalls.
-Not having learned about VI during my master’s, I set out to read about it.&lt;/p&gt;
-
-&lt;p&gt;VI is a method for approximating probability densities&lt;!-- [[202101121750 Variational Inference A Review For Statisticians]] --&gt;.
-In the context of Bayesian modeling, we can use it to approximate the posterior.
-As such, we can consider it an alternative to markov chain monte carlo (MCMC) algorithms.
-There is one important advantage of VI: it’s very fast compared to MCMC.
-And there is an important disadvantage: you don’t get to be sure that the approximation will give you what you’re looking for, unlike with MCMC.&lt;/p&gt;
-
-&lt;p&gt;Let’s start with remembering what we’re looking for in Bayesian inference problem: the posterior, or the density of model parameters conditional on the data. Mathematically speaking:&lt;/p&gt;
-
-\[p(z | x)\]
-
-&lt;p&gt;Commonly used modern methods for getting to the posterior are based on sampling, a.k.a markov chain monte carlo algorithms.
-VI, on the other hand, approaches the problem from an optimisation point of view, by making use of a clever trick.
-Before we get to the trick, let’s specify the objective of the optimisation: Kullbeck-Leibler (KL) divergence &lt;!-- [[202101121805 Kullbeck-Leibler divergence]] --&gt;.&lt;/p&gt;
-
-&lt;p&gt;The Kullbeck-Leibler divergence is a measure if the “difference in information contained within two distributions” &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.
-In the VI context, specifically, the KL divergence from the posterior to the approximating density is relevant:  \(KL( q(\mathbf{z}) \| p(\mathbf{z} \vert \mathbf{x} ) )\)&lt;/p&gt;
-
-&lt;p&gt;Buried in this divergence is a term that’s very difficult to evaluate: \(p(\boldsymbol{x})\).
-The trick is to optimise for another objective which is (1) easier to evaluate and (2) is equivalent to minimising the KL divergence: Evidence lower bound (ELBO).&lt;/p&gt;
-
-\[ELBO(q) = \mathbb{E}[logp(\mathbf{z}, \mathbf{x})] - \mathbb{E}[logq(\mathbf{z})]\]
-
-&lt;p&gt;Blei et al. (2018) note that “the variational objective mirrors the usual balance between likelihood and prior” &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;!-- [[202101121750 Variational Inference A Review For Statisticians]] --&gt; and this is visible once the identity is rearranged:&lt;/p&gt;
-
-\[ELBO(q) = \mathbb{E}[logp(\mathbf{x}|\mathbf{z})] + KL(q(\mathbf{z})||p(\mathbf{z}))\]
-
-&lt;p&gt;Great. But how do we specify \(q\)? A commonly used family of probability distributions is “mean-field variational family”. The mean-field variational family is essentially a joint distribution of independent random variables.
-So we have:&lt;/p&gt;
-
-\[q(\boldsymbol{z}) = \prod_{j=1}^{m}q_j(z_j).\]
-
-&lt;p&gt;This makes one of the key properties of VI with mean-field family clear: &lt;strong&gt;we’re assuming that model parameters are mutually independent&lt;/strong&gt;.
-If they are correlated, the approximation will not be able to capture that information.&lt;/p&gt;
-
-&lt;p&gt;Now, we need an optimisation algorithm and we’re ready to go. I’ll refer you to Blei et al. (2018) &lt;sup id=&quot;fnref:2:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; for the details, where you can read about coordinate ascent mean-field variational inference.&lt;/p&gt;
-
-&lt;p&gt;Now let’s turn to what’s happening when we use the &lt;a href=&quot;https://docs.pymc.io/notebooks/variational_api_quickstart.html&quot;&gt;variational API of PyMC3&lt;/a&gt;. &lt;a href=&quot;https://github.com/pymc-devs/pymc3/blob/aedc8e9006c7e672e461774a5ee095562405c99c/pymc3/variational/inference.py#L732-L741&quot;&gt;Here&lt;/a&gt; you can see that the default of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;method=&lt;/code&gt; parameter is ADVI (automatic differentiation variational inference). ADVI is an algorithm that can express a given probabilistic model as an optimisation problem. The significant advantage of it is that we don’t have to think about technical requirements that we need to satisfy to make the approximation work. Any model we can write in PyMC3 (also Stan) can be run through ADVI.&lt;/p&gt;
-
-&lt;p&gt;Equipped with the magic provided by PyMC3 and with a basic understanding of variational inference.
-It’s time to see it in practice!&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;https://ermongroup.github.io/cs228-notes/inference/variational/ &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;https://arxiv.org/abs/1601.00670 &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:2:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 23 Jan 2021 00:00:00 +0100</pubDate>
-        <link>https://ozan.ogreden.com/2021/01/23/variational-inference/</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/2021/01/23/variational-inference/</guid>
         
         
         <category>writing</category>

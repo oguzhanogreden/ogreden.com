@@ -4,13 +4,50 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-04-08T22:05:47+02:00</updated>
+ <updated>2021-04-11T22:57:02+02:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>(Very) recently</title>
+   <link href="https://ozan.ogreden.com/2021/04/11/very-recently/"/>
+   <updated>2021-04-11T00:00:00+02:00</updated>
+   <id>https://ozan.ogreden.com/2021/04/11/very-recently</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Inspired by &lt;a href=&quot;https://twitter.com/tmcw&quot;&gt;Tom MacWright’s&lt;/a&gt; Recently series, and to appease &lt;a href=&quot;https://www.beeminder.com/oguzhanogreden/w-posted&quot;&gt;Beeminder&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;notes-for-junior-developers&quot;&gt;Notes for junior developers&lt;/h2&gt;
+
+&lt;p&gt;I’ll be starting working as a developer next week. As in any problem solving domain, problems I will get will have a few good and many bad solutions. My focus in this “first period” will be focusing on learning what makes a solution good, and when to make a trade-off for a worse solution for the sake of e.g. speed.&lt;/p&gt;
+
+&lt;p&gt;Developing problem solving expertise is difficult. Surely, I will feel lost, tried and tried, and &lt;a href=&quot;https://www.brainpickings.org/2012/10/15/when-charles-darwin-hated-everybody/&quot;&gt;hate everybody &amp;amp; everything&lt;/a&gt;. Here’s some advice from &lt;a href=&quot;https://twitter.com/dulcedejae/status/1366698180340047874&quot;&gt;jae anne&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/dan_abramov/status/1366728171534565376&quot;&gt;Dan Abramov&lt;/a&gt; on how to tackle this.&lt;/p&gt;
+
+&lt;p&gt;In short, jae anne shouts a warning that anytime something works but you don’t understand it, you should treat it as it’s “not working” and your work not done. You just don’t give into the feeling of “I just want this damn thing to be done.”&lt;/p&gt;
+
+&lt;p&gt;In a sense, these are obvious. In another sense, it’s hard for me to tell “Up to which resolution should &lt;strong&gt;I&lt;/strong&gt; understand what’s going on here?” before being able to use jae anne’s suggestion. That’s easier to do for me than following their advice, and is a pre-requisite too.&lt;/p&gt;
+
+&lt;h2 id=&quot;command-line-tools-that-compete-with-a-hadoop-cluster&quot;&gt;Command-line tools that compete with a Hadoop Cluster&lt;/h2&gt;
+
+&lt;p&gt;Adam Drake wrote (many years ago) &lt;a href=&quot;https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html&quot;&gt;a short demo&lt;/a&gt; of what can be achieved with &lt;a href=&quot;https://brandur.org/small-sharp-tools&quot;&gt;small, sharp tools&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m pretty happy if I can pipe &lt;a href=&quot;https://parkbee.github.io/data-til/2020/11/05/find-and-replace-extension-regex/&quot;&gt;two shell commands&lt;/a&gt; (and not lose any file), while Adam goes on to parallelize operations and all.&lt;/p&gt;
+
+&lt;p&gt;Inspiring stuff.&lt;/p&gt;
+
+&lt;h2 id=&quot;shorthand-for-shaping&quot;&gt;“Shorthand for shaping”&lt;/h2&gt;
+
+&lt;p&gt;I’ve always found shorthand a bit magical. In my own way, I have about 7 shortcuts defined for &lt;a href=&quot;https://espanso.org&quot;&gt;espanso&lt;/a&gt;. That’s all I have to say about shorthand.&lt;/p&gt;
+
+&lt;p&gt;There are also custom (sometimes ad-hoc) shorthands that people use. Ryan Singer’s essay &lt;a href=&quot;https://world.hey.com/rjs/9-shorthand-for-shaping-cc672da1&quot;&gt;“Shorthand for shaping”&lt;/a&gt; is a short exposition of a custom shorthand of how he used a simple shorthand notation for thinking about a early stage design process.&lt;/p&gt;
+
+&lt;p&gt;Being someone who doesn’t know shorthand, neither designs anything, I found it pretty interesting to see that a sketch like this is part of the process:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2021-04-11-very-recently.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Looking for: Meta blub studies</title>
