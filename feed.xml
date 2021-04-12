@@ -5,9 +5,24 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Apr 2021 22:57:02 +0200</pubDate>
-    <lastBuildDate>Sun, 11 Apr 2021 22:57:02 +0200</lastBuildDate>
+    <pubDate>Mon, 12 Apr 2021 21:04:37 +0200</pubDate>
+    <lastBuildDate>Mon, 12 Apr 2021 21:04:37 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>EBS for individuals</title>
+        <description>&lt;p&gt;I’ve read Joel Spolsky’s Evidence Based Scheduling a while ago, thanks to &lt;a href=&quot;https://forum.beeminder.com/t/20th-anniversary-of-the-joel-test-for-software-teams/7096/25&quot;&gt;a discussion&lt;/a&gt; in Beeminder forums.&lt;/p&gt;
+
+&lt;p&gt;It’s written from the developer team management perspective. In it’s essence, Evidence Based Scheduling calibrates developers’ estimation performance so that realistic estimates can be obtained. (A key aspect of the method is that it also quantifies the confidence one may have in an estimate, but that’s besides the point.)&lt;/p&gt;
+
+&lt;p&gt;I think EBS may also be useful from the individual perspective. In the practice suggested by Joel, “velocities” that are older than 6 months discarded since estimators get better at estimating. Someone who’s early in their career could also get noticably better and faster in such a time span. A side effect of EBS data would then be making explicit if “5 story points” came to mean 8 days to 4 days, for instance.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 12 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/12</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/12</guid>
+        
+        
+      </item>
     
       <item>
         <title>(Very) recently</title>
@@ -325,40 +340,6 @@ This is preferable since line heights are very much font size dependent.&lt;/p&g
         <pubDate>Wed, 10 Mar 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/03/10/why-change-career-software/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/03/10/why-change-career-software/</guid>
-        
-        
-        <category>writing</category>
-        
-      </item>
-    
-      <item>
-        <title>A pivot: From data science to software development</title>
-        <description>&lt;p&gt;It’s official, I’m pivoting to a career in software development!&lt;/p&gt;
-
-&lt;p&gt;It’s funny but I didn’t see this coming so quickly!
-Until 10 days ago, I’ve been thinking that my next career move would be going a sabbatical and starting a niche e-commerce company.
-I have always liked these ideas and arrangements were mostly done, save for taking the leap itself.&lt;/p&gt;
-
-&lt;p&gt;Combined with a lack of excitement about my job, that I couldn’t shake of despite &lt;a href=&quot;/2021/01/23/variational-inference/&quot;&gt;a few&lt;/a&gt; &lt;a href=&quot;/2021/01/08/dirichlet-processes-label-switching/&quot;&gt;attempts&lt;/a&gt;…
-I was ‘dangerously’ close to the edge.
-Then, a friend suggested &lt;a href=&quot;https://www.youtube.com/watch?v=dL7LBoGIHZM&quot;&gt;Pivot&lt;/a&gt; by &lt;a href=&quot;http://www.pivotmethod.com/&quot;&gt;Jenny Blake&lt;/a&gt;. 
-Because she thought I was contemplating a sabbatical for the wrong reasons.&lt;/p&gt;
-
-&lt;p&gt;The talk was a good trigger for an &lt;a href=&quot;https://slatestarcodex.com/2014/03/24/should-you-reverse-any-advice-you-hear/&quot;&gt;advice reversal&lt;/a&gt; session, that led to my final decision.
-Jenny Blake addresses people like me, directly:
-those who think that a large step is needed for getting more satisfaction out of their career.
-Her advice is quite the opposite, though.
-She suggests doubling down on what works, and taking a small step.
-A small step to reorient oneself, and face a different path.&lt;/p&gt;
-
-&lt;p&gt;Thinking about it, I realised I wanted to try my hand at software development.
-And last week, I internally announced my plans of switching from my data science role to a software development role.&lt;/p&gt;
-
-&lt;p&gt;I have a lot to learn, a lot to experience and a lot of ideas - I’m excited!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 20 Feb 2021 00:00:00 +0100</pubDate>
-        <link>https://ozan.ogreden.com/2021/02/20/pivot-career-software/</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/2021/02/20/pivot-career-software/</guid>
         
         
         <category>writing</category>

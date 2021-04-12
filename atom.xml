@@ -4,13 +4,26 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-04-11T22:57:02+02:00</updated>
+ <updated>2021-04-12T21:04:37+02:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>EBS for individuals</title>
+   <link href="https://ozan.ogreden.com/notebook/2021/04/12"/>
+   <updated>2021-04-12T00:00:00+02:00</updated>
+   <id>https://ozan.ogreden.com/notebook/2021/04/individual-ebs</id>
+   <content type="html">&lt;p&gt;I’ve read Joel Spolsky’s Evidence Based Scheduling a while ago, thanks to &lt;a href=&quot;https://forum.beeminder.com/t/20th-anniversary-of-the-joel-test-for-software-teams/7096/25&quot;&gt;a discussion&lt;/a&gt; in Beeminder forums.&lt;/p&gt;
+
+&lt;p&gt;It’s written from the developer team management perspective. In it’s essence, Evidence Based Scheduling calibrates developers’ estimation performance so that realistic estimates can be obtained. (A key aspect of the method is that it also quantifies the confidence one may have in an estimate, but that’s besides the point.)&lt;/p&gt;
+
+&lt;p&gt;I think EBS may also be useful from the individual perspective. In the practice suggested by Joel, “velocities” that are older than 6 months discarded since estimators get better at estimating. Someone who’s early in their career could also get noticably better and faster in such a time span. A side effect of EBS data would then be making explicit if “5 story points” came to mean 8 days to 4 days, for instance.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>(Very) recently</title>
