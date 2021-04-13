@@ -5,9 +5,26 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Apr 2021 21:04:37 +0200</pubDate>
-    <lastBuildDate>Mon, 12 Apr 2021 21:04:37 +0200</lastBuildDate>
+    <pubDate>Tue, 13 Apr 2021 22:32:47 +0200</pubDate>
+    <lastBuildDate>Tue, 13 Apr 2021 22:32:47 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Spaced Repetition, Flinches / Ugh-Fields</title>
+        <description>&lt;p&gt;About 15 months ago. I have started (re-)using Anki for expanding my Dutch vocabulary. After a few months of dutiful daily Anki practices, it had become a dull exercise. My search for Anki-revival tactics led me to Michael Nielsen’s essay &lt;a href=&quot;http://augmentingcognition.com/ltm.html&quot;&gt;Augmenting Long-term Memory&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using Anki for topics other than language has been an interesting experience. For instance, engaging with a topic/material at regular but not always predictable intervals has been emotionally pleasing for me. This venue is actively researched by Andy Matuschak and you should check &lt;a href=&quot;https://notes.andymatuschak.org/About_these_notes?stackedNotes=zUw5PuD8op9oq8kHvni6sug6eRTNtR9Wqma&amp;amp;stackedNotes=z4rRX3qwSSJRsEkdXKwH2shamgHNeRthrMLiF&quot;&gt;his work&lt;/a&gt; out if you’re into it.&lt;/p&gt;
+
+&lt;p&gt;Just today I’ve run into a radically interesting use case at the intersection of spaced repetition and mental health. Internet is a small world, so this happens to be located on a blog that I distinctly remember visiting earlier: &lt;a href=&quot;http://becomingeden.com/developing-object-permanence-around-flinches/&quot;&gt;becomingeden.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Just like yesterday &lt;a href=&quot;/2021/04/11/very-recently/&quot;&gt;yesterday&lt;/a&gt; &lt;!--[[202104112132 (very) recently - post]]--&gt;, today has been generous with inspiring stuff, too.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/13</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/13</guid>
+        
+        
+      </item>
     
       <item>
         <title>EBS for individuals</title>
@@ -322,27 +339,6 @@ This is preferable since line heights are very much font size dependent.&lt;/p&g
         
         
         <category>til</category>
-        
-      </item>
-    
-      <item>
-        <title>Why am I changing into a career in software?</title>
-        <description>&lt;p&gt;The answer boils down to one concept: craft. Wikipedia entry of the word is rather narrow in definition&lt;!--[[202103102009 wikipedia entry of craft]]--&gt;. It’s been more than 10 years that software has been described as one. And it’s not a stretch of imagination to consider writing another. Stretch a little and you will see a crafty element in a wide array of human activities.&lt;/p&gt;
-
-&lt;p&gt;The crafty nature of software is in part why I’m switching.&lt;/p&gt;
-
-&lt;p&gt;In retrospect, this is a logical next step. Once, I aspired to be a cognitive psychology researcher. When it came to &lt;a href=&quot;https://doi.org/10.3758/s13414-018-1560-5&quot;&gt;doing research&lt;/a&gt;, I chose for writing Python scripts for creating experiment materials and R to simulate participants. Instead of focusing on generating knowledge. And this kept going on &lt;a href=&quot;https://cran.r-project.org/web/packages/dcurver/index.html&quot;&gt;like this&lt;/a&gt;, well into my current position: working as a data scientist.&lt;/p&gt;
-
-&lt;p&gt;The “data scientist” title still covers really wide ground. One way of grouping data scientists is whether the position is a central role or a supportive role. The supportive role is the one I know closely: You support a business in solving a problem, but you are not at the core of the problem solution. If you’re craving for craft, you need to stretch yourself quite frequently.&lt;/p&gt;
-
-&lt;p&gt;Ultimately, I would prefer less stretching and more craft.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 10 Mar 2021 00:00:00 +0100</pubDate>
-        <link>https://ozan.ogreden.com/2021/03/10/why-change-career-software/</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/2021/03/10/why-change-career-software/</guid>
-        
-        
-        <category>writing</category>
         
       </item>
     
