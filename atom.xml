@@ -4,13 +4,37 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-04-16T21:37:50+02:00</updated>
+ <updated>2021-04-17T16:24:46+02:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>How could I have done this for times faster?</title>
+   <link href="https://ozan.ogreden.com/notebook/2021/04/17"/>
+   <updated>2021-04-17T00:00:00+02:00</updated>
+   <id>https://ozan.ogreden.com/notebook/2021/04/first-week</id>
+   <content type="html">&lt;p&gt;It’s the end of my first week with &lt;a href=&quot;/2021/02/20/pivot-career-software/&quot;&gt;my new team&lt;/a&gt;. Towards the end of the week, I came across a Tweet:&lt;/p&gt;
+
+&lt;p&gt;“Why couldn’t we deliver this 4 times faster is a good question for software development teams to be asking.”&lt;/p&gt;
+
+&lt;p&gt;I can’t find the Tweet, but If I recall correctly, the author meant to suggest this as a question that would help developers stretch their imagination and focus on their tooling. I took it a bit differently: It’s not a stretch for me to imagine that I will soon produce four times what I’ve produced this week.&lt;/p&gt;
+
+&lt;p&gt;Looking at my week with this lens, what were the time sinkholes for me? Two things:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;I’ve tested my solutions too many times.&lt;/li&gt;
+  &lt;li&gt;I hadn’t read the documentation of my dependencies well enough.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I’ve tested too many times primarily because conjuring a mental “infinite zoom overview” of my work has been difficult. Both on the backend with microservices and in the frontend with Angular, this slowed me down prohibitively. This was compounded by the fact that I’m far from having a solid knowledge of the many specifics of external dependencies, frameworks and in-house solutions.&lt;/p&gt;
+
+&lt;p&gt;Reading documentation in a rushed way is a classic, of course. This was a case of “I just want this damn thing to be done” and I should’ve &lt;a href=&quot;/2021/04/11/very-recently/&quot;&gt;known better&lt;/a&gt;&lt;!--[[202104112132 (very) recently - post]]--&gt;. There isn’t much to do but to remind yourself that this does not save time, after all. Reading documentation may also be the only way to get confident with specifics of everything.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Presence, Absence, Computing</title>

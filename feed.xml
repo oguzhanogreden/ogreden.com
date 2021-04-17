@@ -5,9 +5,35 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Apr 2021 21:37:50 +0200</pubDate>
-    <lastBuildDate>Fri, 16 Apr 2021 21:37:50 +0200</lastBuildDate>
+    <pubDate>Sat, 17 Apr 2021 16:24:46 +0200</pubDate>
+    <lastBuildDate>Sat, 17 Apr 2021 16:24:46 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>How could I have done this for times faster?</title>
+        <description>&lt;p&gt;It’s the end of my first week with &lt;a href=&quot;/2021/02/20/pivot-career-software/&quot;&gt;my new team&lt;/a&gt;. Towards the end of the week, I came across a Tweet:&lt;/p&gt;
+
+&lt;p&gt;“Why couldn’t we deliver this 4 times faster is a good question for software development teams to be asking.”&lt;/p&gt;
+
+&lt;p&gt;I can’t find the Tweet, but If I recall correctly, the author meant to suggest this as a question that would help developers stretch their imagination and focus on their tooling. I took it a bit differently: It’s not a stretch for me to imagine that I will soon produce four times what I’ve produced this week.&lt;/p&gt;
+
+&lt;p&gt;Looking at my week with this lens, what were the time sinkholes for me? Two things:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;I’ve tested my solutions too many times.&lt;/li&gt;
+  &lt;li&gt;I hadn’t read the documentation of my dependencies well enough.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I’ve tested too many times primarily because conjuring a mental “infinite zoom overview” of my work has been difficult. Both on the backend with microservices and in the frontend with Angular, this slowed me down prohibitively. This was compounded by the fact that I’m far from having a solid knowledge of the many specifics of external dependencies, frameworks and in-house solutions.&lt;/p&gt;
+
+&lt;p&gt;Reading documentation in a rushed way is a classic, of course. This was a case of “I just want this damn thing to be done” and I should’ve &lt;a href=&quot;/2021/04/11/very-recently/&quot;&gt;known better&lt;/a&gt;&lt;!--[[202104112132 (very) recently - post]]--&gt;. There isn’t much to do but to remind yourself that this does not save time, after all. Reading documentation may also be the only way to get confident with specifics of everything.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/17</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/17</guid>
+        
+        
+      </item>
     
       <item>
         <title>Presence, Absence, Computing</title>
@@ -174,37 +200,6 @@
         <link>https://ozan.ogreden.com/notebook/2021/04/05</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/05</guid>
         
-        
-      </item>
-    
-      <item>
-        <title>How to notice what you don't know?</title>
-        <description>&lt;p&gt;Some authors make you feel lucky that you’re in their audience. &lt;a href=&quot;https://jvns.ca&quot;&gt;Julia Evans&lt;/a&gt; &lt;!--[[202104041301 Julia Evans]]--&gt; is one of those authors for me.&lt;/p&gt;
-
-&lt;p&gt;Julia recently published &lt;a href=&quot;https://jvns.ca/blog/learn-how-things-work/&quot;&gt;“Get better at programming by learning how things work”&lt;/a&gt;. She has great advice that pairs well with Peter Norvig’s &lt;!--[[202104041304 Peter Norvig]]--&gt;’s &lt;a href=&quot;http://norvig.com/21-days.html&quot;&gt;recipe for programming success&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;One question that she leaves open is “How do you figure out what you don’t know?” Here’s what’s been working for me.&lt;/p&gt;
-
-&lt;p&gt;Trying to talk about the topic opens the portal for me. I find self-talking out loud effective. Initiating the talk with a hypothetical interview question is helpful here. For instance, “Can you explain how a Flexbox is laid out in &lt;a href=&quot;https://www.youtube.com/watch?v=QcUey-DVYjk&quot;&gt;5 levels&lt;/a&gt;?” If can come up with two levels, perhaps three, but not more, that’s a good sign. That usually tells me I’m at the “I can use this thing (and it will be okay).” level, borrowing Julia’s description.&lt;/p&gt;
-
-&lt;p&gt;Once I have the portal open, I need a good source. Then I’ll just read it with a specific goal: To make notes of concepts I don’t know, or statements that I wouldn’t be able to make myself.&lt;/p&gt;
-
-&lt;p&gt;In the CSS example, I thought I’d be able to add another level by reading the CSS specification. (I was also curious why people seemed “scared” of them.) This was a good idea.&lt;/p&gt;
-
-&lt;p&gt;Here’s how it worked. A sentence &lt;a href=&quot;https://www.w3.org/TR/css-flexbox-1/#flex-containers&quot;&gt;like&lt;/a&gt; “A flex container establishes a new flex formatting context for its contents. This is the same as establishing a block formatting context, except that flex layout is used instead of block layout.” brought up the following question:  What is a formatting context? I also noticed that I should probably know how block containers establish their formatting context. Or what kind of formatting context they establish.&lt;/p&gt;
-
-&lt;p&gt;Here’s another example. &lt;a href=&quot;https://www.w3.org/TR/css-flexbox-1/#visibility-collapse&quot;&gt;Reading&lt;/a&gt; “Though collapsed flex items aren’t rendered, they do appear in the formatting structure.” highlighted box in my mental model that I need to fill in. What is a formatting structure?&lt;/p&gt;
-
-&lt;p&gt;After all, this can get scary: The amount of notes I now have is overwhelming. Next to that, stepping into unknown territory makes one thing very hard: To make smart choices to reach your goal effectively. Which of this leads should I follow? At this point, I usually just make notes, and keep reading. I read until I have a sense of which leads are promising.&lt;/p&gt;
-
-&lt;p&gt;I could, of course, heed &lt;a href=&quot;https://www.w3.org/Style/CSS/read.en.html&quot;&gt;the advice of the wise&lt;/a&gt; and learn everything. But that seems impractical for my needs.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 04 Apr 2021 00:00:00 +0200</pubDate>
-        <link>https://ozan.ogreden.com/notebook/2021/04/04</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/04</guid>
-        
-        
-        <category>notebook</category>
         
       </item>
     
