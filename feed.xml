@@ -5,9 +5,26 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Apr 2021 22:15:32 +0200</pubDate>
-    <lastBuildDate>Mon, 19 Apr 2021 22:15:32 +0200</lastBuildDate>
+    <pubDate>Tue, 20 Apr 2021 19:49:31 +0200</pubDate>
+    <lastBuildDate>Tue, 20 Apr 2021 19:49:31 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Shell Culture</title>
+        <description>&lt;p&gt;After years of “having to” and “fighting with”, I’m finally grokking shell scripting, I think.&lt;/p&gt;
+
+&lt;p&gt;While trying to get &lt;a href=&quot;https://github.com/oguzhanogreden/dotfiles/blob/master/scripts/bmndr-tmin.sh&quot;&gt;a shell script&lt;/a&gt; to work on OhMyZsh. I vaguely though of a  scene from Where Wizards Stay Up Late. The main difference between the experience of the developers described there and my experience was that I never had to think of a “LOGIN” to be truncated to “LO” due to network issues.&lt;/p&gt;
+
+&lt;p&gt;I never had to think of my programs as a stream of characters.&lt;/p&gt;
+
+&lt;p&gt;So when I read the comment “Sorry, I should have thought about echoing the contents of course.” (&lt;a href=&quot;https://unix.stackexchange.com/a/275797&quot;&gt;here&lt;/a&gt;), it just made sense.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/20</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/20</guid>
+        
+        
+      </item>
     
       <item>
         <title>Two Histories, and Another One</title>
@@ -176,32 +193,6 @@
         
         
         <category>writing</category>
-        
-      </item>
-    
-      <item>
-        <title>Looking for: Meta blub studies</title>
-        <description>&lt;p&gt;Blub studies is not a very good &lt;a href=&quot;https://slatestarcodex.com/2016/02/20/writing-advice/&quot;&gt;concept-handle&lt;/a&gt;. It’s not very clear what “blub” is. It is, however, a great meme.&lt;/p&gt;
-
-&lt;p&gt;In its shortest definition, &lt;a href=&quot;https://www.benkuhn.net/blub/&quot;&gt;blub studies&lt;/a&gt; is:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;the study of what goes on in the guts of these boring, everyday systems–not the kind you get tenure for inventing, but the kind people actually use.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ben Kuhn suggests “kickstarting ‘your blub flywheel’” however you can. He promises it will eventually pay off greatly.&lt;/p&gt;
-
-&lt;p&gt;I have an appetite for blub studies. And this sounds like a good advice to me.  I will heed it. Just like I followed the “Use Vim emulation in an IDE” advice, as a person with an appetite for keyboard-dominant interaction with my computer.&lt;/p&gt;
-
-&lt;p&gt;I feel like there’s something missing. There must be a “blub-studies studies” level that we can rise to. At that level, we could ask and answer questions like: How to build appetite for blub-studies? How to get better at it? I don’t think I have come across this yet. Except perhaps in The Zen and Motorcycle Maintenance, or Philosophical Explanations.&lt;/p&gt;
-
-&lt;p&gt;(This came my way thanks to &lt;a href=&quot;https://jvns.ca&quot;&gt;Julia Evans&lt;/a&gt;&lt;!--[[202104041301 Julia Evans]]--&gt;.)&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 08 Apr 2021 00:00:00 +0200</pubDate>
-        <link>https://ozan.ogreden.com/notebook/2021/04/08</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/08</guid>
-        
         
       </item>
     

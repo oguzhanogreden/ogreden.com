@@ -4,13 +4,28 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-04-19T22:15:32+02:00</updated>
+ <updated>2021-04-20T19:49:31+02:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Shell Culture</title>
+   <link href="https://ozan.ogreden.com/notebook/2021/04/20"/>
+   <updated>2021-04-20T00:00:00+02:00</updated>
+   <id>https://ozan.ogreden.com/notebook/2021/04/shell-culture</id>
+   <content type="html">&lt;p&gt;After years of “having to” and “fighting with”, I’m finally grokking shell scripting, I think.&lt;/p&gt;
+
+&lt;p&gt;While trying to get &lt;a href=&quot;https://github.com/oguzhanogreden/dotfiles/blob/master/scripts/bmndr-tmin.sh&quot;&gt;a shell script&lt;/a&gt; to work on OhMyZsh. I vaguely though of a  scene from Where Wizards Stay Up Late. The main difference between the experience of the developers described there and my experience was that I never had to think of a “LOGIN” to be truncated to “LO” due to network issues.&lt;/p&gt;
+
+&lt;p&gt;I never had to think of my programs as a stream of characters.&lt;/p&gt;
+
+&lt;p&gt;So when I read the comment “Sorry, I should have thought about echoing the contents of course.” (&lt;a href=&quot;https://unix.stackexchange.com/a/275797&quot;&gt;here&lt;/a&gt;), it just made sense.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Two Histories, and Another One</title>
