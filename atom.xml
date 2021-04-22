@@ -4,13 +4,24 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-04-20T19:49:31+02:00</updated>
+ <updated>2021-04-22T20:48:10+02:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Worth Noticing</title>
+   <link href="https://ozan.ogreden.com/notebook/2021/04/22"/>
+   <updated>2021-04-22T00:00:00+02:00</updated>
+   <id>https://ozan.ogreden.com/notebook/2021/04/beeminder-worth-noticing</id>
+   <content type="html">&lt;p&gt;I use Beeminder to track a few goals. Some of these are quite essential for my wellbeing, some aren’t (like my &lt;a href=&quot;https://www.beeminder.com/oguzhanogreden/w-daily&quot;&gt;commitment to write these daily notes&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;It took me a really long while to realise one area where Beeminder really shines: It functions perfectly as a trigger for you to notice things. That goal you said you’d stick to? Well, you haven’t. And it won’t just fade into background, it will take 5 bucks from your wallet.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Shell Culture</title>
