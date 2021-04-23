@@ -5,9 +5,30 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Apr 2021 21:48:40 +0200</pubDate>
-    <lastBuildDate>Fri, 23 Apr 2021 21:48:40 +0200</lastBuildDate>
+    <pubDate>Fri, 23 Apr 2021 21:50:22 +0200</pubDate>
+    <lastBuildDate>Fri, 23 Apr 2021 21:50:22 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>The sense of a bean sprout</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“[…] if you have the sense of a bean sprout you know you’re in a rare and irreproducible presence.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The analogy is obvious, it’s just been lying there for someone to reach at it. Only one person &lt;a href=&quot;https://www.google.com/search?q=%22sense+of+a+bean+sprout%22&amp;amp;client=firefox-b-d&amp;amp;ei=fCODYJPRLP2H9u8Pvs-PuA0&amp;amp;oq=%22sense+of+a+bean+sprout%22&amp;amp;gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADUPAUWJ0fYIYhaAFwAngAgAFPiAHfAZIBATOYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&amp;amp;sclient=gws-wiz&amp;amp;ved=0ahUKEwiT__ehkJXwAhX9g_0HHb7nA9cQ4dUDCA0&amp;amp;uact=5&quot;&gt;seems to have done it&lt;/a&gt;, Ursula K. LeGuin.&lt;/p&gt;
+
+&lt;p&gt;She concludes the following paragraph with that sentence:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“If memory remains sound and the thinking mind retains its vigor, an old intelligence may have extraordinary breadth and depth of understanding. It’s had time to gather knowledge and more practice in comparison and judgement. No matter if the knowledge is intellectual or practical or emotional, if it concerns alpine ecosystems or the Buddha nature or how to reassure a frightened child: when you meet an old person with that kind of knowledge, if you have the sense of a bean sprout you know you’re in a rare and irreproducible presence.”&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 23 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/23</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/23</guid>
+        
+        
+      </item>
     
       <item>
         <title>Worth Noticing</title>
@@ -149,21 +170,6 @@
         <pubDate>Tue, 13 Apr 2021 00:00:00 +0200</pubDate>
         <link>https://ozan.ogreden.com/notebook/2021/04/13</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/13</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>EBS for individuals</title>
-        <description>&lt;p&gt;I’ve read Joel Spolsky’s Evidence Based Scheduling a while ago, thanks to &lt;a href=&quot;https://forum.beeminder.com/t/20th-anniversary-of-the-joel-test-for-software-teams/7096/25&quot;&gt;a discussion&lt;/a&gt; in Beeminder forums.&lt;/p&gt;
-
-&lt;p&gt;It’s written from the developer team management perspective. In it’s essence, Evidence Based Scheduling calibrates developers’ estimation performance so that realistic estimates can be obtained. (A key aspect of the method is that it also quantifies the confidence one may have in an estimate, but that’s besides the point.)&lt;/p&gt;
-
-&lt;p&gt;I think EBS may also be useful from the individual perspective. In the practice suggested by Joel, “velocities” that are older than 6 months discarded since estimators get better at estimating. Someone who’s early in their career could also get noticably better and faster in such a time span. A side effect of EBS data would then be making explicit if “5 story points” came to mean 8 days to 4 days, for instance.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 12 Apr 2021 00:00:00 +0200</pubDate>
-        <link>https://ozan.ogreden.com/notebook/2021/04/12</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/12</guid>
         
         
       </item>
