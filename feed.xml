@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Apr 2021 21:33:48 +0200</pubDate>
-    <lastBuildDate>Mon, 26 Apr 2021 21:33:48 +0200</lastBuildDate>
+    <pubDate>Mon, 26 Apr 2021 21:47:51 +0200</pubDate>
+    <lastBuildDate>Mon, 26 Apr 2021 21:47:51 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -51,6 +51,8 @@
         <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/26</guid>
         
         
+        <category>writing</category>
+        
       </item>
     
       <item>
@@ -71,6 +73,8 @@
         <link>https://ozan.ogreden.com/notebook/2021/04/23</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/23</guid>
         
+        
+        <category>writing</category>
         
       </item>
     
