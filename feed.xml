@@ -5,9 +5,53 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Apr 2021 21:50:22 +0200</pubDate>
-    <lastBuildDate>Fri, 23 Apr 2021 21:50:22 +0200</lastBuildDate>
+    <pubDate>Mon, 26 Apr 2021 21:33:48 +0200</pubDate>
+    <lastBuildDate>Mon, 26 Apr 2021 21:33:48 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>On &quot;The Art of Doing Science and Engineering&quot;</title>
+        <description>&lt;p&gt;Books written for a different audience are hard to read. I don’t belong to the wide audience of Hamming’s “The Art of Doing Science and Engineering.” I admit parts of the book cost me way too much time. So you can imagine the comfort I felt when I read that I could skip the maths:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Later sections will be understandable […]. General results are always stated in words […]”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I kept on reading. The book is about “style”, after all. I am interested in his general results. It did, however, hurt a bit to read:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Later sections will be understandable provided you are willing to forgo the deep insights mathematics gives into the weaknesses of our current beliefs.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The first chapter of the book is titled “Orientation.” which gives a good taste of Hamming’s style: a delightful mix of a mathematically clear mind, self-help a la The Art of Manliness, and eloquently delivered life advice.&lt;/p&gt;
+
+&lt;p&gt;A quick glance and I see that many are attracted to one of the latter, rather than for the mathematically clear mind. For I came across quotes from the self-help (for researchers?) bits, &lt;a href=&quot;https://statmodeling.stat.columbia.edu/2021/03/22/richard-hammings-the-art-of-doing-science-and-engineering/&quot;&gt;Andrew Gelman expressing unfulfilled career desires&lt;/a&gt;, and &lt;a href=&quot;https://math.stackexchange.com/questions/3746698/the-art-of-doing-science-and-engineering-back-of-the-envelope-math&quot;&gt;one person who asked a question on StackExchange&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ll consider the following self-evident: you should not read quotes from a book on “style”. Gelman’s discovery is both useful to him, and gives you a hint on how you can become Gelman’s student, if you’re into that sort of thing. I’ll focus on the question on StackExchange. (A message to the writer of the question: I hope this helps you enjoy it more the next time. My purpose is not to discourage you from picking up the book again, or cause any other emotional distress.)&lt;/p&gt;
+
+&lt;p&gt;One of the examples of this chapter is an illustration of how to quickly evaluate two well-specified hypothesis. This is an important example, because, again, “Style of thinking is the center of the course.” and it is the style that allows the evaluation. It is the style that is on display.&lt;/p&gt;
+
+&lt;p&gt;The style is elaborate enough for 227 pages from Hamming, I won’t even try to summarise it. Here’s an example, though:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“I will take […] two statements, knowledge doubles every 17 years, and 90% of the scientists who ever lived are now alive, and ask to what extent they are compatible. The model of the growth of knowledge and the growth of scientists assumed are both exponential, with the growth of knowledge being proportional to the number of scientists alive. We begin by assuming the number scientists at any time t is
+\(y(t) = ae^{bt}\)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You may feel like you’re missing something obvious, like the original poster: “What’s a? What’s T? I assume e is &lt;a href=&quot;https://en.wikipedia.org/wiki/E_(mathematical_constant)&quot;&gt;this&lt;/a&gt; guy.” Then you need to listen to Hamming. I recommend you make sure you can parse the paragraph into the formula with the help of a pen and a paper. (And yes, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt; is that guy, as it will very, very frequently be. Consider making it a habit to try to full in that guy each time you see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt; in math before asking it. You may end up thinking faster.)&lt;/p&gt;
+
+&lt;p&gt;It may seem like too much effort, but consider trying how long it takes you to evaluate those statements with full confidence in your result. And think whether you could express your method with extreme precision to many thousands of people in half a page like Manning does.&lt;/p&gt;
+
+&lt;p&gt;Welcome to the journey!&lt;/p&gt;
+
+&lt;p&gt;Don’t forget - “Do not think the technical content is the course—it is only illustrative material.” But you better understand the illustrations really well, if you’re to learn “style” from a book.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/26</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/26</guid>
+        
+        
+      </item>
     
       <item>
         <title>The sense of a bean sprout</title>
@@ -153,23 +197,6 @@
         <pubDate>Thu, 15 Apr 2021 00:00:00 +0200</pubDate>
         <link>https://ozan.ogreden.com/notebook/2021/04/15</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/15</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Spaced Repetition, Flinches / Ugh-Fields</title>
-        <description>&lt;p&gt;About 15 months ago. I have started (re-)using Anki for expanding my Dutch vocabulary. After a few months of dutiful daily Anki practices, it had become a dull exercise. My search for Anki-revival tactics led me to Michael Nielsen’s essay &lt;a href=&quot;http://augmentingcognition.com/ltm.html&quot;&gt;Augmenting Long-term Memory&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Using Anki for topics other than language has been an interesting experience. For instance, engaging with a topic/material at regular but not always predictable intervals has been emotionally pleasing for me. This venue is actively researched by Andy Matuschak and you should check &lt;a href=&quot;https://notes.andymatuschak.org/About_these_notes?stackedNotes=zUw5PuD8op9oq8kHvni6sug6eRTNtR9Wqma&amp;amp;stackedNotes=z4rRX3qwSSJRsEkdXKwH2shamgHNeRthrMLiF&quot;&gt;his work&lt;/a&gt; out if you’re into it.&lt;/p&gt;
-
-&lt;p&gt;Just today I’ve run into a radically interesting use case at the intersection of spaced repetition and mental health. Internet is a small world, so this happens to be located on a blog that I distinctly remember visiting earlier: &lt;a href=&quot;http://becomingeden.com/developing-object-permanence-around-flinches/&quot;&gt;becomingeden.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Just like &lt;a href=&quot;/2021/04/11/very-recently/&quot;&gt;yesterday&lt;/a&gt;&lt;!--[[202104112132 (very) recently - post]]--&gt;, today has been generous with inspiring stuff, too.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 13 Apr 2021 00:00:00 +0200</pubDate>
-        <link>https://ozan.ogreden.com/notebook/2021/04/13</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/13</guid>
         
         
       </item>
