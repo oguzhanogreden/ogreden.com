@@ -4,13 +4,93 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-04-26T21:47:51+02:00</updated>
+ <updated>2021-04-29T22:28:03+02:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>What does that button do?</title>
+   <link href="https://ozan.ogreden.com/notebook/2021/04/29"/>
+   <updated>2021-04-29T00:00:00+02:00</updated>
+   <id>https://ozan.ogreden.com/notebook/2021/04/buttons</id>
+   <content type="html">&lt;p&gt;At work, I get to click a button, wait 5 minutes and see my work deployed in either test, UAT or production environment. With almost no stress that something infrastructural can go wrong.&lt;/p&gt;
+
+&lt;p&gt;Our DevOps team is telling us that we will have to think less about this process in near future.&lt;/p&gt;
+
+&lt;p&gt;I am growing curious: What does that button do, exactly?&lt;/p&gt;
+
+&lt;p&gt;Well, there are two buttons. One is “pressed” by a webhook from Github (I think?) and builds and stores a Docker image. The other then actually does the deployment.&lt;/p&gt;
+
+&lt;p&gt;The container is built through this steps, noted down verbosely:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Initialize job&lt;/li&gt;
+  &lt;li&gt;Pre-job
+    &lt;ul&gt;
+      &lt;li&gt;Download pgp dev&lt;/li&gt;
+      &lt;li&gt;Download pgp data&lt;/li&gt;
+      &lt;li&gt;Download sops file&lt;/li&gt;
+      &lt;li&gt;helm package&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Checkout git repository&lt;/li&gt;
+  &lt;li&gt;Ensure PGP key installed&lt;/li&gt;
+  &lt;li&gt;Construct version number&lt;/li&gt;
+  &lt;li&gt;Fetch tags&lt;/li&gt;
+  &lt;li&gt;Set the Helm Chart version on on values-*.json&lt;/li&gt;
+  &lt;li&gt;Update dependencies
+    &lt;ul&gt;
+      &lt;li&gt;test [environment]&lt;/li&gt;
+      &lt;li&gt;uat [environment]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;upload: Helm folder&lt;/li&gt;
+  &lt;li&gt;Clean Docker cache&lt;/li&gt;
+  &lt;li&gt;Docker login&lt;/li&gt;
+  &lt;li&gt;Generate Helm charts&lt;/li&gt;
+  &lt;li&gt;Download: helm charts&lt;/li&gt;
+  &lt;li&gt;Remove unnecessary files&lt;/li&gt;
+  &lt;li&gt;Override deployment&lt;/li&gt;
+  &lt;li&gt;Helm lint&lt;/li&gt;
+  &lt;li&gt;Helm package&lt;/li&gt;
+  &lt;li&gt;Build an image&lt;/li&gt;
+  &lt;li&gt;Push the image&lt;/li&gt;
+  &lt;li&gt;Push to chart museum&lt;/li&gt;
+  &lt;li&gt;Push to chart museum prod&lt;/li&gt;
+  &lt;li&gt;Publish artifact: environments&lt;/li&gt;
+  &lt;li&gt;Update patch numberin variable group&lt;/li&gt;
+  &lt;li&gt;Clean agent directories&lt;/li&gt;
+  &lt;li&gt;Post-job:
+    &lt;ul&gt;
+      &lt;li&gt;clean agent directories&lt;/li&gt;
+      &lt;li&gt;helm package&lt;/li&gt;
+      &lt;li&gt;Checkout gitrepository (??)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then the deployment is done through these steps:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Initialize job&lt;/li&gt;
+  &lt;li&gt;Pre-job
+    &lt;ul&gt;
+      &lt;li&gt;Download pgp dev&lt;/li&gt;
+      &lt;li&gt;Download pgp data&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Download artifact - build - environments&lt;/li&gt;
+  &lt;li&gt;Download artifact - build - full-helm-chart&lt;/li&gt;
+  &lt;li&gt;Ensure PGP key installed&lt;/li&gt;
+  &lt;li&gt;Deploy&lt;/li&gt;
+  &lt;li&gt;Finalize job&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>On "The Art of Doing Science and Engineering"</title>
