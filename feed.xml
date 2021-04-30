@@ -5,9 +5,34 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Apr 2021 22:28:03 +0200</pubDate>
-    <lastBuildDate>Thu, 29 Apr 2021 22:28:03 +0200</lastBuildDate>
+    <pubDate>Fri, 30 Apr 2021 23:01:39 +0200</pubDate>
+    <lastBuildDate>Fri, 30 Apr 2021 23:01:39 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Advice reversal, again</title>
+        <description>&lt;p&gt;I asked a friend of mine to review my post &lt;a href=&quot;/notebook/2021/04/26&quot;&gt;“On ‘The Art of Doing Science and Engineering’”&lt;/a&gt;&lt;!--[[202104262127 On The Art of Doing Science and Engineering]]--&gt; for me. One of the questions she had for me was “So do we want to understand the maths or not?”&lt;/p&gt;
+
+&lt;p&gt;I don’t know.&lt;/p&gt;
+
+&lt;p&gt;In one sense, the point I tried to make with the earlier post was the familiar “advice reversal advice” in disguise.&lt;/p&gt;
+
+&lt;p&gt;Someone could advise used Hamming’s example on “Why it matters to be able to predict the future?” in two directions:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It is well known the drunken sailor who staggers to the left or right with $n$ independent random steps will, on the average, end up about $\sqrt n$ steps from the origin. But if there is a pretty girl in one direction, then his steps will tend to go in that direction and he will go a distance proportional to $n$. In a lifetime of many, many independent choices, small and large, a career with a vision will get you a distance proportional to $n$, while no vision will get you only the distance $\sqrt n$.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;One would be “Oh you don’t need to understand maths to get the message.” Another would be “It’s essential that you understand how Hamming makes that conclusion and you should not do anything prior to that.”&lt;/p&gt;
+
+&lt;p&gt;Well, reverse that advice.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/30</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/30</guid>
+        
+        
+      </item>
     
       <item>
         <title>What does that button do?</title>
@@ -257,17 +282,6 @@
         <pubDate>Fri, 16 Apr 2021 00:00:00 +0200</pubDate>
         <link>https://ozan.ogreden.com/2021/04/16/test/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/04/16/test/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>
-</description>
-        <pubDate>Fri, 16 Apr 2021 00:00:00 +0200</pubDate>
-        <link>https://ozan.ogreden.com/2021/04/16/</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/2021/04/16/</guid>
         
         
       </item>
