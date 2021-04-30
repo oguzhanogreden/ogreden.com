@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 30 Apr 2021 23:01:39 +0200</pubDate>
-    <lastBuildDate>Fri, 30 Apr 2021 23:01:39 +0200</lastBuildDate>
+    <pubDate>Fri, 30 Apr 2021 23:09:19 +0200</pubDate>
+    <lastBuildDate>Fri, 30 Apr 2021 23:09:19 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -20,7 +20,7 @@
 &lt;p&gt;Someone could advise used Hamming’s example on “Why it matters to be able to predict the future?” in two directions:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;It is well known the drunken sailor who staggers to the left or right with $n$ independent random steps will, on the average, end up about $\sqrt n$ steps from the origin. But if there is a pretty girl in one direction, then his steps will tend to go in that direction and he will go a distance proportional to $n$. In a lifetime of many, many independent choices, small and large, a career with a vision will get you a distance proportional to $n$, while no vision will get you only the distance $\sqrt n$.&lt;/p&gt;
+  &lt;p&gt;It is well known the drunken sailor who staggers to the left or right with \(n\) independent random steps will, on the average, end up about \(\sqrt n\) steps from the origin. But if there is a pretty girl in one direction, then his steps will tend to go in that direction and he will go a distance proportional to \(n\). In a lifetime of many, many independent choices, small and large, a career with a vision will get you a distance proportional to \(n\), while no vision will get you only the distance \(\sqrt n\).&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;One would be “Oh you don’t need to understand maths to get the message.” Another would be “It’s essential that you understand how Hamming makes that conclusion and you should not do anything prior to that.”&lt;/p&gt;

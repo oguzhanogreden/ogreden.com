@@ -4,7 +4,7 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-04-30T23:01:39+02:00</updated>
+ <updated>2021-04-30T23:09:19+02:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
@@ -26,7 +26,7 @@
 &lt;p&gt;Someone could advise used Hamming’s example on “Why it matters to be able to predict the future?” in two directions:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;It is well known the drunken sailor who staggers to the left or right with $n$ independent random steps will, on the average, end up about $\sqrt n$ steps from the origin. But if there is a pretty girl in one direction, then his steps will tend to go in that direction and he will go a distance proportional to $n$. In a lifetime of many, many independent choices, small and large, a career with a vision will get you a distance proportional to $n$, while no vision will get you only the distance $\sqrt n$.&lt;/p&gt;
+  &lt;p&gt;It is well known the drunken sailor who staggers to the left or right with \(n\) independent random steps will, on the average, end up about \(\sqrt n\) steps from the origin. But if there is a pretty girl in one direction, then his steps will tend to go in that direction and he will go a distance proportional to \(n\). In a lifetime of many, many independent choices, small and large, a career with a vision will get you a distance proportional to \(n\), while no vision will get you only the distance \(\sqrt n\).&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;One would be “Oh you don’t need to understand maths to get the message.” Another would be “It’s essential that you understand how Hamming makes that conclusion and you should not do anything prior to that.”&lt;/p&gt;
