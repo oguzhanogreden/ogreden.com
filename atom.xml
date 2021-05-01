@@ -4,7 +4,7 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-04-30T23:09:19+02:00</updated>
+ <updated>2021-05-01T14:13:47+02:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
@@ -257,24 +257,6 @@
  </entry>
  
  <entry>
-   <title>Test</title>
-   <link href="https://ozan.ogreden.com/2021/04/16/test/"/>
-   <updated>2021-04-16T00:00:00+02:00</updated>
-   <id>https://ozan.ogreden.com/2021/04/16/test</id>
-   <content type="html">
-</content>
- </entry>
- 
- <entry>
-   <title></title>
-   <link href="https://ozan.ogreden.com/2021/04/16/"/>
-   <updated>2021-04-16T00:00:00+02:00</updated>
-   <id>https://ozan.ogreden.com/2021/04/</id>
-   <content type="html">
-</content>
- </entry>
- 
- <entry>
    <title>No-CV</title>
    <link href="https://ozan.ogreden.com/notebook/2021/04/15"/>
    <updated>2021-04-15T00:00:00+02:00</updated>
@@ -316,7 +298,7 @@
  </entry>
  
  <entry>
-   <title>(Very) recently</title>
+   <title>Recently</title>
    <link href="https://ozan.ogreden.com/2021/04/11/very-recently/"/>
    <updated>2021-04-11T00:00:00+02:00</updated>
    <id>https://ozan.ogreden.com/2021/04/11/very-recently</id>
@@ -597,7 +579,7 @@ This is preferable since line heights are very much font size dependent.&lt;/p&g
 
 &lt;p&gt;The “data scientist” title still covers really wide ground. One way of grouping data scientists is whether the position is a central role or a supportive role. The supportive role is the one I know closely: You support a business in solving a problem, but you are not at the core of the problem solution. If you’re craving for craft, you need to stretch yourself quite frequently.&lt;/p&gt;
 
-&lt;p&gt;Ultimately, I would prefer less stretching and more craft.&lt;/p&gt;
+&lt;p&gt;Ultimately, I &lt;a href=&quot;/2021/02/20/pivot-career-software/&quot;&gt;would prefer&lt;/a&gt; less stretching and more craft.&lt;/p&gt;
 </content>
  </entry>
  
