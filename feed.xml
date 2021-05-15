@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 May 2021 09:37:34 +0200</pubDate>
-    <lastBuildDate>Sat, 15 May 2021 09:37:34 +0200</lastBuildDate>
+    <pubDate>Sat, 15 May 2021 13:50:21 +0200</pubDate>
+    <lastBuildDate>Sat, 15 May 2021 13:50:21 +0200</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -39,6 +39,53 @@ I hope this note lowers the threshold.&lt;/p&gt;
         <link>https://ozan.ogreden.com/2021/05/15/help/</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/2021/05/15/help/</guid>
         
+        
+      </item>
+    
+      <item>
+        <title>Angular nested forms with ControlValueAccessor interface</title>
+        <description>&lt;p&gt;This post has but one message for Angular users: Your nested form component should implement a ControlValueAccessor.&lt;/p&gt;
+
+&lt;p&gt;I am not the first one &lt;a href=&quot;https://stackoverflow.com/a/55674946&quot;&gt;to do this&lt;/a&gt;.
+Nevertheless a disclaimer and a request: I’ve had about four weeks of professional Angular development experience, &lt;a href=&quot;https://brandur.org/fragments/engineering-skepticism&quot;&gt;apply healthy skepticism&lt;/a&gt; with abundance.
+I’m writing to clarify my understanding, and give something to the community.
+If you think the claim is preposterous, you know where to find me ;)&lt;/p&gt;
+
+&lt;p&gt;Now, let’s get you convinced by building up a minimally realistic example.&lt;/p&gt;
+
+&lt;p&gt;Suppose we have a form that our users use to specify how many customers we can accept in a given day. Initially, the form is very simple. There is one integer input control per day. The only validation requirement is that the capacity can’t be smaller than 0 or larger than 20.&lt;/p&gt;
+
+&lt;p&gt;We implement this with one component that has a FormGroup member/propery and bind the controls manually. This is the simplest use of Angular Reactive Forms. You can find a barebones example &lt;a href=&quot;https://stackblitz.com/github/oguzhanogreden/example-nested-form-cva/tree/0fb88df86ee9cedd231a7fde629d18ae9f51fcec&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now let’s imagine a more involved second iteration for the form. We need to be able to support varying capacity throughout the day. Instead of a single integer input, we allow the user to add/remove time periods, which are specified by a start time, an end time and the capacity. We need to make sure that user can’t enter an end time that’s earlier than start time. And we need to make sure that the total capacity input doesn’t exceed 20 within a day.&lt;/p&gt;
+
+&lt;p&gt;We have two conceptual levels to our input: the time period level and the day level. We can implement two components, and nest the time period component in the day component. We can then reuse the time period component within and across days, and the day component across days.&lt;/p&gt;
+
+&lt;p&gt;Here’s my solution, where each component implements ControlValueAccessor.&lt;/p&gt;
+
+&lt;iframe style=&quot;width: 100%; height: 400px;&quot; src=&quot;https://stackblitz.com/github/oguzhanogreden/example-nested-form-cva/tree/main?ctl=1&amp;amp;embed=1&amp;amp;file=src/app/form/form.component.ts&amp;amp;hideNavigation=1&amp;amp;view=editor&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I think there are three key implementation details worth noting:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Components that implement &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ControlValueAccessor&lt;/code&gt; interface bind to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FormControl&lt;/code&gt;s [Eliseo’s SO answer], and not to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FormGroup&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FormArray&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;You need to notify parents of value changes, just like the default value accessors for e.g. &lt;a href=&quot;https://github.com/angular/angular/blob/11.2.13/packages/forms/src/directives/default_value_accessor.ts#L144-L148&quot;&gt;number inputs&lt;/a&gt; do.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ControlValueAccessor interface is very helpful here, for instance while handling nested arrays that do not have a predetermined size. While using it, make sure you bind it to a FormControl. Hint: The interface is called a &lt;strong&gt;Control&lt;/strong&gt;ValueAccessor for a reason ;) This brings us to the third implementation detail:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;You need to trigger change detection if a parent acts in a way that a child causes a change in the validity of the parent without triggering change detection automatically. This is the case e.g. when the parent triggers initialisation of a child which initializes in invalid state.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In my limited experience, this implementation is the most flexible and the most idiomatic one. Do you disagree? I’d be happy to learn from you!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 May 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/2021/05/15/angular-nested-form/</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/2021/05/15/angular-nested-form/</guid>
+        
+        
+        <category>writing</category>
         
       </item>
     
@@ -287,23 +334,6 @@ I hope this note lowers the threshold.&lt;/p&gt;
         <pubDate>Sat, 17 Apr 2021 00:00:00 +0200</pubDate>
         <link>https://ozan.ogreden.com/notebook/2021/04/17</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/17</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Presence, Absence, Computing</title>
-        <description>&lt;p&gt;&lt;em&gt;(I thought this would become something better, it didn’t work out, but I have &lt;a href=&quot;https://www.beeminder.com/oguzhanogreden/w-daily&quot;&gt;a promise&lt;/a&gt;!)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;A non-controversial statement: Computing is about references.&lt;/p&gt;
-
-&lt;p&gt;You’d like to refer to something that exists and do something with it. Now you can’t stop there: You need to be able to refer to non-existence, null. Maybe you are someone who can think of 0 as something other than a reference to non-existence. If you need to represent something electrically (utimately), you will need first and foremost have to distinguish presence and absence of electricity. If you find yourself in the sad profession of representing things electrically, you will realise that you need to give up. Forget about all those “other things 0 can be.” You will call “that doesn’t exist” 0 and “that exists” 1, and move on.&lt;/p&gt;
-
-&lt;p&gt;Once you have 1, and 0 so that you can have 1, you have infinitely many references that you can use. That you are using.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 16 Apr 2021 00:00:00 +0200</pubDate>
-        <link>https://ozan.ogreden.com/notebook/2021/04/16</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/16</guid>
         
         
       </item>
