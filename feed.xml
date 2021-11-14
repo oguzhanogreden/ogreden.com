@@ -5,26 +5,26 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Nov 2021 10:19:27 +0100</pubDate>
-    <lastBuildDate>Sun, 14 Nov 2021 10:19:27 +0100</lastBuildDate>
+    <pubDate>Sun, 14 Nov 2021 10:22:18 +0100</pubDate>
+    <lastBuildDate>Sun, 14 Nov 2021 10:22:18 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
         <title>Beeminder Weeklies</title>
         <description>&lt;p&gt;This page is here so that I can use &lt;a href=&quot;https://help.beeminder.com/article/88-urlminder&quot;&gt;URLminder&lt;/a&gt; to commit to weekly reviews of my beeminder activity.&lt;/p&gt;
 
-&lt;h1 id=&quot;beeminder-weekly-20211114&quot;&gt;Beeminder Weekly 2021/11/14&lt;/h1&gt;
+&lt;h2 id=&quot;beeminder-weekly-20211114&quot;&gt;Beeminder Weekly 2021/11/14&lt;/h2&gt;
 
-&lt;h2 id=&quot;derailments&quot;&gt;Derailments&lt;/h2&gt;
+&lt;h3 id=&quot;derailments&quot;&gt;Derailments&lt;/h3&gt;
 &lt;p&gt;[[202111140844 beeminder/s]]: Derailed 10-&amp;gt;30 and 30-&amp;gt;90 this week. This is part of me trying to use Beeminder with larger, significant pledges. Last night, what went through my mind was “Do I want this right now?” and I thought “Would I pay ~30$ to e.g. go out tonight for an evening out with similar utility?” and the answer was yes. I’m now curious if 90$ will deter me, or will make me more likely to delete the goal.&lt;/p&gt;
 
-&lt;h2 id=&quot;new-goals&quot;&gt;New goals&lt;/h2&gt;
+&lt;h3 id=&quot;new-goals&quot;&gt;New goals&lt;/h3&gt;
 &lt;p&gt;[[202111140853 beeminder/drawing]]: Created this to actually draw at least 5 minutes everyday for about a week, &lt;a href=&quot;https://forum.beeminder.com/t/day-8-sunk-cost-faith/9824/5?u=ozanogreden&quot;&gt;as prompted by Hammertime&lt;/a&gt;.
 [[202111140855 beeminder/pb-i-p]]: This is a work related goal. I need to work in my I project a certain amount of time. I need Beeminder because otherwise the accountability is missing. Also prompted by Hammertime.
 [[202111140856 beeminder/yt-day-plan]]: This is to set a Yoda Timer for day planning. I’m terribly bad at this, and avoid it. I’d like to keep doing it a for a while, and see how I can get better.
 [[202111140857 beeminder/tagtime]]: I’ve started using TagTime with smitop’s implementation.&lt;/p&gt;
 
-&lt;h2 id=&quot;rate-changes&quot;&gt;Rate changes&lt;/h2&gt;
+&lt;h3 id=&quot;rate-changes&quot;&gt;Rate changes&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;n/a&lt;/li&gt;
 &lt;/ul&gt;
