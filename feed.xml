@@ -5,9 +5,38 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Nov 2021 10:17:47 +0100</pubDate>
-    <lastBuildDate>Sun, 14 Nov 2021 10:17:47 +0100</lastBuildDate>
+    <pubDate>Sun, 14 Nov 2021 10:19:27 +0100</pubDate>
+    <lastBuildDate>Sun, 14 Nov 2021 10:19:27 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>Beeminder Weeklies</title>
+        <description>&lt;p&gt;This page is here so that I can use &lt;a href=&quot;https://help.beeminder.com/article/88-urlminder&quot;&gt;URLminder&lt;/a&gt; to commit to weekly reviews of my beeminder activity.&lt;/p&gt;
+
+&lt;h1 id=&quot;beeminder-weekly-20211114&quot;&gt;Beeminder Weekly 2021/11/14&lt;/h1&gt;
+
+&lt;h2 id=&quot;derailments&quot;&gt;Derailments&lt;/h2&gt;
+&lt;p&gt;[[202111140844 beeminder/s]]: Derailed 10-&amp;gt;30 and 30-&amp;gt;90 this week. This is part of me trying to use Beeminder with larger, significant pledges. Last night, what went through my mind was “Do I want this right now?” and I thought “Would I pay ~30$ to e.g. go out tonight for an evening out with similar utility?” and the answer was yes. I’m now curious if 90$ will deter me, or will make me more likely to delete the goal.&lt;/p&gt;
+
+&lt;h2 id=&quot;new-goals&quot;&gt;New goals&lt;/h2&gt;
+&lt;p&gt;[[202111140853 beeminder/drawing]]: Created this to actually draw at least 5 minutes everyday for about a week, &lt;a href=&quot;https://forum.beeminder.com/t/day-8-sunk-cost-faith/9824/5?u=ozanogreden&quot;&gt;as prompted by Hammertime&lt;/a&gt;.
+[[202111140855 beeminder/pb-i-p]]: This is a work related goal. I need to work in my I project a certain amount of time. I need Beeminder because otherwise the accountability is missing. Also prompted by Hammertime.
+[[202111140856 beeminder/yt-day-plan]]: This is to set a Yoda Timer for day planning. I’m terribly bad at this, and avoid it. I’d like to keep doing it a for a while, and see how I can get better.
+[[202111140857 beeminder/tagtime]]: I’ve started using TagTime with smitop’s implementation.&lt;/p&gt;
+
+&lt;h2 id=&quot;rate-changes&quot;&gt;Rate changes&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;n/a&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 14 Nov 2021 00:00:00 +0100</pubDate>
+        <link>https://ozan.ogreden.com/2021/11/14/weeklies/</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/2021/11/14/weeklies/</guid>
+        
+        
+        <category>personal</category>
+        
+      </item>
     
       <item>
         <title>Ways I'm available to help</title>
@@ -309,32 +338,6 @@ If you think the claim is preposterous, reach out!&lt;/p&gt;
         <pubDate>Mon, 19 Apr 2021 00:00:00 +0200</pubDate>
         <link>https://ozan.ogreden.com/notebook/2021/04/19</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/19</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>How could I have done this for times faster?</title>
-        <description>&lt;p&gt;It’s the end of my first week with &lt;a href=&quot;/2021/02/20/pivot-career-software/&quot;&gt;my new team&lt;/a&gt;. Towards the end of the week, I came across a Tweet:&lt;/p&gt;
-
-&lt;p&gt;“Why couldn’t we deliver this 4 times faster is a good question for software development teams to be asking.”&lt;/p&gt;
-
-&lt;p&gt;I can’t find the Tweet, but If I recall correctly, the author meant to suggest this as a question that would help developers stretch their imagination and focus on their tooling. I took it a bit differently: It’s not a stretch for me to imagine that I will soon produce four times what I’ve produced this week.&lt;/p&gt;
-
-&lt;p&gt;Looking at my week with this lens, what were the time sinkholes for me? Two things:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;I’ve tested my solutions too many times.&lt;/li&gt;
-  &lt;li&gt;I hadn’t read the documentation of my dependencies well enough.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I’ve tested too many times primarily because conjuring a mental “infinite zoom overview” of my work has been difficult. Both on the backend with microservices and in the frontend with Angular, this slowed me down prohibitively. This was compounded by the fact that I’m far from having a solid knowledge of the many specifics of external dependencies, frameworks and in-house solutions.&lt;/p&gt;
-
-&lt;p&gt;Reading documentation in a rushed way is a classic, of course. This was a case of “I just want this damn thing to be done” and I should’ve &lt;a href=&quot;/2021/04/11/very-recently/&quot;&gt;known better&lt;/a&gt;&lt;!--[[202104112132 (very) recently - post]]--&gt;. There isn’t much to do but to remind yourself that this does not save time, after all. Reading documentation may also be the only way to get confident with specifics of everything.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 17 Apr 2021 00:00:00 +0200</pubDate>
-        <link>https://ozan.ogreden.com/notebook/2021/04/17</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/17</guid>
         
         
       </item>
