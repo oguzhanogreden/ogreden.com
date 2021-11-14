@@ -4,7 +4,7 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-06-04T21:21:56+02:00</updated>
+ <updated>2021-11-14T09:15:01+01:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
@@ -209,13 +209,13 @@ If you think the claim is preposterous, reach out!&lt;/p&gt;
   &lt;p&gt;“Later sections will be understandable provided you are willing to forgo the deep insights mathematics gives into the weaknesses of our current beliefs.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;The first chapter of the book is titled “Orientation.” and it gives a good taste of Hamming’s style: a delightful mix of a mathematically clear mind, self-help (for researchers) a la The Art of Manliness, and eloquently delivered life advice.&lt;/p&gt;
+&lt;p&gt;The first chapter of the book is titled “Orientation.” which gives a good taste of Hamming’s style: a delightful mix of a mathematically clear mind, self-help a la The Art of Manliness, and eloquently delivered life advice.&lt;/p&gt;
 
-&lt;p&gt;A quick online search led me to the conclusion that many are attracted to one of the latter. In most instances, academically oriented people seemed to have cherished the self-help. Interestingly, I also came across &lt;a href=&quot;https://statmodeling.stat.columbia.edu/2021/03/22/richard-hammings-the-art-of-doing-science-and-engineering/&quot;&gt;Andrew Gelman expressing unfulfilled career desires&lt;/a&gt;, and &lt;a href=&quot;https://math.stackexchange.com/questions/3746698/the-art-of-doing-science-and-engineering-back-of-the-envelope-math&quot;&gt;one person who asked a question about one of Hamming’s examples&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A quick glance and I see that many are attracted to one of the latter, rather than for the mathematically clear mind. For I came across quotes from the self-help (for researchers?) bits, &lt;a href=&quot;https://statmodeling.stat.columbia.edu/2021/03/22/richard-hammings-the-art-of-doing-science-and-engineering/&quot;&gt;Andrew Gelman expressing unfulfilled career desires&lt;/a&gt;, and &lt;a href=&quot;https://math.stackexchange.com/questions/3746698/the-art-of-doing-science-and-engineering-back-of-the-envelope-math&quot;&gt;one person who asked a question on StackExchange&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I’ll consider the following self-evident: cherishing motivational quotes from a book on “style” won’t have great returns. Gelman’s discovery seems useful to him, and prospective students of him. I’ll focus on the question on StackExchange. (A message to the writer of the question: I hope this helps you enjoy it more the next time. My purpose is not to discourage you from picking up the book again, or cause any other emotional distress.)&lt;/p&gt;
+&lt;p&gt;I’ll consider the following self-evident: you should not read quotes from a book on “style”. Gelman’s discovery is both useful to him, and gives you a hint on how you can become Gelman’s student, if you’re into that sort of thing. I’ll focus on the question on StackExchange. (A message to the writer of the question: I hope this helps you enjoy it more the next time. My purpose is not to discourage you from picking up the book again, or cause any other emotional distress.)&lt;/p&gt;
 
-&lt;p&gt;One of the examples from this chapter is an illustration of how to quickly evaluate two well-specified hypotheses. This is an important example, because, again, “Style of thinking is the center of the course.” and it is the style that allows the evaluation. It is the style that is on display.&lt;/p&gt;
+&lt;p&gt;One of the examples of this chapter is an illustration of how to quickly evaluate two well-specified hypothesis. This is an important example, because, again, “Style of thinking is the center of the course.” and it is the style that allows the evaluation. It is the style that is on display.&lt;/p&gt;
 
 &lt;p&gt;The style is elaborate enough for 227 pages from Hamming, I won’t even try to summarise it. Here’s an example, though:&lt;/p&gt;
 
@@ -224,11 +224,13 @@ If you think the claim is preposterous, reach out!&lt;/p&gt;
 \(y(t) = ae^{bt}\)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;You may feel like you’re missing something obvious, I know this person did: “What’s a? What’s T? I assume e is &lt;a href=&quot;https://en.wikipedia.org/wiki/E_(mathematical_constant)&quot;&gt;this&lt;/a&gt; guy.” Then you need to listen to Hamming a bit more closely: This is a back of an envelope example. If you read his passages prior to the mathematical formulation of the example, and rely on your common sense while playing with the example, these questions may be easier to answer. I recommend you make sure you can parse the paragraph into the formula with the help of a pen and a paper. (And yes, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt; is that guy, as it will very, very frequently be. Consider making it a habit to try to full in that guy each time you see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt; in math before asking it. You may end up thinking faster.)&lt;/p&gt;
+&lt;p&gt;You may feel like you’re missing something obvious, like the original poster: “What’s a? What’s T? I assume e is &lt;a href=&quot;https://en.wikipedia.org/wiki/E_(mathematical_constant)&quot;&gt;this&lt;/a&gt; guy.” Then you need to listen to Hamming. I recommend you make sure you can parse the paragraph into the formula with the help of a pen and a paper. (And yes, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt; is that guy, as it will very, very frequently be. Consider making it a habit to try to full in that guy each time you see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt; in math before asking it. You may end up thinking faster.)&lt;/p&gt;
 
-&lt;p&gt;It may seem like too much effort, and remember “[…] the technical content is […] only illustrative material.” Consider the potential pay-off, though. You may be able to evaluate two statements dense with information with high confidence. You could even be able to express it in half a page, in a language that’s legible to thousands of people, like Manning does.&lt;/p&gt;
+&lt;p&gt;It may seem like too much effort, but consider trying how long it takes you to evaluate those statements with full confidence in your result. And think whether you could express your method with extreme precision to many thousands of people in half a page like Manning does.&lt;/p&gt;
 
 &lt;p&gt;Welcome to the journey!&lt;/p&gt;
+
+&lt;p&gt;Don’t forget - “Do not think the technical content is the course—it is only illustrative material.” But you better understand the illustrations really well, if you’re to learn “style” from a book.&lt;/p&gt;
 </content>
  </entry>
  
@@ -520,18 +522,20 @@ If the execution is deferred long enough, resources that are needed for querying
    <id>https://ozan.ogreden.com/2021/03/24/typography-font-size-scale-line-height</id>
    <content type="html">&lt;p&gt;What does your visitors first do when they land your webpage?&lt;/p&gt;
 
-&lt;p&gt;I press down &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command&lt;/code&gt; and hit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; two times. Unless your page already looks like &lt;a href=&quot;https://ia.net&quot;&gt;iA’s home page&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Let me tell you what I do. I press down &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command&lt;/code&gt; and hit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; two times. Unless your page already looks like &lt;a href=&quot;https://ia.net&quot;&gt;iA’s home page&lt;/a&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;post-image&quot; style=&quot;border: 1px solid rgba(0, 134, 179, 0.15);&quot;&gt;
     &lt;img src=&quot;/assets/images/2021-03-24-ia-light.png&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;It’s hard to represent how large those letters actually are with a screenshot.
-They are &lt;em&gt;really&lt;/em&gt; large, go check it out!&lt;/p&gt;
+(Especially since I stole their background color ;))
+They are really large, go check it out!&lt;/p&gt;
 
 &lt;p&gt;It turns out, I’m not alone in my discontent about font size on web.
-This became only more clear as I starting reading about web typography.
-Here are some basic rules that I learned, that improved readability on this page.&lt;/p&gt;
+This became only more clear as I starting reading about web typography.&lt;/p&gt;
+
+&lt;p&gt;Here are some basic rules that I learned, that improved readability on this page.&lt;/p&gt;
 
 &lt;p&gt;Before we start, &lt;strong&gt;a warning&lt;/strong&gt;: Writing about typography on a blog that’s still so poorly laid is a bit… painful.
 Reading will be even more so.
@@ -545,23 +549,24 @@ I’m moving away from the Jekyll theme I started with, but things are in transi
 
 &lt;p&gt;from &lt;a href=&quot;https://ia.net/topics/responsive-typography-the-basics&quot;&gt;Responsive Typography: The Basics&lt;/a&gt;&lt;!--[[202103162148 responsive typography the basics]]--&gt;.&lt;/p&gt;
 
-&lt;p&gt;Oliver Reichenstein &lt;!--[[202103192305 Oliver Reichenstein]]--&gt; makes this point unreservedly.
-Before I go into how to choose the size… why in the first place did we get used to uncomfortably small type sizes?&lt;/p&gt;
+&lt;p&gt;Oliver Reichenstein &lt;!--[[202103192305 Oliver Reichenstein]]--&gt; is quite clear in his post.
+More about how to choose the size in a bit.
+Before that… why in the first place did we get used to uncomfortably small type sizes?&lt;/p&gt;
 
 &lt;p&gt;Part of the answer is seems to be a bad alignment of stars in the industry.
 Richard Rutter &lt;a href=&quot;https://alistapart.com/article/howtosizetextincss/#section3&quot;&gt;notes&lt;/a&gt; that 16 pixels was often considered too large&lt;!--[[202103182126 how to size text in CSS]]--&gt;.
-I’m not sure if this is still the case.
+I’m not if this is still the case.
 But in any case, if Rutter didn’t get what he wanted, it’s not surprising that most of the designers couldn’t.&lt;/p&gt;
 
 &lt;p&gt;Today, the default of 16 pixels seemed a good &lt;em&gt;starting point&lt;/em&gt; to me.
-As a next step, I used a practical trick offered by Reichenstein:
+Starting there, I used the practical trick offered by Reichenstein:
 Take a book and hold it at a comfortable reading distance.
 Simultaneously, hold your digital device at it’s common use distance.
 Make sure the physical sizes of letters are the same.
 That is the correct size.&lt;/p&gt;
 
-&lt;p&gt;For this blog, I’ve chosen 1.25rem as the base of the modular scale, both for mobile and desktop.
-I haven’t overwritten the root font size, so these are relative to 16 pixels.&lt;/p&gt;
+&lt;p&gt;For this blog, I’ve chosen &lt;em&gt;two&lt;/em&gt; sizes to base my typographic scales: 1.12rem and 1.25rem, for mobile and desktop.
+Without overwriting the root font size, that’d be based on 16 pixels.&lt;/p&gt;
 
 &lt;h2 id=&quot;2-choose-a-modular-scale-not-one-size&quot;&gt;2. Choose a modular scale, not one size.&lt;/h2&gt;
 
