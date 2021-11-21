@@ -4,13 +4,22 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-11-14T10:25:13+01:00</updated>
+ <updated>2021-11-21T17:25:18+01:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Weeklies</title>
+   <link href="https://ozan.ogreden.com/2021/11/21/weeklies/"/>
+   <updated>2021-11-21T00:00:00+01:00</updated>
+   <id>https://ozan.ogreden.com/2021/11/21/weeklies</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>Beeminder Weeklies</title>
@@ -38,6 +47,33 @@
 &lt;h3 id=&quot;rate-changes&quot;&gt;Rate changes&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;n/a&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211121&quot;&gt;Beeminder Weekly 2021/11/21&lt;/h2&gt;
+
+&lt;h3 id=&quot;successes&quot;&gt;Successes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202111140853 beeminder-drawing]]: I’ve succeeded after 7 days, as it was intended.&lt;/li&gt;
+  &lt;li&gt;[[202111211701 beeminder-news-tr]] 3.25 days/week -&amp;gt; 3.10 days/week I’m succeeding today. This has helped me cut down my news consumption significantly, without any derailment. Just a bit more ambition can be interesting.&lt;/li&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]] 2 days/week -&amp;gt; 1.9 days/week.&lt;/li&gt;
+  &lt;li&gt;[[202111211709 yt-day-plan]] Succeeding without derailments after 1 week. I find this quite useful, so I’ll extend it past my holiday, so that I can get back into it when I’m back.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;derailments-1&quot;&gt;Derailments&lt;/h3&gt;
+&lt;p&gt;Total of 20$.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211655 beeminder-pb-i-p]]: Derailed 5-&amp;gt;10 on the first week. This was due to a combination of (1) urgent issues at work getting me tired, or making me to obusy to make space for this and (2) laziness in the weekends to make up for the lost time. I do feel significant resistance to the goal, so it’s good I have this.&lt;/li&gt;
+  &lt;li&gt;[[202111211651 beeminder-todo]]: Derailed 10-&amp;gt;30 this week, &lt;em&gt;on a weekend!&lt;/em&gt; This was just prioritisation error. I was free for [[202111140844 beeminder-s]] an opted for that. I first entered incorrect data. I was wiser the next morning.&lt;/li&gt;
+  &lt;li&gt;[[202111211711 beeminder-srs]]: Derailed 5 -&amp;gt; 10 this week. I’ve been lazing about this, so I’m happy I’ve got the goal. I believe I wouldn’t derail at 10$ here.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-goals-1&quot;&gt;New goals&lt;/h3&gt;
+&lt;p&gt;[[202111211656 beeminder-reading-d]]: During &lt;em&gt;focusing&lt;/em&gt; sessions this week, I felt significant negativity due to my Dutch skills. I created this goal to get back into Dutch reading and vocabulary building. I’m starting at 0.15h per day.&lt;/p&gt;
+
+&lt;h3 id=&quot;rate-changes-1&quot;&gt;Rate changes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202111211657 beeminder-reading]], 0.15 / day -&amp;gt; 0.30h / day will now be tracking both Dutch reading and general reading. So I increased it’s rate to account for [[202111211656 beeminder-reading-d]].&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>
