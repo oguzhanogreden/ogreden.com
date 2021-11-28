@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Nov 2021 12:17:14 +0100</pubDate>
-    <lastBuildDate>Sun, 28 Nov 2021 12:17:14 +0100</lastBuildDate>
+    <pubDate>Sun, 28 Nov 2021 12:21:13 +0100</pubDate>
+    <lastBuildDate>Sun, 28 Nov 2021 12:21:13 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -142,6 +142,18 @@
         &lt;ul&gt;
           &lt;li&gt;0.58 hours/week&lt;/li&gt;
           &lt;li&gt;Increasing auto-ratchet due to visiting parents&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281219 beeminder-todo]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after ~a month.&lt;/li&gt;
+      &lt;li&gt;No derailment since last week, at 30$.&lt;/li&gt;
+      &lt;li&gt;Commitment:
+        &lt;ul&gt;
+          &lt;li&gt;1 goal / day (= minimum of a Yoda Timer towards a goal)&lt;/li&gt;
+          &lt;li&gt;Weekends off&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;

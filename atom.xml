@@ -4,7 +4,7 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-11-28T12:17:14+01:00</updated>
+ <updated>2021-11-28T12:21:13+01:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
@@ -148,6 +148,18 @@
         &lt;ul&gt;
           &lt;li&gt;0.58 hours/week&lt;/li&gt;
           &lt;li&gt;Increasing auto-ratchet due to visiting parents&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281219 beeminder-todo]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after ~a month.&lt;/li&gt;
+      &lt;li&gt;No derailment since last week, at 30$.&lt;/li&gt;
+      &lt;li&gt;Commitment:
+        &lt;ul&gt;
+          &lt;li&gt;1 goal / day (= minimum of a Yoda Timer towards a goal)&lt;/li&gt;
+          &lt;li&gt;Weekends off&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
