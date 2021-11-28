@@ -4,22 +4,13 @@
  <title></title>
  <link href="https://ozan.ogreden.com/atom.xml" rel="self"/>
  <link href="https://ozan.ogreden.com/"/>
- <updated>2021-11-21T17:25:18+01:00</updated>
+ <updated>2021-11-28T12:17:14+01:00</updated>
  <id>https://ozan.ogreden.com</id>
  <author>
    <name>Ozan Öğreden</name>
    <email></email>
  </author>
 
- 
- <entry>
-   <title>Weeklies</title>
-   <link href="https://ozan.ogreden.com/2021/11/21/weeklies/"/>
-   <updated>2021-11-21T00:00:00+01:00</updated>
-   <id>https://ozan.ogreden.com/2021/11/21/weeklies</id>
-   <content type="html">
-</content>
- </entry>
  
  <entry>
    <title>Beeminder Weeklies</title>
@@ -74,6 +65,117 @@
 &lt;h3 id=&quot;rate-changes-1&quot;&gt;Rate changes&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;[[202111211657 beeminder-reading]], 0.15 / day -&amp;gt; 0.30h / day will now be tracking both Dutch reading and general reading. So I increased it’s rate to account for [[202111211656 beeminder-reading-d]].&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211128&quot;&gt;Beeminder Weekly 2021/11/28&lt;/h2&gt;
+
+&lt;h3 id=&quot;successes-1&quot;&gt;Successes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111281140 beeminder-chess]]:
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a ~month.&lt;/li&gt;
+      &lt;li&gt;No derailments at 5$.&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.5 hours/week.&lt;/li&gt;
+      &lt;li&gt;Mean delta: 0.06 [/ day, toggl]&lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.5 * 1.05 hours/week&lt;/li&gt;
+          &lt;li&gt;10$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211657 beeminder-reading]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;1 derailment at 5$, slightly before than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-1 month&lt;/code&gt; mark&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.3 hours/day
+        &lt;ul&gt;
+          &lt;li&gt;Mean delta: 0.21 [/ day, toogle]&lt;/li&gt;
+          &lt;li&gt;Overall daily average: 6.96 / 65. calc = .11 (= .77 / week)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.35 hours/day&lt;/li&gt;
+          &lt;li&gt;10$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281154 beeminder-pb-focus]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;Without any derailment at $5.&lt;/li&gt;
+      &lt;li&gt;Commitment was 4 hours/week
+        &lt;ul&gt;
+          &lt;li&gt;This was too easy, of course!&lt;/li&gt;
+          &lt;li&gt;This was a very helpful goal, especially at the office. I’d be helped by the sting greatly!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;5 hours/week, weekends off.&lt;/li&gt;
+          &lt;li&gt;$5&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281158 beeminder-dev]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month&lt;/li&gt;
+      &lt;li&gt;No derailments at $5&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.55 hours/day, weekends off&lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.6 hours/day&lt;/li&gt;
+          &lt;li&gt;Increased auto-ratched due to visiting parents&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281203 beeminder-running]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeded after a month.&lt;/li&gt;
+      &lt;li&gt;No derailments at $5.&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.53 hours a week.
+        &lt;ul&gt;
+          &lt;li&gt;Auto-ratched kicked in once!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.58 hours/week&lt;/li&gt;
+          &lt;li&gt;Increasing auto-ratchet due to visiting parents&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;derailments-2&quot;&gt;Derailments&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;None!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-goals-2&quot;&gt;New goals&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111281208 beeminder-score]]: “If It’s Worth Doing, It’s Worth Doing With Made-Up Statistics” but for wellbeing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rate-changes-2&quot;&gt;Rate changes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;None!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;time-commited&quot;&gt;Time commited&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Still don’t have a script for this :/ Making a TW todo.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>

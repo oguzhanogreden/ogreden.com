@@ -5,20 +5,9 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 Nov 2021 17:25:18 +0100</pubDate>
-    <lastBuildDate>Sun, 21 Nov 2021 17:25:18 +0100</lastBuildDate>
+    <pubDate>Sun, 28 Nov 2021 12:17:14 +0100</pubDate>
+    <lastBuildDate>Sun, 28 Nov 2021 12:17:14 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
-    
-      <item>
-        <title>Weeklies</title>
-        <description>
-</description>
-        <pubDate>Sun, 21 Nov 2021 00:00:00 +0100</pubDate>
-        <link>https://ozan.ogreden.com/2021/11/21/weeklies/</link>
-        <guid isPermaLink="true">https://ozan.ogreden.com/2021/11/21/weeklies/</guid>
-        
-        
-      </item>
     
       <item>
         <title>Beeminder Weeklies</title>
@@ -70,6 +59,117 @@
 &lt;h3 id=&quot;rate-changes-1&quot;&gt;Rate changes&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;[[202111211657 beeminder-reading]], 0.15 / day -&amp;gt; 0.30h / day will now be tracking both Dutch reading and general reading. So I increased it’s rate to account for [[202111211656 beeminder-reading-d]].&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211128&quot;&gt;Beeminder Weekly 2021/11/28&lt;/h2&gt;
+
+&lt;h3 id=&quot;successes-1&quot;&gt;Successes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111281140 beeminder-chess]]:
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a ~month.&lt;/li&gt;
+      &lt;li&gt;No derailments at 5$.&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.5 hours/week.&lt;/li&gt;
+      &lt;li&gt;Mean delta: 0.06 [/ day, toggl]&lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.5 * 1.05 hours/week&lt;/li&gt;
+          &lt;li&gt;10$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211657 beeminder-reading]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;1 derailment at 5$, slightly before than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-1 month&lt;/code&gt; mark&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.3 hours/day
+        &lt;ul&gt;
+          &lt;li&gt;Mean delta: 0.21 [/ day, toogle]&lt;/li&gt;
+          &lt;li&gt;Overall daily average: 6.96 / 65. calc = .11 (= .77 / week)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.35 hours/day&lt;/li&gt;
+          &lt;li&gt;10$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281154 beeminder-pb-focus]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;Without any derailment at $5.&lt;/li&gt;
+      &lt;li&gt;Commitment was 4 hours/week
+        &lt;ul&gt;
+          &lt;li&gt;This was too easy, of course!&lt;/li&gt;
+          &lt;li&gt;This was a very helpful goal, especially at the office. I’d be helped by the sting greatly!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;5 hours/week, weekends off.&lt;/li&gt;
+          &lt;li&gt;$5&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281158 beeminder-dev]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month&lt;/li&gt;
+      &lt;li&gt;No derailments at $5&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.55 hours/day, weekends off&lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.6 hours/day&lt;/li&gt;
+          &lt;li&gt;Increased auto-ratched due to visiting parents&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281203 beeminder-running]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeded after a month.&lt;/li&gt;
+      &lt;li&gt;No derailments at $5.&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.53 hours a week.
+        &lt;ul&gt;
+          &lt;li&gt;Auto-ratched kicked in once!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.58 hours/week&lt;/li&gt;
+          &lt;li&gt;Increasing auto-ratchet due to visiting parents&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;derailments-2&quot;&gt;Derailments&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;None!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-goals-2&quot;&gt;New goals&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111281208 beeminder-score]]: “If It’s Worth Doing, It’s Worth Doing With Made-Up Statistics” but for wellbeing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rate-changes-2&quot;&gt;Rate changes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;None!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;time-commited&quot;&gt;Time commited&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Still don’t have a script for this :/ Making a TW todo.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 14 Nov 2021 00:00:00 +0100</pubDate>
@@ -364,6 +464,23 @@ If you think the claim is preposterous, reach out!&lt;/p&gt;
         <pubDate>Tue, 20 Apr 2021 00:00:00 +0200</pubDate>
         <link>https://ozan.ogreden.com/notebook/2021/04/20</link>
         <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/20</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Two Histories, and Another One</title>
+        <description>&lt;p&gt;Reading &lt;a href=&quot;https://www.notion.so/Broad-Band-by-Claire-L-Evans-a1ec6dffff4940d6852e071210f0910e&quot;&gt;Broad Band&lt;/a&gt; by Claire L. Evans right after Where the Wizards Stay Up Late has been interesting so far. There’s a lot to of good things to be said about Broad Band, and I may do that once I’m through the book.&lt;/p&gt;
+
+&lt;p&gt;One of the most striking differences is how they chose their frames. Reading Where Wizards Stay Up Late, you get to know two groups of people: the mighty wizards and the powerful man. It’s as much the story of the powerful man who paved a way as it is about mighty wizards who marched the paved path in their own inspiring, awkward and adorable manner. You get to imagine an ARPA director providing millions of dollars of funding. You get to forget the literal army of people that made this possible.&lt;/p&gt;
+
+&lt;p&gt;Reading Broad Band, you get the taste of a different story. It’s a balancing act. There are pointers to existing histories of the wizards, but you’re reading a &lt;em&gt;wider&lt;/em&gt; history. One in which women who had to persevere through sexism in some of its most hideous forms is at the center of the stage. You read stories of women who had to embrace a horrible kind of grind. Next to the very familiar kind of grind &lt;a href=&quot;https://jacobian.org/2021/apr/7/embrace-the-grind/&quot;&gt;that makes things possible&lt;/a&gt;&lt;!--[202104122020 Embrace the Grind] --&gt;, that makes them happen.&lt;/p&gt;
+
+&lt;p&gt;It’s then disappointing a bit when you see other faces through lines that you were just allowed to forget. When efforts that helped commit one of the most horrorful atrocities of our history gets credited as “saving time and lives.”&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/19</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/19</guid>
         
         
       </item>
