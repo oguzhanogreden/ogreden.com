@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Nov 2021 12:21:13 +0100</pubDate>
-    <lastBuildDate>Sun, 28 Nov 2021 12:21:13 +0100</lastBuildDate>
+    <pubDate>Mon, 06 Dec 2021 22:34:24 +0100</pubDate>
+    <lastBuildDate>Mon, 06 Dec 2021 22:34:24 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -182,6 +182,101 @@
 
 &lt;ul&gt;
   &lt;li&gt;Still don’t have a script for this :/ Making a TW todo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211106&quot;&gt;Beeminder Weekly, 2021/11/06&lt;/h2&gt;
+
+&lt;p&gt;Time committed for upcoming week: ~10 hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;successes-2&quot;&gt;Successes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202111211711 beeminder-srs]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;Only one derailment, two weeks ago [[20211121 beeminder weekly]].
+        &lt;ul&gt;
+          &lt;li&gt;Reached $10.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Commitment was ??&lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;4.41 sessions/week&lt;/li&gt;
+          &lt;li&gt;$20&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112062201 beeminder walking]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a long while!&lt;/li&gt;
+      &lt;li&gt;No derailment since the start at 5$.&lt;/li&gt;
+      &lt;li&gt;Commitment was ??&lt;/li&gt;
+      &lt;li&gt;Mean delta: 0.28 [/day]&lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.3 hours/day&lt;/li&gt;
+          &lt;li&gt;10$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;derailments-3&quot;&gt;Derailments&lt;/h3&gt;
+
+&lt;p&gt;Total of: $10&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]]
+    &lt;ul&gt;
+      &lt;li&gt;$5 -&amp;gt; $10&lt;/li&gt;
+      &lt;li&gt;Derailed while on vacation in Turkey due to mindless browsing.
+        &lt;ul&gt;
+          &lt;li&gt;How can I beemind mindless browsing?&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112062208 beeminder-yt-day-plan]]
+    &lt;ul&gt;
+      &lt;li&gt;$0 -&amp;gt; $5&lt;/li&gt;
+      &lt;li&gt;Derailed on an off work day during a holiday.
+        &lt;ul&gt;
+          &lt;li&gt;This isn’t surprising because this has been primarily a work related activity.&lt;/li&gt;
+          &lt;li&gt;Didn’t call it non-legit due to the use of the habit - I wanted to jump commitment level.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112062211 beeminder-pushup]]
+    &lt;ul&gt;
+      &lt;li&gt;$5 -&amp;gt; $10&lt;/li&gt;
+      &lt;li&gt;Derailed during a holiday, on a day where I needed to do 4 pushups!&lt;/li&gt;
+      &lt;li&gt;I clearly needed the increase in my commitment.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112062212 beeminder-score]]
+    &lt;ul&gt;
+      &lt;li&gt;$0 -&amp;gt; $5.&lt;/li&gt;
+      &lt;li&gt;Derailed during a holiday, and kinda forgot this goal after that, too.&lt;/li&gt;
+      &lt;li&gt;This is an important one, so I’m looking forward to notice the impact of my increased commitment.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-goals-3&quot;&gt;New goals&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112062215 beeminder-day-planning-failure]]&lt;/li&gt;
+  &lt;li&gt;[[202112062218 beeminder-beard]]&lt;/li&gt;
+  &lt;li&gt;[[202112062230 beeminder-reading-yrs]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rate-changes-3&quot;&gt;Rate changes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;I’m probably missing data here, due to fiddling during my holiday!&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 14 Nov 2021 00:00:00 +0100</pubDate>
