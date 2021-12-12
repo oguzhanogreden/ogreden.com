@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Dec 2021 22:34:24 +0100</pubDate>
-    <lastBuildDate>Mon, 06 Dec 2021 22:34:24 +0100</lastBuildDate>
+    <pubDate>Sun, 12 Dec 2021 14:03:35 +0100</pubDate>
+    <lastBuildDate>Sun, 12 Dec 2021 14:03:35 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -277,6 +277,155 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;em&gt;I’m probably missing data here, due to fiddling during my holiday!&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;beeminder-weekly-20211112&quot;&gt;Beeminder Weekly, 2021/11/12&lt;/h1&gt;
+
+&lt;p&gt;Time committed for upcoming week: ~10 hours.&lt;/p&gt;
+
+&lt;h2 id=&quot;past-week&quot;&gt;Past week&lt;/h2&gt;
+
+&lt;h3 id=&quot;successes-3&quot;&gt;Successes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202112121228 beeminder hammertime]]:
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;Only one derailment ($5)&lt;/li&gt;
+      &lt;li&gt;This was effective:
+        &lt;ul&gt;
+          &lt;li&gt;It made me work on Hammertime many evenings where otherwise I wouldn’t have&lt;/li&gt;
+          &lt;li&gt;It made me realize when the goal was no longer relevant/interesting in the respite period after the derailment.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;derailments-4&quot;&gt;Derailments&lt;/h3&gt;
+
+&lt;p&gt;Total of: $25&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211656 beeminder-reading-nl]] $5 -&amp;gt; $10
+    &lt;ul&gt;
+      &lt;li&gt;Due to /s :(&lt;/li&gt;
+      &lt;li&gt;This led me to the Anki weekly review checklist item for prioritisation.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112121233 beeminder-flossing]] $10 -&amp;gt; $10
+    &lt;ul&gt;
+      &lt;li&gt;Due to /s :(&lt;/li&gt;
+      &lt;li&gt;Increased cap&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]] $10 -&amp;gt; $30
+    &lt;ul&gt;
+      &lt;li&gt;Morning (~/s) mindful browsing got me on this one.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-goals-4&quot;&gt;New goals&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;N/A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rate-changes-4&quot;&gt;Rate changes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112062218 beeminder-beard]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;upcoming-week&quot;&gt;Upcoming week&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Adding tasks to Task Warrior.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Took: 10 minutes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;meta&quot;&gt;Meta&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Weekly took: 12:25 - 13:01&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211112-1&quot;&gt;Beeminder Weekly, 2021/11/12&lt;/h2&gt;
+
+&lt;p&gt;Time committed for upcoming week: ~10 hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;past-week-1&quot;&gt;Past week&lt;/h3&gt;
+
+&lt;h4 id=&quot;successes-4&quot;&gt;Successes&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202112121228 beeminder hammertime]]:
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;Only one derailment ($5)&lt;/li&gt;
+      &lt;li&gt;This was effective:
+        &lt;ul&gt;
+          &lt;li&gt;It made me work on Hammertime many evenings where otherwise I wouldn’t have&lt;/li&gt;
+          &lt;li&gt;It made me realize when the goal was no longer relevant/interesting in the respite period after the derailment.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112121401 beeminder-yt-day-plan]]:
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month! This feels good, so I’ll keep going ahead!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;derailments-5&quot;&gt;Derailments&lt;/h4&gt;
+
+&lt;p&gt;Total of: $25&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211656 beeminder-reading-nl]] $5 -&amp;gt; $10
+    &lt;ul&gt;
+      &lt;li&gt;Due to /s :(&lt;/li&gt;
+      &lt;li&gt;This led me to the Anki weekly review checklist item for prioritisation.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112121233 beeminder-flossing]] $10 -&amp;gt; $10
+    &lt;ul&gt;
+      &lt;li&gt;Due to /s :(&lt;/li&gt;
+      &lt;li&gt;Increased cap&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]] $10 -&amp;gt; $30
+    &lt;ul&gt;
+      &lt;li&gt;Morning (~/s) mindful browsing got me on this one.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;new-goals-5&quot;&gt;New goals&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;N/A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;rate-changes-5&quot;&gt;Rate changes&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112062218 beeminder-beard]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;upcoming-week-1&quot;&gt;Upcoming week&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Adding tasks to Task Warrior.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Took: 10 minutes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;meta-1&quot;&gt;Meta&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Weekly took: 12:25 - 13:01&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 14 Nov 2021 00:00:00 +0100</pubDate>
