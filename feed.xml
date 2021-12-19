@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Dec 2021 14:03:35 +0100</pubDate>
-    <lastBuildDate>Sun, 12 Dec 2021 14:03:35 +0100</lastBuildDate>
+    <pubDate>Sun, 19 Dec 2021 12:25:26 +0100</pubDate>
+    <lastBuildDate>Sun, 19 Dec 2021 12:25:26 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -426,6 +426,135 @@
 
 &lt;ul&gt;
   &lt;li&gt;Weekly took: 12:25 - 13:01&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211119&quot;&gt;Beeminder Weekly, 2021/11/19&lt;/h2&gt;
+
+&lt;p&gt;Time committed: ?? hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;past-week-2&quot;&gt;Past week&lt;/h3&gt;
+
+&lt;h4 id=&quot;successes-5&quot;&gt;Successes&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202111211701 beeminder-news-tr]]
+    &lt;ul&gt;
+      &lt;li&gt;A month long success&lt;/li&gt;
+      &lt;li&gt;No derailments at 5$.&lt;/li&gt;
+      &lt;li&gt;This has been mostly effective in making me consume less news.&lt;/li&gt;
+      &lt;li&gt;Restarting at 10$.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]] success:
+    &lt;ul&gt;
+      &lt;li&gt;A month long success&lt;/li&gt;
+      &lt;li&gt;Derailed at $5 and $10.&lt;/li&gt;
+      &lt;li&gt;Effective at reducing days I consume news. I should probably also consider switching to a newspaper!&lt;/li&gt;
+      &lt;li&gt;Restarting at $30.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112121233 beeminder-flossing]] success:
+    &lt;ul&gt;
+      &lt;li&gt;A month long, last week in respite&lt;/li&gt;
+      &lt;li&gt;Derailed at $5, ignored it for a week at $10.&lt;/li&gt;
+      &lt;li&gt;Restarted at $30.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;derailments-6&quot;&gt;Derailments&lt;/h4&gt;
+
+&lt;p&gt;Total: $15&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211709 yt-day-plan]] derailment
+    &lt;ul&gt;
+      &lt;li&gt;$5 -&amp;gt; $10, apparently $5 was not enough here.&lt;/li&gt;
+      &lt;li&gt;This is effective in getting me to do plan my day.&lt;/li&gt;
+      &lt;li&gt;Continuing at the current rate until 2022/01/07.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112062215 beeminder-day-planning-failure]] derailment
+    &lt;ul&gt;
+      &lt;li&gt;$5 -&amp;gt; $10&lt;/li&gt;
+      &lt;li&gt;This is effective in getting me to track the data: “I didn’t have a plan by 10:00 on 80% of the past 3 weeks.”&lt;/li&gt;
+      &lt;li&gt;Continuing infinitely to capture data.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281158 beeminder-dev]] derailment
+    &lt;ul&gt;
+      &lt;li&gt;$5 -&amp;gt; $10&lt;/li&gt;
+      &lt;li&gt;This is effective in getting me to work, and will be even more so as I’m increasing the focus on this.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;new-goals-6&quot;&gt;New goals&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112191121 beeminder-reading-nvc]] for reading [[Nonviolent Communication]] and practicing [[How to Read a Book]].&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;rate-changes-6&quot;&gt;Rate changes&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211701 beeminder-news-tr]] down to 3 days/week&lt;/li&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]] down to 1.8 days/week&lt;/li&gt;
+  &lt;li&gt;[[202111281158 beeminder-dev]] up to 12 hours/week to counter lack of [[202111140844 beeminder-s]] and as part of [[202112141107 beeminder time allocation experiment]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;upcoming-week-2&quot;&gt;Upcoming week&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Took about 10 mins.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;202112141107-beeminder-time-allocation-experiment&quot;&gt;[[202112141107 beeminder time allocation experiment]]&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Quality of data collected in the week
+    &lt;ul&gt;
+      &lt;li&gt;High quality for almost all time tracking goals…&lt;/li&gt;
+      &lt;li&gt;Low quality data for [[202112062201 beeminder walking]]&lt;/li&gt;
+      &lt;li&gt;TagTime
+        &lt;ul&gt;
+          &lt;li&gt;Mostly ignored this week!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Review the week
+    &lt;ul&gt;
+      &lt;li&gt;Failure modes
+        &lt;ul&gt;
+          &lt;li&gt;[[202111140844 beeminder-s]] distracted me a lot from progress on these goals.&lt;/li&gt;
+          &lt;li&gt;I’m not focused on countering [[202112062215 beeminder-day-planning-failure]]&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Tired by:
+        &lt;ul&gt;
+          &lt;li&gt;I felt some pressure on [[202111281158 beeminder-dev]] due to giving into [[202111140844 beeminder-s]]. Nevertheless, I’ve increased my commitment. This is to stop [[202112191145 beeminder-s]] from taking over my life.&lt;/li&gt;
+          &lt;li&gt;[[202111211701 beeminder-news-tr]] and [[202111211706 beeminder-news-nl]]&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Money I’ve paid to Beeminder
+        &lt;ul&gt;
+          &lt;li&gt;I think was useful to keep me on track.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;How can I minimize it?
+        &lt;ul&gt;
+          &lt;li&gt;Creating TaskWarrior tasks to be referred to during current/next daily planning sessions seems useful, still.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;meta-2&quot;&gt;Meta&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Starting tracking wekly under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Maintenance - #beeminder-weekly&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Took about 90 minutes.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 14 Nov 2021 00:00:00 +0100</pubDate>
