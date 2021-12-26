@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Dec 2021 12:25:26 +0100</pubDate>
-    <lastBuildDate>Sun, 19 Dec 2021 12:25:26 +0100</lastBuildDate>
+    <pubDate>Sun, 26 Dec 2021 23:42:32 +0100</pubDate>
+    <lastBuildDate>Sun, 26 Dec 2021 23:42:32 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -556,6 +556,43 @@
   &lt;li&gt;Starting tracking wekly under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Maintenance - #beeminder-weekly&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;Took about 90 minutes.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211119-1&quot;&gt;Beeminder Weekly, 2021/11/19&lt;/h2&gt;
+
+&lt;p&gt;Time committed: ~ hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;past-week-3&quot;&gt;Past week&lt;/h3&gt;
+
+&lt;h4 id=&quot;successes-6&quot;&gt;Successes&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202111211657 beeminder-reading]]&lt;/li&gt;
+  &lt;li&gt;[[202111211656 beeminder-reading-nl]]&lt;/li&gt;
+  &lt;li&gt;[[202112062212 beeminder-score]] - needs review&lt;/li&gt;
+  &lt;li&gt;[[202111281140 beeminder-chess]]&lt;/li&gt;
+  &lt;li&gt;[[202112262337 beeminder-tagtime]] - needs review&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;derailments-7&quot;&gt;Derailments&lt;/h4&gt;
+
+&lt;p&gt;Total: $15&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112062218 beeminder-beard]]&lt;/li&gt;
+  &lt;li&gt;[[202112121233 beeminder-flossing]]&lt;/li&gt;
+  &lt;li&gt;[[202111211651 beeminder-todo]]&lt;/li&gt;
+  &lt;li&gt;[[202112262339 beeminder-neck]]&lt;/li&gt;
+  &lt;li&gt;[[202112262340 beeminder-yt-day-plan]]&lt;/li&gt;
+  &lt;li&gt;[[202111211701 beeminder-news-tr]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;new-goals-7&quot;&gt;New goals&lt;/h4&gt;
+
+&lt;p&gt;Expanded running goals.&lt;/p&gt;
+
+&lt;h4 id=&quot;rate-changes-7&quot;&gt;Rate changes&lt;/h4&gt;
+
+&lt;p&gt;None.&lt;/p&gt;
+
 </description>
         <pubDate>Sun, 14 Nov 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/11/14/weeklies/</link>
