@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Dec 2021 23:42:32 +0100</pubDate>
-    <lastBuildDate>Sun, 26 Dec 2021 23:42:32 +0100</lastBuildDate>
+    <pubDate>Mon, 27 Dec 2021 15:22:40 +0100</pubDate>
+    <lastBuildDate>Mon, 27 Dec 2021 15:22:40 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -557,7 +557,7 @@
   &lt;li&gt;Took about 90 minutes.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;beeminder-weekly-20211119-1&quot;&gt;Beeminder Weekly, 2021/11/19&lt;/h2&gt;
+&lt;h2 id=&quot;beeminder-weekly-20211126&quot;&gt;Beeminder Weekly, 2021/11/26&lt;/h2&gt;
 
 &lt;p&gt;Time committed: ~ hours.&lt;/p&gt;
 
@@ -570,29 +570,64 @@
   &lt;li&gt;[[202112062212 beeminder-score]] - needs review&lt;/li&gt;
   &lt;li&gt;[[202111281140 beeminder-chess]]&lt;/li&gt;
   &lt;li&gt;[[202112262337 beeminder-tagtime]] - needs review&lt;/li&gt;
+  &lt;li&gt;[[202111281154 beeminder-pb-focus]]&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;derailments-7&quot;&gt;Derailments&lt;/h4&gt;
 
-&lt;p&gt;Total: $15&lt;/p&gt;
+&lt;p&gt;Total: $50 and counting&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;[[202112062218 beeminder-beard]]&lt;/li&gt;
-  &lt;li&gt;[[202112121233 beeminder-flossing]]&lt;/li&gt;
-  &lt;li&gt;[[202111211651 beeminder-todo]]&lt;/li&gt;
-  &lt;li&gt;[[202112262339 beeminder-neck]]&lt;/li&gt;
-  &lt;li&gt;[[202112262340 beeminder-yt-day-plan]]&lt;/li&gt;
-  &lt;li&gt;[[202111211701 beeminder-news-tr]]&lt;/li&gt;
+  &lt;li&gt;[[202112062218 beeminder-beard]] derailed $0 -&amp;gt; $5
+    &lt;ul&gt;
+      &lt;li&gt;Due to: not planning in advance&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112121233 beeminder-flossing]]
+    &lt;ul&gt;
+      &lt;li&gt;Due to: out of rhythm due to derailment
+        &lt;ul&gt;
+          &lt;li&gt;Action: Reduce respite&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211651 beeminder-todo]] derailed $30 -&amp;gt; $90
+    &lt;ul&gt;
+      &lt;li&gt;Due to: stale TODO list
+        &lt;ul class=&quot;task-list&quot;&gt;
+          &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Action: Go back to todoist? ([[202112271517 beeminder-todoist]])&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112262339 beeminder-neck]]derailed $0 -&amp;gt; $5
+    &lt;ul&gt;
+      &lt;li&gt;Due to: /s&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112262340 beeminder-yt-day-plan]] derailed $10 -&amp;gt; $30
+    &lt;ul&gt;
+      &lt;li&gt;Due to: not planning in advance&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211701 beeminder-news-tr]] derailed $10 -&amp;gt; $30
+    &lt;ul&gt;
+      &lt;li&gt;Due to: Sloppiness!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;new-goals-7&quot;&gt;New goals&lt;/h4&gt;
 
-&lt;p&gt;Expanded running goals.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202112271516 beeminder-movies and -count]]&lt;/li&gt;
+  &lt;li&gt;[[202112271517 beeminder-todoist]]&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h4 id=&quot;rate-changes-7&quot;&gt;Rate changes&lt;/h4&gt;
 
 &lt;p&gt;None.&lt;/p&gt;
-
 </description>
         <pubDate>Sun, 14 Nov 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/11/14/weeklies/</link>
