@@ -5,8 +5,8 @@
     <description>Personal homepage.</description>
     <link>https://ozan.ogreden.com/</link>
     <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 27 Dec 2021 15:22:40 +0100</pubDate>
-    <lastBuildDate>Mon, 27 Dec 2021 15:22:40 +0100</lastBuildDate>
+    <pubDate>Sat, 08 Jan 2022 21:09:25 +0100</pubDate>
+    <lastBuildDate>Sat, 08 Jan 2022 21:09:25 +0100</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>
@@ -628,6 +628,24 @@
 &lt;h4 id=&quot;rate-changes-7&quot;&gt;Rate changes&lt;/h4&gt;
 
 &lt;p&gt;None.&lt;/p&gt;
+
+&lt;h2 id=&quot;20220109&quot;&gt;20220109&lt;/h2&gt;
+
+&lt;h3 id=&quot;derailments-8&quot;&gt;Derailments&lt;/h3&gt;
+
+&lt;h4 id=&quot;202112062230-beeminder-reading-yrs&quot;&gt;[[202112062230 beeminder-reading-yrs]]&lt;/h4&gt;
+
+&lt;p&gt;This was mainly due to /s.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, this is a book I’d like to take my time with. It has exercises I’d like to do. Until I can figure out how to time that well with my commitment, I’m flatlining this.&lt;/p&gt;
+
+&lt;h3 id=&quot;high-priority-goals&quot;&gt;High priority goals&lt;/h3&gt;
+
+&lt;h4 id=&quot;202111281158-beeminder-dev&quot;&gt;[[202111281158 beeminder-dev]]&lt;/h4&gt;
+
+&lt;p&gt;My commitment is 7 hours/week. This week is closing at ~2.5 hours/week. The main reason is a bad respite days and auto-ratchet set up: I derailed and got 7 days of buffer. So I’ve waited until I’ve consumed all the buffer.&lt;/p&gt;
+
+&lt;p&gt;When I’m in a period with a lot of time to myself and no external commitments, I’m inclined to edge skate. When I’m going through such a period, I should either reconfigure respite days and auto-ratchet, or ratchet manually.&lt;/p&gt;
 </description>
         <pubDate>Sun, 14 Nov 2021 00:00:00 +0100</pubDate>
         <link>https://ozan.ogreden.com/2021/11/14/weeklies/</link>
