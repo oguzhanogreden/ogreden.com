@@ -429,6 +429,18 @@ ul.ref-box>li:nth-last-of-type(2)::before {
   }
 }
 
+@media (max-width: 810px) {
+  body {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 810px;
+  }
+}
+
 #webaddress-print {
   display: none;
 }
