@@ -1,0 +1,73 @@
+/* *, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+
+/*  Layout */
+
+html, body {
+  /* min-width: 640px; */
+  /* height: 100%; */
+  /* font-family: "Fira Sans" !important; */
+}
+
+.parliament-container {
+  transition: all .4s;
+  opacity: 1;
+  /* display: flex;
+  justify-content: center; */
+}
+
+#scatter-container {
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* #line-plot-svg {
+  position: relative;
+  left: -100px;
+} */
+
+.axis {
+  font-size: 11pt;
+  font-family: inherit;
+}
+
+.is-y line {
+  opacity: .10;
+}
+
+.seat {
+  stroke: #00000075;
+  stroke-width: 1.5;
+}
+
+.seat.deemphasize {
+  opacity: .5;
+}
+
+.seat.male {
+  stroke: unset;
+  opacity: .3;
+}
+
+.seat.male.deemphasize {
+  opacity: .1;
+}
+
+div > img {
+  width: 100%;
+}
+
+@media (min-width: 620px) {
+  .hide-small-mobile {
+      display: none;
+  }
+}

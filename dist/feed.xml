@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>Personal homepage.</description>
+    <link>https://ozan.ogreden.com/</link>
+    <atom:link href="https://ozan.ogreden.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 19 Dec 2024 05:00:48 +0100</pubDate>
+    <lastBuildDate>Thu, 19 Dec 2024 05:00:48 +0100</lastBuildDate>
+    <generator>Jekyll v4.3.4</generator>
+    
+      <item>
+        <title>Beeminder Weeklies</title>
+        <description>&lt;p&gt;This page is here so that I can use &lt;a href=&quot;https://help.beeminder.com/article/88-urlminder&quot;&gt;URLminder&lt;/a&gt; to commit to weekly reviews of my beeminder activity.&lt;/p&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211114&quot;&gt;Beeminder Weekly 2021/11/14&lt;/h2&gt;
+
+&lt;h3 id=&quot;derailments&quot;&gt;Derailments&lt;/h3&gt;
+
+&lt;p&gt;[[202111140844 beeminder/s]]: Derailed 10-&amp;gt;30 and 30-&amp;gt;90 this week. This is part of me trying to use Beeminder with larger, significant pledges. Last night, what went through my mind was “Do I want this right now?” and I thought “Would I pay ~30$ to e.g. go out tonight for an evening out with similar utility?” and the answer was yes. I’m now curious if 90$ will deter me, or will make me more likely to delete the goal.&lt;/p&gt;
+
+&lt;h3 id=&quot;new-goals&quot;&gt;New goals&lt;/h3&gt;
+
+&lt;p&gt;[[202111140853 beeminder/drawing]]: Created this to actually draw at least 5 minutes everyday for about a week, &lt;a href=&quot;https://forum.beeminder.com/t/day-8-sunk-cost-faith/9824/5?u=ozanogreden&quot;&gt;as prompted by Hammertime&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;[[202111140855 beeminder/pb-i-p]]: This is a work related goal. I need to work in my I project a certain amount of time. I need Beeminder because otherwise the accountability is missing. Also prompted by Hammertime.&lt;/p&gt;
+
+&lt;p&gt;[[202111140856 beeminder/yt-day-plan]]: This is to set a Yoda Timer for day planning. I’m terribly bad at this, and avoid it. I’d like to keep doing it a for a while, and see how I can get better.&lt;/p&gt;
+
+&lt;p&gt;[[202111140857 beeminder/tagtime]]: I’ve started using TagTime with smitop’s implementation.&lt;/p&gt;
+
+&lt;h3 id=&quot;rate-changes&quot;&gt;Rate changes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;n/a&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211121&quot;&gt;Beeminder Weekly 2021/11/21&lt;/h2&gt;
+
+&lt;h3 id=&quot;successes&quot;&gt;Successes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202111140853 beeminder-drawing]]: I’ve succeeded after 7 days, as it was intended.&lt;/li&gt;
+  &lt;li&gt;[[202111211701 beeminder-news-tr]] 3.25 days/week -&amp;gt; 3.10 days/week I’m succeeding today. This has helped me cut down my news consumption significantly, without any derailment. Just a bit more ambition can be interesting.&lt;/li&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]] 2 days/week -&amp;gt; 1.9 days/week.&lt;/li&gt;
+  &lt;li&gt;[[202111211709 yt-day-plan]] Succeeding without derailments after 1 week. I find this quite useful, so I’ll extend it past my holiday, so that I can get back into it when I’m back.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;derailments-1&quot;&gt;Derailments&lt;/h3&gt;
+&lt;p&gt;Total of 20$.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211655 beeminder-pb-i-p]]: Derailed 5-&amp;gt;10 on the first week. This was due to a combination of (1) urgent issues at work getting me tired, or making me to obusy to make space for this and (2) laziness in the weekends to make up for the lost time. I do feel significant resistance to the goal, so it’s good I have this.&lt;/li&gt;
+  &lt;li&gt;[[202111211651 beeminder-todo]]: Derailed 10-&amp;gt;30 this week, &lt;em&gt;on a weekend!&lt;/em&gt; This was just prioritisation error. I was free for [[202111140844 beeminder-s]] an opted for that. I first entered incorrect data. I was wiser the next morning.&lt;/li&gt;
+  &lt;li&gt;[[202111211711 beeminder-srs]]: Derailed 5 -&amp;gt; 10 this week. I’ve been lazing about this, so I’m happy I’ve got the goal. I believe I wouldn’t derail at 10$ here.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-goals-1&quot;&gt;New goals&lt;/h3&gt;
+&lt;p&gt;[[202111211656 beeminder-reading-d]]: During &lt;em&gt;focusing&lt;/em&gt; sessions this week, I felt significant negativity due to my Dutch skills. I created this goal to get back into Dutch reading and vocabulary building. I’m starting at 0.15h per day.&lt;/p&gt;
+
+&lt;h3 id=&quot;rate-changes-1&quot;&gt;Rate changes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202111211657 beeminder-reading]], 0.15 / day -&amp;gt; 0.30h / day will now be tracking both Dutch reading and general reading. So I increased it’s rate to account for [[202111211656 beeminder-reading-d]].&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211128&quot;&gt;Beeminder Weekly 2021/11/28&lt;/h2&gt;
+
+&lt;h3 id=&quot;successes-1&quot;&gt;Successes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111281140 beeminder-chess]]:
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a ~month.&lt;/li&gt;
+      &lt;li&gt;No derailments at 5$.&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.5 hours/week.&lt;/li&gt;
+      &lt;li&gt;Mean delta: 0.06 [/ day, toggl]&lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.5 * 1.05 hours/week&lt;/li&gt;
+          &lt;li&gt;10$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211657 beeminder-reading]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;1 derailment at 5$, slightly before than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-1 month&lt;/code&gt; mark&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.3 hours/day
+        &lt;ul&gt;
+          &lt;li&gt;Mean delta: 0.21 [/ day, toogle]&lt;/li&gt;
+          &lt;li&gt;Overall daily average: 6.96 / 65. calc = .11 (= .77 / week)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.35 hours/day&lt;/li&gt;
+          &lt;li&gt;10$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281154 beeminder-pb-focus]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;Without any derailment at $5.&lt;/li&gt;
+      &lt;li&gt;Commitment was 4 hours/week
+        &lt;ul&gt;
+          &lt;li&gt;This was too easy, of course!&lt;/li&gt;
+          &lt;li&gt;This was a very helpful goal, especially at the office. I’d be helped by the sting greatly!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;5 hours/week, weekends off.&lt;/li&gt;
+          &lt;li&gt;$5&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281158 beeminder-dev]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month&lt;/li&gt;
+      &lt;li&gt;No derailments at $5&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.55 hours/day, weekends off&lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.6 hours/day&lt;/li&gt;
+          &lt;li&gt;Increased auto-ratched due to visiting parents&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281203 beeminder-running]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeded after a month.&lt;/li&gt;
+      &lt;li&gt;No derailments at $5.&lt;/li&gt;
+      &lt;li&gt;Commitment was 0.53 hours a week.
+        &lt;ul&gt;
+          &lt;li&gt;Auto-ratched kicked in once!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.58 hours/week&lt;/li&gt;
+          &lt;li&gt;Increasing auto-ratchet due to visiting parents&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281219 beeminder-todo]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after ~a month.&lt;/li&gt;
+      &lt;li&gt;No derailment since last week, at 30$.&lt;/li&gt;
+      &lt;li&gt;Commitment:
+        &lt;ul&gt;
+          &lt;li&gt;1 goal / day (= minimum of a Yoda Timer towards a goal)&lt;/li&gt;
+          &lt;li&gt;Weekends off&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;derailments-2&quot;&gt;Derailments&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;None!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-goals-2&quot;&gt;New goals&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111281208 beeminder-score]]: “If It’s Worth Doing, It’s Worth Doing With Made-Up Statistics” but for wellbeing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rate-changes-2&quot;&gt;Rate changes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;None!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;time-commited&quot;&gt;Time commited&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Still don’t have a script for this :/ Making a TW todo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211106&quot;&gt;Beeminder Weekly, 2021/11/06&lt;/h2&gt;
+
+&lt;p&gt;Time committed for upcoming week: ~10 hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;successes-2&quot;&gt;Successes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202111211711 beeminder-srs]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;Only one derailment, two weeks ago [[20211121 beeminder weekly]].
+        &lt;ul&gt;
+          &lt;li&gt;Reached $10.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Commitment was ??&lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;4.41 sessions/week&lt;/li&gt;
+          &lt;li&gt;$20&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112062201 beeminder walking]]
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a long while!&lt;/li&gt;
+      &lt;li&gt;No derailment since the start at 5$.&lt;/li&gt;
+      &lt;li&gt;Commitment was ??&lt;/li&gt;
+      &lt;li&gt;Mean delta: 0.28 [/day]&lt;/li&gt;
+      &lt;li&gt;Restart:
+        &lt;ul&gt;
+          &lt;li&gt;0.3 hours/day&lt;/li&gt;
+          &lt;li&gt;10$&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;derailments-3&quot;&gt;Derailments&lt;/h3&gt;
+
+&lt;p&gt;Total of: $10&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]]
+    &lt;ul&gt;
+      &lt;li&gt;$5 -&amp;gt; $10&lt;/li&gt;
+      &lt;li&gt;Derailed while on vacation in Turkey due to mindless browsing.
+        &lt;ul&gt;
+          &lt;li&gt;How can I beemind mindless browsing?&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112062208 beeminder-yt-day-plan]]
+    &lt;ul&gt;
+      &lt;li&gt;$0 -&amp;gt; $5&lt;/li&gt;
+      &lt;li&gt;Derailed on an off work day during a holiday.
+        &lt;ul&gt;
+          &lt;li&gt;This isn’t surprising because this has been primarily a work related activity.&lt;/li&gt;
+          &lt;li&gt;Didn’t call it non-legit due to the use of the habit - I wanted to jump commitment level.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112062211 beeminder-pushup]]
+    &lt;ul&gt;
+      &lt;li&gt;$5 -&amp;gt; $10&lt;/li&gt;
+      &lt;li&gt;Derailed during a holiday, on a day where I needed to do 4 pushups!&lt;/li&gt;
+      &lt;li&gt;I clearly needed the increase in my commitment.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112062212 beeminder-score]]
+    &lt;ul&gt;
+      &lt;li&gt;$0 -&amp;gt; $5.&lt;/li&gt;
+      &lt;li&gt;Derailed during a holiday, and kinda forgot this goal after that, too.&lt;/li&gt;
+      &lt;li&gt;This is an important one, so I’m looking forward to notice the impact of my increased commitment.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-goals-3&quot;&gt;New goals&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112062215 beeminder-day-planning-failure]]&lt;/li&gt;
+  &lt;li&gt;[[202112062218 beeminder-beard]]&lt;/li&gt;
+  &lt;li&gt;[[202112062230 beeminder-reading-yrs]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rate-changes-3&quot;&gt;Rate changes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;I’m probably missing data here, due to fiddling during my holiday!&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;beeminder-weekly-20211112&quot;&gt;Beeminder Weekly, 2021/11/12&lt;/h1&gt;
+
+&lt;p&gt;Time committed for upcoming week: ~10 hours.&lt;/p&gt;
+
+&lt;h2 id=&quot;past-week&quot;&gt;Past week&lt;/h2&gt;
+
+&lt;h3 id=&quot;successes-3&quot;&gt;Successes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202112121228 beeminder hammertime]]:
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;Only one derailment ($5)&lt;/li&gt;
+      &lt;li&gt;This was effective:
+        &lt;ul&gt;
+          &lt;li&gt;It made me work on Hammertime many evenings where otherwise I wouldn’t have&lt;/li&gt;
+          &lt;li&gt;It made me realize when the goal was no longer relevant/interesting in the respite period after the derailment.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;derailments-4&quot;&gt;Derailments&lt;/h3&gt;
+
+&lt;p&gt;Total of: $25&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211656 beeminder-reading-nl]] $5 -&amp;gt; $10
+    &lt;ul&gt;
+      &lt;li&gt;Due to /s :(&lt;/li&gt;
+      &lt;li&gt;This led me to the Anki weekly review checklist item for prioritisation.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112121233 beeminder-flossing]] $10 -&amp;gt; $10
+    &lt;ul&gt;
+      &lt;li&gt;Due to /s :(&lt;/li&gt;
+      &lt;li&gt;Increased cap&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]] $10 -&amp;gt; $30
+    &lt;ul&gt;
+      &lt;li&gt;Morning (~/s) mindful browsing got me on this one.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-goals-4&quot;&gt;New goals&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;N/A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rate-changes-4&quot;&gt;Rate changes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112062218 beeminder-beard]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;upcoming-week&quot;&gt;Upcoming week&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Adding tasks to Task Warrior.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Took: 10 minutes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;meta&quot;&gt;Meta&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Weekly took: 12:25 - 13:01&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211112-1&quot;&gt;Beeminder Weekly, 2021/11/12&lt;/h2&gt;
+
+&lt;p&gt;Time committed for upcoming week: ~10 hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;past-week-1&quot;&gt;Past week&lt;/h3&gt;
+
+&lt;h4 id=&quot;successes-4&quot;&gt;Successes&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202112121228 beeminder hammertime]]:
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month.&lt;/li&gt;
+      &lt;li&gt;Only one derailment ($5)&lt;/li&gt;
+      &lt;li&gt;This was effective:
+        &lt;ul&gt;
+          &lt;li&gt;It made me work on Hammertime many evenings where otherwise I wouldn’t have&lt;/li&gt;
+          &lt;li&gt;It made me realize when the goal was no longer relevant/interesting in the respite period after the derailment.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112121401 beeminder-yt-day-plan]]:
+    &lt;ul&gt;
+      &lt;li&gt;Succeeded after a month! This feels good, so I’ll keep going ahead!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;derailments-5&quot;&gt;Derailments&lt;/h4&gt;
+
+&lt;p&gt;Total of: $25&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211656 beeminder-reading-nl]] $5 -&amp;gt; $10
+    &lt;ul&gt;
+      &lt;li&gt;Due to /s :(&lt;/li&gt;
+      &lt;li&gt;This led me to the Anki weekly review checklist item for prioritisation.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112121233 beeminder-flossing]] $10 -&amp;gt; $10
+    &lt;ul&gt;
+      &lt;li&gt;Due to /s :(&lt;/li&gt;
+      &lt;li&gt;Increased cap&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]] $10 -&amp;gt; $30
+    &lt;ul&gt;
+      &lt;li&gt;Morning (~/s) mindful browsing got me on this one.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;new-goals-5&quot;&gt;New goals&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;N/A&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;rate-changes-5&quot;&gt;Rate changes&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112062218 beeminder-beard]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;upcoming-week-1&quot;&gt;Upcoming week&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Adding tasks to Task Warrior.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Took: 10 minutes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;meta-1&quot;&gt;Meta&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Weekly took: 12:25 - 13:01&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211119&quot;&gt;Beeminder Weekly, 2021/11/19&lt;/h2&gt;
+
+&lt;p&gt;Time committed: ?? hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;past-week-2&quot;&gt;Past week&lt;/h3&gt;
+
+&lt;h4 id=&quot;successes-5&quot;&gt;Successes&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202111211701 beeminder-news-tr]]
+    &lt;ul&gt;
+      &lt;li&gt;A month long success&lt;/li&gt;
+      &lt;li&gt;No derailments at 5$.&lt;/li&gt;
+      &lt;li&gt;This has been mostly effective in making me consume less news.&lt;/li&gt;
+      &lt;li&gt;Restarting at 10$.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]] success:
+    &lt;ul&gt;
+      &lt;li&gt;A month long success&lt;/li&gt;
+      &lt;li&gt;Derailed at $5 and $10.&lt;/li&gt;
+      &lt;li&gt;Effective at reducing days I consume news. I should probably also consider switching to a newspaper!&lt;/li&gt;
+      &lt;li&gt;Restarting at $30.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112121233 beeminder-flossing]] success:
+    &lt;ul&gt;
+      &lt;li&gt;A month long, last week in respite&lt;/li&gt;
+      &lt;li&gt;Derailed at $5, ignored it for a week at $10.&lt;/li&gt;
+      &lt;li&gt;Restarted at $30.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;derailments-6&quot;&gt;Derailments&lt;/h4&gt;
+
+&lt;p&gt;Total: $15&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211709 yt-day-plan]] derailment
+    &lt;ul&gt;
+      &lt;li&gt;$5 -&amp;gt; $10, apparently $5 was not enough here.&lt;/li&gt;
+      &lt;li&gt;This is effective in getting me to do plan my day.&lt;/li&gt;
+      &lt;li&gt;Continuing at the current rate until 2022/01/07.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112062215 beeminder-day-planning-failure]] derailment
+    &lt;ul&gt;
+      &lt;li&gt;$5 -&amp;gt; $10&lt;/li&gt;
+      &lt;li&gt;This is effective in getting me to track the data: “I didn’t have a plan by 10:00 on 80% of the past 3 weeks.”&lt;/li&gt;
+      &lt;li&gt;Continuing infinitely to capture data.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111281158 beeminder-dev]] derailment
+    &lt;ul&gt;
+      &lt;li&gt;$5 -&amp;gt; $10&lt;/li&gt;
+      &lt;li&gt;This is effective in getting me to work, and will be even more so as I’m increasing the focus on this.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;new-goals-6&quot;&gt;New goals&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112191121 beeminder-reading-nvc]] for reading [[Nonviolent Communication]] and practicing [[How to Read a Book]].&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;rate-changes-6&quot;&gt;Rate changes&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202111211701 beeminder-news-tr]] down to 3 days/week&lt;/li&gt;
+  &lt;li&gt;[[202111211706 beeminder-news-nl]] down to 1.8 days/week&lt;/li&gt;
+  &lt;li&gt;[[202111281158 beeminder-dev]] up to 12 hours/week to counter lack of [[202111140844 beeminder-s]] and as part of [[202112141107 beeminder time allocation experiment]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;upcoming-week-2&quot;&gt;Upcoming week&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Took about 10 mins.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;202112141107-beeminder-time-allocation-experiment&quot;&gt;[[202112141107 beeminder time allocation experiment]]&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Quality of data collected in the week
+    &lt;ul&gt;
+      &lt;li&gt;High quality for almost all time tracking goals…&lt;/li&gt;
+      &lt;li&gt;Low quality data for [[202112062201 beeminder walking]]&lt;/li&gt;
+      &lt;li&gt;TagTime
+        &lt;ul&gt;
+          &lt;li&gt;Mostly ignored this week!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Review the week
+    &lt;ul&gt;
+      &lt;li&gt;Failure modes
+        &lt;ul&gt;
+          &lt;li&gt;[[202111140844 beeminder-s]] distracted me a lot from progress on these goals.&lt;/li&gt;
+          &lt;li&gt;I’m not focused on countering [[202112062215 beeminder-day-planning-failure]]&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Tired by:
+        &lt;ul&gt;
+          &lt;li&gt;I felt some pressure on [[202111281158 beeminder-dev]] due to giving into [[202111140844 beeminder-s]]. Nevertheless, I’ve increased my commitment. This is to stop [[202112191145 beeminder-s]] from taking over my life.&lt;/li&gt;
+          &lt;li&gt;[[202111211701 beeminder-news-tr]] and [[202111211706 beeminder-news-nl]]&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Money I’ve paid to Beeminder
+        &lt;ul&gt;
+          &lt;li&gt;I think was useful to keep me on track.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;How can I minimize it?
+        &lt;ul&gt;
+          &lt;li&gt;Creating TaskWarrior tasks to be referred to during current/next daily planning sessions seems useful, still.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;meta-2&quot;&gt;Meta&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Starting tracking wekly under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Maintenance - #beeminder-weekly&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Took about 90 minutes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;beeminder-weekly-20211126&quot;&gt;Beeminder Weekly, 2021/11/26&lt;/h2&gt;
+
+&lt;p&gt;Time committed: ~ hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;past-week-3&quot;&gt;Past week&lt;/h3&gt;
+
+&lt;h4 id=&quot;successes-6&quot;&gt;Successes&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;[[202111211657 beeminder-reading]]&lt;/li&gt;
+  &lt;li&gt;[[202111211656 beeminder-reading-nl]]&lt;/li&gt;
+  &lt;li&gt;[[202112062212 beeminder-score]] - needs review&lt;/li&gt;
+  &lt;li&gt;[[202111281140 beeminder-chess]]&lt;/li&gt;
+  &lt;li&gt;[[202112262337 beeminder-tagtime]] - needs review&lt;/li&gt;
+  &lt;li&gt;[[202111281154 beeminder-pb-focus]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;derailments-7&quot;&gt;Derailments&lt;/h4&gt;
+
+&lt;p&gt;Total: $50 and counting&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112062218 beeminder-beard]] derailed $0 -&amp;gt; $5
+    &lt;ul&gt;
+      &lt;li&gt;Due to: not planning in advance&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112121233 beeminder-flossing]]
+    &lt;ul&gt;
+      &lt;li&gt;Due to: out of rhythm due to derailment
+        &lt;ul&gt;
+          &lt;li&gt;Action: Reduce respite&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211651 beeminder-todo]] derailed $30 -&amp;gt; $90
+    &lt;ul&gt;
+      &lt;li&gt;Due to: stale TODO list
+        &lt;ul class=&quot;task-list&quot;&gt;
+          &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Action: Go back to todoist? ([[202112271517 beeminder-todoist]])&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112262339 beeminder-neck]]derailed $0 -&amp;gt; $5
+    &lt;ul&gt;
+      &lt;li&gt;Due to: /s&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202112262340 beeminder-yt-day-plan]] derailed $10 -&amp;gt; $30
+    &lt;ul&gt;
+      &lt;li&gt;Due to: not planning in advance&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[[202111211701 beeminder-news-tr]] derailed $10 -&amp;gt; $30
+    &lt;ul&gt;
+      &lt;li&gt;Due to: Sloppiness!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;new-goals-7&quot;&gt;New goals&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[[202112271516 beeminder-movies and -count]]&lt;/li&gt;
+  &lt;li&gt;[[202112271517 beeminder-todoist]]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;rate-changes-7&quot;&gt;Rate changes&lt;/h4&gt;
+
+&lt;p&gt;None.&lt;/p&gt;
+
+&lt;h2 id=&quot;20220109&quot;&gt;20220109&lt;/h2&gt;
+
+&lt;h3 id=&quot;derailments-8&quot;&gt;Derailments&lt;/h3&gt;
+
+&lt;h4 id=&quot;202112062230-beeminder-reading-yrs&quot;&gt;[[202112062230 beeminder-reading-yrs]]&lt;/h4&gt;
+
+&lt;p&gt;This was mainly due to /s.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, this is a book I’d like to take my time with. It has exercises I’d like to do. Until I can figure out how to time that well with my commitment, I’m flatlining this.&lt;/p&gt;
+
+&lt;h3 id=&quot;high-priority-goals&quot;&gt;High priority goals&lt;/h3&gt;
+
+&lt;h4 id=&quot;202111281158-beeminder-dev&quot;&gt;[[202111281158 beeminder-dev]]&lt;/h4&gt;
+
+&lt;p&gt;My commitment is 7 hours/week. This week is closing at ~2.5 hours/week. The main reason is a bad respite days and auto-ratchet set up: I derailed and got 7 days of buffer. So I’ve waited until I’ve consumed all the buffer.&lt;/p&gt;
+
+&lt;p&gt;When I’m in a period with a lot of time to myself and no external commitments, I’m inclined to edge skate. When I’m going through such a period, I should either reconfigure respite days and auto-ratchet, or ratchet manually.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 14 Nov 2021 00:00:00 +0100</pubDate>
+        <link>https://ozan.ogreden.com/2021/11/14/weeklies/</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/2021/11/14/weeklies/</guid>
+        
+        
+        <category>personal</category>
+        
+      </item>
+    
+      <item>
+        <title>Ways I&apos;m available to help</title>
+        <description>&lt;p&gt;&lt;em&gt;Summary: Do you think I can help you? Let me know. Email me at oguzhanogreden@protonmail.com&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve come across many helpful people on the internet.
+Some of them did help me actively, some of them had simply written something that turned out to be useful for me.
+The actual individuals who helped me in past have been long offline.
+Their presence has lost the flavor that attracted me to them.&lt;/p&gt;
+
+&lt;p&gt;I can hint the flavor by giving contemporary examples, though.
+I’m thinking of people like &lt;a href=&quot;https://jacobian.org/help/&quot;&gt;Jacob Kaplan-Moss&lt;/a&gt;, &lt;a href=&quot;https://lethain.com/ways-i-help/&quot;&gt;Will Larson&lt;/a&gt;, and &lt;a href=&quot;https://blog.evjang.com/2020/06/free-office-hours-for-non-traditional.html&quot;&gt;Eric Jang&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have nothing of the sort of experience these people have, but do get a few emails per year asking me about one of the “non-traditional” experiences I had.
+Most of these emails have a rather reserved tone, if not outright apologetic for demanding my time.
+I suppose there may be a few more emails that never got sent.
+I hope this note lowers the threshold.&lt;/p&gt;
+
+&lt;p&gt;Some of the topics I’ve received questions on include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Getting an applied statistics master’s degree after studying psychology&lt;/li&gt;
+  &lt;li&gt;Getting a data science job with a social science background&lt;/li&gt;
+  &lt;li&gt;Living in the Netherlands as a Turkish immigrant&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The questions I may be (and I’d like to) offer help with are not limited to these, of course.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 May 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/2021/05/15/help/</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/2021/05/15/help/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Angular nested forms with ControlValueAccessor interface</title>
+        <description>&lt;p&gt;This post has but one message for Angular users: Your nested form implementation may be better off with a ControlValueAccessor.&lt;/p&gt;
+
+&lt;p&gt;I am not the first one &lt;a href=&quot;https://stackoverflow.com/a/55674946&quot;&gt;to do this&lt;/a&gt;.
+Nevertheless a disclaimer and a request: I’ve had about four weeks of professional Angular development experience, &lt;a href=&quot;https://brandur.org/fragments/engineering-skepticism&quot;&gt;apply healthy skepticism&lt;/a&gt; with abundance.
+I’m writing to clarify my understanding, and give something to the community.
+If you think the claim is preposterous, reach out!&lt;/p&gt;
+
+&lt;p&gt;Now, let’s get you convinced by building up a minimally realistic example.&lt;/p&gt;
+
+&lt;p&gt;Suppose we have a form that used to input how many customers we can accept in a given day. Initially, the form is very simple. There is one integer input field per day. The only validation requirement is that the capacity can’t be smaller than 0 or larger than 20.&lt;/p&gt;
+
+&lt;p&gt;We implement this with one component that has a FormGroup property and bind the controls manually. This is the simplest use of Angular Reactive Forms. You can find a barebones example &lt;a href=&quot;https://stackblitz.com/github/oguzhanogreden/example-nested-form-cva/tree/0fb88df86ee9cedd231a7fde629d18ae9f51fcec&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now let’s imagine a more complex second iteration for the form. We need to be able to support varying capacity throughout the day. That is, instead of a single integer input, we need to allow the user to add/remove time periods, which are specified by a start time, an end time and a capacity. We need to make sure that user can’t enter an end time that’s earlier than the start time. And we need to make sure that the total capacity doesn’t exceed 20 within a day.&lt;/p&gt;
+
+&lt;p&gt;Conceptually, we have two conceptual levels: the time period level and the day level. We can implement two components, and nest the time period component in the day component. We can then reuse the time period component within and across days, and the day component across days.&lt;/p&gt;
+
+&lt;p&gt;Here’s my solution, where each component implements ControlValueAccessor.&lt;/p&gt;
+
+&lt;iframe style=&quot;width: 100%; height: 400px;&quot; src=&quot;https://stackblitz.com/github/oguzhanogreden/example-nested-form-cva/tree/main?ctl=1&amp;amp;embed=1&amp;amp;file=src/app/form/form.component.ts&amp;amp;hideNavigation=1&amp;amp;view=editor&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I think there are three key implementation details worth noting:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Components that implement &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ControlValueAccessor&lt;/code&gt; interface bind to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FormControl&lt;/code&gt;s, and not to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FormGroup&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FormArray&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;You need to notify parents of value changes, just like the default value accessors for e.g. &lt;a href=&quot;https://github.com/angular/angular/blob/11.2.13/packages/forms/src/directives/default_value_accessor.ts#L144-L148&quot;&gt;number inputs&lt;/a&gt; do.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ControlValueAccessor interface is very helpful here, especially while handling nested arrays that do not have a predetermined size. The interface is called a &lt;strong&gt;Control&lt;/strong&gt;ValueAccessor for a reason ;) Don’t forget the point 1 above.&lt;/p&gt;
+
+&lt;p&gt;There is one final implementation detail:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;You need to trigger change detection if a parent acts in a way that a child causes a change in the validity of the parent without triggering change detection automatically. This is the case e.g. when the parent triggers initialisation of a child which initializes in invalid state.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In my limited experience, this implementation is the most flexible and the most idiomatic one. Do you disagree? I’d be happy to learn from you!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 May 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/2021/05/15/angular-nested-form/</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/2021/05/15/angular-nested-form/</guid>
+        
+        
+        <category>writing</category>
+        
+      </item>
+    
+      <item>
+        <title>Advice reversal, again</title>
+        <description>&lt;p&gt;I asked a friend of mine to review my post &lt;a href=&quot;/notebook/2021/04/26&quot;&gt;“On ‘The Art of Doing Science and Engineering’”&lt;/a&gt;&lt;!--[[202104262127 On The Art of Doing Science and Engineering]]--&gt; for me. One of the questions she had for me was “So do we want to understand the maths or not?”&lt;/p&gt;
+
+&lt;p&gt;I don’t know.&lt;/p&gt;
+
+&lt;p&gt;In one sense, the point I tried to make with the earlier post was the familiar “advice reversal advice” in disguise.&lt;/p&gt;
+
+&lt;p&gt;Someone could advise used Hamming’s example on “Why it matters to be able to predict the future?” in two directions:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It is well known the drunken sailor who staggers to the left or right with \(n\) independent random steps will, on the average, end up about \(\sqrt n\) steps from the origin. But if there is a pretty girl in one direction, then his steps will tend to go in that direction and he will go a distance proportional to \(n\). In a lifetime of many, many independent choices, small and large, a career with a vision will get you a distance proportional to \(n\), while no vision will get you only the distance \(\sqrt n\).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;One would be “Oh you don’t need to understand maths to get the message.” Another would be “It’s essential that you understand how Hamming makes that conclusion and you should not do anything prior to that.”&lt;/p&gt;
+
+&lt;p&gt;Well, reverse that advice.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/30</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/30</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>What does that button do?</title>
+        <description>&lt;p&gt;At work, I get to click a button, wait 5 minutes and see my work deployed in either test, UAT or production environment. With almost no stress that something infrastructural can go wrong.&lt;/p&gt;
+
+&lt;p&gt;Our DevOps team is telling us that we will have to think less about this process in near future.&lt;/p&gt;
+
+&lt;p&gt;I am growing curious: What does that button do, exactly?&lt;/p&gt;
+
+&lt;p&gt;Well, there are two buttons. One is “pressed” by a webhook from Github (I think?) and builds and stores a Docker image. The other then actually does the deployment.&lt;/p&gt;
+
+&lt;p&gt;The container is built through this steps, noted down verbosely:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Initialize job&lt;/li&gt;
+  &lt;li&gt;Pre-job
+    &lt;ul&gt;
+      &lt;li&gt;Download pgp dev&lt;/li&gt;
+      &lt;li&gt;Download pgp data&lt;/li&gt;
+      &lt;li&gt;Download sops file&lt;/li&gt;
+      &lt;li&gt;helm package&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Checkout git repository&lt;/li&gt;
+  &lt;li&gt;Ensure PGP key installed&lt;/li&gt;
+  &lt;li&gt;Construct version number&lt;/li&gt;
+  &lt;li&gt;Fetch tags&lt;/li&gt;
+  &lt;li&gt;Set the Helm Chart version on on values-*.json&lt;/li&gt;
+  &lt;li&gt;Update dependencies
+    &lt;ul&gt;
+      &lt;li&gt;test [environment]&lt;/li&gt;
+      &lt;li&gt;uat [environment]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;upload: Helm folder&lt;/li&gt;
+  &lt;li&gt;Clean Docker cache&lt;/li&gt;
+  &lt;li&gt;Docker login&lt;/li&gt;
+  &lt;li&gt;Generate Helm charts&lt;/li&gt;
+  &lt;li&gt;Download: helm charts&lt;/li&gt;
+  &lt;li&gt;Remove unnecessary files&lt;/li&gt;
+  &lt;li&gt;Override deployment&lt;/li&gt;
+  &lt;li&gt;Helm lint&lt;/li&gt;
+  &lt;li&gt;Helm package&lt;/li&gt;
+  &lt;li&gt;Build an image&lt;/li&gt;
+  &lt;li&gt;Push the image&lt;/li&gt;
+  &lt;li&gt;Push to chart museum&lt;/li&gt;
+  &lt;li&gt;Push to chart museum prod&lt;/li&gt;
+  &lt;li&gt;Publish artifact: environments&lt;/li&gt;
+  &lt;li&gt;Update patch numberin variable group&lt;/li&gt;
+  &lt;li&gt;Clean agent directories&lt;/li&gt;
+  &lt;li&gt;Post-job:
+    &lt;ul&gt;
+      &lt;li&gt;clean agent directories&lt;/li&gt;
+      &lt;li&gt;helm package&lt;/li&gt;
+      &lt;li&gt;Checkout gitrepository (??)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then the deployment is done through these steps:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Initialize job&lt;/li&gt;
+  &lt;li&gt;Pre-job
+    &lt;ul&gt;
+      &lt;li&gt;Download pgp dev&lt;/li&gt;
+      &lt;li&gt;Download pgp data&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Download artifact - build - environments&lt;/li&gt;
+  &lt;li&gt;Download artifact - build - full-helm-chart&lt;/li&gt;
+  &lt;li&gt;Ensure PGP key installed&lt;/li&gt;
+  &lt;li&gt;Deploy&lt;/li&gt;
+  &lt;li&gt;Finalize job&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 29 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/29</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/29</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>On &quot;The Art of Doing Science and Engineering&quot;</title>
+        <description>&lt;p&gt;Books written for a different audience are hard to read. I don’t belong to the wide audience of Hamming’s “The Art of Doing Science and Engineering.” I admit parts of the book cost me way too much time. So you can imagine the comfort I felt when I read that I could skip the maths:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Later sections will be understandable […]. General results are always stated in words […]”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I kept on reading. The book is about “style”, after all. I am interested in his general results. It did, however, hurt a bit to read:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Later sections will be understandable provided you are willing to forgo the deep insights mathematics gives into the weaknesses of our current beliefs.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The first chapter of the book is titled “Orientation.” and it gives a good taste of Hamming’s style: a delightful mix of a mathematically clear mind, self-help (for researchers) a la The Art of Manliness, and eloquently delivered life advice.&lt;/p&gt;
+
+&lt;p&gt;A quick online search led me to the conclusion that many are attracted to one of the latter. In most instances, academically oriented people seemed to have cherished the self-help. Interestingly, I also came across &lt;a href=&quot;https://statmodeling.stat.columbia.edu/2021/03/22/richard-hammings-the-art-of-doing-science-and-engineering/&quot;&gt;Andrew Gelman expressing unfulfilled career desires&lt;/a&gt;, and &lt;a href=&quot;https://math.stackexchange.com/questions/3746698/the-art-of-doing-science-and-engineering-back-of-the-envelope-math&quot;&gt;one person who asked a question about one of Hamming’s examples&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ll consider the following self-evident: cherishing motivational quotes from a book on “style” won’t have great returns. Gelman’s discovery seems useful to him, and prospective students of him. I’ll focus on the question on StackExchange. (A message to the writer of the question: I hope this helps you enjoy it more the next time. My purpose is not to discourage you from picking up the book again, or cause any other emotional distress.)&lt;/p&gt;
+
+&lt;p&gt;One of the examples from this chapter is an illustration of how to quickly evaluate two well-specified hypotheses. This is an important example, because, again, “Style of thinking is the center of the course.” and it is the style that allows the evaluation. It is the style that is on display.&lt;/p&gt;
+
+&lt;p&gt;The style is elaborate enough for 227 pages from Hamming, I won’t even try to summarise it. Here’s an example, though:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“I will take […] two statements, knowledge doubles every 17 years, and 90% of the scientists who ever lived are now alive, and ask to what extent they are compatible. The model of the growth of knowledge and the growth of scientists assumed are both exponential, with the growth of knowledge being proportional to the number of scientists alive. We begin by assuming the number scientists at any time t is
+\(y(t) = ae^{bt}\)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You may feel like you’re missing something obvious, I know this person did: “What’s a? What’s T? I assume e is &lt;a href=&quot;https://en.wikipedia.org/wiki/E_(mathematical_constant)&quot;&gt;this&lt;/a&gt; guy.” Then you need to listen to Hamming a bit more closely: This is a back of an envelope example. If you read his passages prior to the mathematical formulation of the example, and rely on your common sense while playing with the example, these questions may be easier to answer. I recommend you make sure you can parse the paragraph into the formula with the help of a pen and a paper. (And yes, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt; is that guy, as it will very, very frequently be. Consider making it a habit to try to full in that guy each time you see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt; in math before asking it. You may end up thinking faster.)&lt;/p&gt;
+
+&lt;p&gt;It may seem like too much effort, and remember “[…] the technical content is […] only illustrative material.” Consider the potential pay-off, though. You may be able to evaluate two statements dense with information with high confidence. You could even be able to express it in half a page, in a language that’s legible to thousands of people, like Manning does.&lt;/p&gt;
+
+&lt;p&gt;Welcome to the journey!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/26</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/26</guid>
+        
+        
+        <category>writing</category>
+        
+      </item>
+    
+      <item>
+        <title>The sense of a bean sprout</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“[…] if you have the sense of a bean sprout you know you’re in a rare and irreproducible presence.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The analogy is obvious, it’s just been lying there for someone to reach at it. Only one person &lt;a href=&quot;https://www.google.com/search?q=%22sense+of+a+bean+sprout%22&amp;amp;client=firefox-b-d&amp;amp;ei=fCODYJPRLP2H9u8Pvs-PuA0&amp;amp;oq=%22sense+of+a+bean+sprout%22&amp;amp;gs_lcp=Cgdnd3Mtd2l6EAMyCAghEBYQHRAeOgcIABBHELADUPAUWJ0fYIYhaAFwAngAgAFPiAHfAZIBATOYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&amp;amp;sclient=gws-wiz&amp;amp;ved=0ahUKEwiT__ehkJXwAhX9g_0HHb7nA9cQ4dUDCA0&amp;amp;uact=5&quot;&gt;seems to have done it&lt;/a&gt;, Ursula K. LeGuin.&lt;/p&gt;
+
+&lt;p&gt;She concludes the following paragraph with that sentence:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“If memory remains sound and the thinking mind retains its vigor, an old intelligence may have extraordinary breadth and depth of understanding. It’s had time to gather knowledge and more practice in comparison and judgement. No matter if the knowledge is intellectual or practical or emotional, if it concerns alpine ecosystems or the Buddha nature or how to reassure a frightened child: when you meet an old person with that kind of knowledge, if you have the sense of a bean sprout you know you’re in a rare and irreproducible presence.”&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 23 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/23</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/23</guid>
+        
+        
+        <category>writing</category>
+        
+      </item>
+    
+      <item>
+        <title>Worth Noticing</title>
+        <description>&lt;p&gt;I use Beeminder to track a few goals. Some of these are quite essential for my wellbeing, some aren’t (like my &lt;a href=&quot;https://www.beeminder.com/oguzhanogreden/w-daily&quot;&gt;commitment to write these daily notes&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;It took me a really long while to realise one area where Beeminder really shines: It functions perfectly as a trigger for you to notice things. That goal you said you’d stick to? Well, you haven’t. And it won’t just fade into background, it will take 5 bucks from your wallet.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/22</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/22</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Shell Culture</title>
+        <description>&lt;p&gt;After years of “having to” and “fighting with”, I’m finally grokking shell scripting, I think.&lt;/p&gt;
+
+&lt;p&gt;While trying to get &lt;a href=&quot;https://github.com/oguzhanogreden/dotfiles/blob/master/scripts/bmndr-tmin.sh&quot;&gt;a shell script&lt;/a&gt; to work on OhMyZsh. I vaguely though of a scene from Where Wizards Stay Up Late. The main difference between the experience of the developers described there and my experience was that I never had to think of a “LOGIN” to be truncated to “LO” due to network issues.&lt;/p&gt;
+
+&lt;p&gt;I never had to think of my programs as a stream of characters.&lt;/p&gt;
+
+&lt;p&gt;So when I read the comment “Sorry, I should have thought about echoing the contents of course.” (&lt;a href=&quot;https://unix.stackexchange.com/a/275797&quot;&gt;here&lt;/a&gt;), it just made sense.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/20</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/20</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Two Histories, and Another One</title>
+        <description>&lt;p&gt;Reading &lt;a href=&quot;https://www.notion.so/Broad-Band-by-Claire-L-Evans-a1ec6dffff4940d6852e071210f0910e&quot;&gt;Broad Band&lt;/a&gt; by Claire L. Evans right after Where the Wizards Stay Up Late has been interesting so far. There’s a lot to of good things to be said about Broad Band, and I may do that once I’m through the book.&lt;/p&gt;
+
+&lt;p&gt;One of the most striking differences is how they chose their frames. Reading Where Wizards Stay Up Late, you get to know two groups of people: the mighty wizards and the powerful man. It’s as much the story of the powerful man who paved a way as it is about mighty wizards who marched the paved path in their own inspiring, awkward and adorable manner. You get to imagine an ARPA director providing millions of dollars of funding. You get to forget the literal army of people that made this possible.&lt;/p&gt;
+
+&lt;p&gt;Reading Broad Band, you get the taste of a different story. It’s a balancing act. There are pointers to existing histories of the wizards, but you’re reading a &lt;em&gt;wider&lt;/em&gt; history. One in which women who had to persevere through sexism in some of its most hideous forms is at the center of the stage. You read stories of women who had to embrace a horrible kind of grind. Next to the very familiar kind of grind &lt;a href=&quot;https://jacobian.org/2021/apr/7/embrace-the-grind/&quot;&gt;that makes things possible&lt;/a&gt;&lt;!--[202104122020 Embrace the Grind] --&gt;, that makes them happen.&lt;/p&gt;
+
+&lt;p&gt;It’s then disappointing a bit when you see other faces through lines that you were just allowed to forget. When efforts that helped commit one of the most horrorful atrocities of our history gets credited as “saving time and lives.”&lt;/p&gt;
+</description>
+        <pubDate>Mon, 19 Apr 2021 00:00:00 +0200</pubDate>
+        <link>https://ozan.ogreden.com/notebook/2021/04/19</link>
+        <guid isPermaLink="true">https://ozan.ogreden.com/notebook/2021/04/19</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
